@@ -174,7 +174,46 @@ def main(args):
     for key, value in hits_dict.items():
         print(f"Hits @ {key} = {value:.6f}")
 
-    print("Training done!")
+    # Export visualization data
+    print("\n" + "="*60)
+    print("Exporting data for visualization...")
+    print("="*60)
+
+    try:
+        from visualization.export_utils import export_full_visualization_data
+
+        viz_output_dir = f'{args.data}/visualization_outputs'
+
+        export_full_visualization_data(
+            model=model,
+            graph=test_graph,
+            node_ids=test_node_id,
+            rel_ids=test_rel,
+            norm=test_norm,
+            train_data=train_data_np,
+            test_data=test_data_np,
+            entity2index=knowledge_graph.entity2index,
+            index2entity=knowledge_graph.index2entity,
+            relation2index=knowledge_graph.relation2index,
+            index2relation=knowledge_graph.index2relation,
+            output_dir=viz_output_dir,
+            device=device
+        )
+
+        print(f"\n✓ Visualization data exported to: {viz_output_dir}")
+        print(f"\nTo visualize:")
+        print(f"  1. Graph structure: python -m visualization.graph_visualizer")
+        print(f"  2. Embeddings: python -m visualization.embedding_visualizer")
+        print(f"  3. Dashboard: python -m visualization.app")
+
+    except ImportError as e:
+        print(f"\nWarning: Could not import visualization module: {e}")
+        print("Skipping visualization data export.")
+    except Exception as e:
+        print(f"\nError during visualization export: {e}")
+        print("Training completed but visualization data not exported.")
+
+    print("\nTraining done!")
 
 
 if __name__ == "__main__":

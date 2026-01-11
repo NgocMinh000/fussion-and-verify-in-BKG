@@ -16,14 +16,14 @@ def main(args):
     valid_path = f'{args.data}/valid.tsv'
     test_path = f'{args.data}/test.tsv'
 
-    # Handle embedding paths: use as-is if absolute or starts with ../
-    if os.path.isabs(args.text_embedding_file) or args.text_embedding_file.startswith('../'):
-        text_embedding_path = args.text_embedding_file
+    # Handle embedding paths: use absolute path if provided, otherwise use relative to data dir
+    if os.path.isabs(args.text_embedding_file):
+        text_embedding_path = os.path.expanduser(args.text_embedding_file)
     else:
         text_embedding_path = f'{args.data}/{args.text_embedding_file}'
 
-    if os.path.isabs(args.knowledge_embedding_file) or args.knowledge_embedding_file.startswith('../'):
-        knowledge_embedding_path = args.knowledge_embedding_file
+    if os.path.isabs(args.knowledge_embedding_file):
+        knowledge_embedding_path = os.path.expanduser(args.knowledge_embedding_file)
     else:
         knowledge_embedding_path = f'{args.data}/{args.knowledge_embedding_file}'
 

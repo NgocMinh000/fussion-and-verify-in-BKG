@@ -203,10 +203,15 @@ class LinkPredict(nn.Module):
         """
         Calculate the score for triplets using TransE.
         TransE scoring: f(h,r,t) = -||h + r - t||_p
+        CRITICAL: Entity embeddings MUST be L2-normalized!
         """
         subject_embeddings = embeddings[triplets[:, 0]]
         relation_embeddings = self.relation_weights[triplets[:, 1]]
         object_embeddings = embeddings[triplets[:, 2]]
+
+        # CRITICAL FIX: L2 normalize entity embeddings to unit length
+        subject_embeddings = F.normalize(subject_embeddings, p=2, dim=1)
+        object_embeddings = F.normalize(object_embeddings, p=2, dim=1)
 
         # TransE: score = -||h + r - t||_1 (L1 norm)
         score = -torch.norm(subject_embeddings + relation_embeddings - object_embeddings, p=1, dim=1)

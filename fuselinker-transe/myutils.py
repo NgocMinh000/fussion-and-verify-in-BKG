@@ -198,7 +198,7 @@ def filter(triplets_to_filter, test_nodes, target_s, target_r, target_o, num_nod
     return torch.LongTensor(candidate_nodes)
 
 
-def perturb_and_get_filtered_rank(emb, w, s, r, o, test_size, triplets_to_filter, neg_sample_size_eval, filter_o=True):
+def perturb_and_get_filtered_rank(emb, w, s, r, o, test_size, triplets_to_filter, neg_sample_size_eval, score_function=None, filter_o=True):
     num_nodes = emb.shape[0]
     ranks = []
     test_nodes = torch.unique(torch.cat((s, o))).tolist()
@@ -215,10 +215,33 @@ def perturb_and_get_filtered_rank(emb, w, s, r, o, test_size, triplets_to_filter
             emb_s = emb[candidate_nodes]
             emb_o = emb[target_o]
         target_idx = 0
-        
+
         emb_r = w[target_r]
-        emb_triplet = emb_s * emb_r * emb_o  # Distmult
-        scores = torch.sigmoid(torch.sum(emb_triplet, dim=1))
+
+        # Use model's scoring function if provided, otherwise fallback to DistMult
+        if score_function is not None:
+            # Construct triplets for scoring
+            batch_size = len(candidate_nodes)
+            if filter_o:
+                # Predicting object: (s, r, ?)
+                s_indices = torch.full((batch_size,), target_s.item() if torch.is_tensor(target_s) else target_s, dtype=torch.long)
+                r_indices = torch.full((batch_size,), target_r.item() if torch.is_tensor(target_r) else target_r, dtype=torch.long)
+                o_indices = torch.tensor(candidate_nodes, dtype=torch.long)
+            else:
+                # Predicting subject: (?, r, o)
+                s_indices = torch.tensor(candidate_nodes, dtype=torch.long)
+                r_indices = torch.full((batch_size,), target_r.item() if torch.is_tensor(target_r) else target_r, dtype=torch.long)
+                o_indices = torch.full((batch_size,), target_o.item() if torch.is_tensor(target_o) else target_o, dtype=torch.long)
+
+            triplets = torch.stack([s_indices, r_indices, o_indices], dim=1)
+            if emb.is_cuda:
+                triplets = triplets.cuda()
+            scores = score_function(emb, triplets)
+            # No sigmoid needed - score_function returns raw scores
+        else:
+            # Fallback to DistMult scoring (for backward compatibility)
+            emb_triplet = emb_s * emb_r * emb_o
+            scores = torch.sigmoid(torch.sum(emb_triplet, dim=1))
 
         _, indices = torch.sort(scores, descending=True)
         rank = int((indices == target_idx).nonzero())
@@ -226,7 +249,7 @@ def perturb_and_get_filtered_rank(emb, w, s, r, o, test_size, triplets_to_filter
     return torch.LongTensor(ranks)
 
 
-def _calc_mrr(emb, w, test_triplets, total_data, batch_size, neg_sample_size_eval, hits, filter=False):
+def _calc_mrr(emb, w, test_triplets, total_data, batch_size, neg_sample_size_eval, hits, score_function=None, filter=False):
     with torch.no_grad():
         s, r, o = test_triplets[:,0], test_triplets[:,1], test_triplets[:,2]
         test_size = len(s)
@@ -234,9 +257,11 @@ def _calc_mrr(emb, w, test_triplets, total_data, batch_size, neg_sample_size_eva
         if filter:
             triplets_to_filter = {tuple(triplet) for triplet in total_data.tolist()}
             ranks_s = perturb_and_get_filtered_rank(emb, w, s, r, o, test_size,
-                                                    triplets_to_filter, neg_sample_size_eval, filter_o=False)
+                                                    triplets_to_filter, neg_sample_size_eval,
+                                                    score_function=score_function, filter_o=False)
             ranks_o = perturb_and_get_filtered_rank(emb, w, s, r, o,
-                                                    test_size, triplets_to_filter, neg_sample_size_eval)
+                                                    test_size, triplets_to_filter, neg_sample_size_eval,
+                                                    score_function=score_function)
         else:
             ranks_s = perturb_and_get_raw_rank(emb, w, o, r, s, test_size, batch_size)
             ranks_o = perturb_and_get_raw_rank(emb, w, s, r, o, test_size, batch_size)
@@ -254,9 +279,9 @@ def _calc_mrr(emb, w, test_triplets, total_data, batch_size, neg_sample_size_eva
     return mr, mrr, hits_dict
 
 
-def calc_mrr(emb, w, test_triplets, total_data, batch_size=100, neg_sample_size_eval=20, hits=[1, 3, 10], eval_p="filtered"):
+def calc_mrr(emb, w, test_triplets, total_data, batch_size=100, neg_sample_size_eval=20, hits=[1, 3, 10], score_function=None, eval_p="filtered"):
     if eval_p == "filtered":
-        mr, mrr, hits_dict = _calc_mrr(emb, w, test_triplets, total_data, batch_size, neg_sample_size_eval, hits, filter=True)
+        mr, mrr, hits_dict = _calc_mrr(emb, w, test_triplets, total_data, batch_size, neg_sample_size_eval, hits, score_function=score_function, filter=True)
     else:
-        mr, mrr, hits_dict = _calc_mrr(emb, w, test_triplets, total_data, batch_size, hits)
+        mr, mrr, hits_dict = _calc_mrr(emb, w, test_triplets, total_data, batch_size, hits, score_function=score_function)
     return mr, mrr, hits_dict

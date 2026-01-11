@@ -180,7 +180,7 @@ def main(args):
     mr, mrr, hits_dict = myutils.calc_mrr(output, model.relation_weights, test_data,
                                               torch.LongTensor(total_data).to(device),
                                               batch_size=args.eval_batch_size, neg_sample_size_eval=args.neg_sample_size_eval,
-                                              hits=hits, eval_p=args.eval_protocol)
+                                              hits=hits, score_function=model.calculate_score, eval_p=args.eval_protocol)
 
     new_time = time.time()
     print(new_time - old_time)

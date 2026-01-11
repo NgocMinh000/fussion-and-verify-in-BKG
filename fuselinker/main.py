@@ -9,6 +9,34 @@ from model import LinkPredict
 from data_loader import Data
 
 
+def add_reciprocal_relations(data_df, num_relations):
+    """
+    Add reciprocal (inverse) relations for each triple.
+    For each (h, r, t), add (t, r_inv, h) where r_inv = r + num_relations.
+
+    Args:
+        data_df: DataFrame with columns [head, relation, tail]
+        num_relations: number of unique relations
+
+    Returns:
+        augmented_df: DataFrame with reciprocal triples added
+        new_num_relations: num_relations * 2
+    """
+    data_np = data_df.values
+
+    # Create inverse triples
+    inverse_data = data_np.copy()
+    inverse_data[:, 0] = data_np[:, 2]  # head <- tail
+    inverse_data[:, 2] = data_np[:, 0]  # tail <- head
+    inverse_data[:, 1] = data_np[:, 1] + num_relations  # relation <- relation + offset
+
+    # Concatenate original and inverse
+    augmented_data = np.vstack([data_np, inverse_data])
+    augmented_df = pd.DataFrame(augmented_data)
+
+    return augmented_df, num_relations * 2
+
+
 def main(args):
     import os
 
@@ -32,6 +60,21 @@ def main(args):
     train = pd.read_csv(train_path, sep='\t', header=None)
     valid = pd.read_csv(valid_path, sep='\t', header=None)
     test = pd.read_csv(test_path, sep='\t', header=None)
+
+    # Add reciprocal relations (best practice for KGE)
+    if args.use_reciprocal:
+        num_relations_original = int(train[1].max()) + 1
+        print(f"Adding reciprocal relations... Original relations: {num_relations_original}")
+
+        train, num_relations = add_reciprocal_relations(train, num_relations_original)
+        valid, _ = add_reciprocal_relations(valid, num_relations_original)
+        test, _ = add_reciprocal_relations(test, num_relations_original)
+
+        print(f"✓ Added reciprocal relations: {num_relations_original} -> {num_relations} relations")
+        print(f"  Train triples: {len(train)} (doubled)")
+    else:
+        print("Reciprocal relations disabled (use --use_reciprocal to enable)")
+
     graph = pd.concat([train, valid, test])
 
     print("Loading Pretrained Embeddings files...")
@@ -180,7 +223,7 @@ def main(args):
     mr, mrr, hits_dict = myutils.calc_mrr(output, model.relation_weights, test_data,
                                               torch.LongTensor(total_data).to(device),
                                               batch_size=args.eval_batch_size, neg_sample_size_eval=args.neg_sample_size_eval,
-                                              hits=hits, eval_p=args.eval_protocol)
+                                              hits=hits, score_function=model.calculate_score, eval_p=args.eval_protocol)
 
     new_time = time.time()
     print(new_time - old_time)
@@ -265,7 +308,11 @@ if __name__ == "__main__":
         help="Freeze text embedding and domain knowledge or not"
     )
 
-     
+    parser.add_argument(
+        "--use_reciprocal", action="store_true",
+        help="Add reciprocal (inverse) relations for each triple (recommended for better performance)"
+    )
+
     parser.add_argument(
         "--w",
         dest="w",

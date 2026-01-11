@@ -35,19 +35,23 @@ def main(args):
     graph = pd.concat([train, valid, test])
 
     print("Loading Pretrained Embeddings files...")
+    print(f"Text embedding path: {text_embedding_path}")
     try:
         text_embeddings = np.load(text_embedding_path)
-        print("Loaded Text Embeddings file successfully!")
-    except:
+        print(f"✓ Loaded Text Embeddings file successfully! Shape: {text_embeddings.shape}")
+    except Exception as e:
         text_embeddings = None
-        print("Failed to Text Embeddings file, random embeddings will be  created.")
+        print(f"✗ Failed to load Text Embeddings file: {e}")
+        print("  Random embeddings will be created.")
 
+    print(f"Knowledge embedding path: {knowledge_embedding_path}")
     try:
         ontology_embeddings = np.load(knowledge_embedding_path)
-        print("Loaded Domain Knowledge Embeddings file successfully!")
-    except:
+        print(f"✓ Loaded Domain Knowledge Embeddings file successfully! Shape: {ontology_embeddings.shape}")
+    except Exception as e:
         ontology_embeddings = None
-        print("Failed to load Domain Knowledge Embeddings file, random embeddings will be  created.")
+        print(f"✗ Failed to load Domain Knowledge Embeddings file: {e}")
+        print("  Random embeddings will be created.")
 
     print(f"w: {args.w}")
     

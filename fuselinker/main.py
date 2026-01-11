@@ -10,11 +10,23 @@ from data_loader import Data
 
 
 def main(args):
+    import os
+
     train_path = f'{args.data}/train.tsv'
     valid_path = f'{args.data}/valid.tsv'
     test_path = f'{args.data}/test.tsv'
-    text_embedding_path = f'{args.data}/{args.text_embedding_file}'
-    knowledge_embedding_path = f'{args.data}/{args.knowledge_embedding_file}'
+
+    # Handle embedding paths: use as-is if absolute or starts with ../
+    if os.path.isabs(args.text_embedding_file) or args.text_embedding_file.startswith('../'):
+        text_embedding_path = args.text_embedding_file
+    else:
+        text_embedding_path = f'{args.data}/{args.text_embedding_file}'
+
+    if os.path.isabs(args.knowledge_embedding_file) or args.knowledge_embedding_file.startswith('../'):
+        knowledge_embedding_path = args.knowledge_embedding_file
+    else:
+        knowledge_embedding_path = f'{args.data}/{args.knowledge_embedding_file}'
+
     freeze = args.freeze
 
     train = pd.read_csv(train_path, sep='\t', header=None)

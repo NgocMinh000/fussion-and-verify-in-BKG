@@ -1,23 +1,26 @@
-# Quick Start Guide - FuseLinker Training
+# Quick Start Guide - FuseLinker Experiments
 
-## ✅ Prerequisites
+## ✅ Setup Verified
 
-- ✅ Environment setup done (`conda activate fuselinker`)
-- ✅ GPU available (RTX 3090 with 25GB)
-- ✅ Embeddings in `~/fussion-and-verify-in-BKG/engine/`
+All embedding files are ready:
+- ✓ llama2_pretrained_embeddings_4096.npy (43474, 4096)
+- ✓ bert_pretrained_embeddings_768.npy (43474, 768)
+- ✓ flant5_pretrained_embeddings_768.npy (43474, 768)
+- ✓ pubmedbert_pretrained_embeddings_768.npy (43474, 768)
+- ✓ poincare_embeddings.npy (43474, 200)
+- ✗ medllama_pretrained_embeddings_4096.npy (corrupted - use llama2 instead)
 
-## 🚀 Ready-to-Run Commands
+## 🚀 Quick Test (2 minutes)
 
-### 1️⃣ Quick Test (100 iterations, ~2 minutes)
-
-**Verify setup and GPU working:**
+Test that everything works:
 
 ```bash
+conda activate fuselinker
 cd ~/fussion-and-verify-in-BKG/fuselinker
 
 python main.py --data suppkg \
-    --text_embedding_file ../engine/medllama_pretrained_embeddings_4096.npy \
-    --knowledge_embedding_file ../engine/poincare_embeddings.npy \
+    --text_embedding_file ~/fussion-and-verify-in-BKG/engine/llama2_pretrained_embeddings_4096.npy \
+    --knowledge_embedding_file ~/fussion-and-verify-in-BKG/engine/poincare_embeddings.npy \
     --num_hidden_layers 2 \
     --n_hidden 200 \
     --iterations 100 \
@@ -29,9 +32,15 @@ python main.py --data suppkg \
 **Expected output:**
 ```
 Loading Pretrained Embeddings files...
-Loaded Text Embeddings file successfully!
-Loaded Domain Knowledge Embeddings file successfully!
-...
+Text embedding path: /root/fussion-and-verify-in-BKG/engine/llama2_pretrained_embeddings_4096.npy
+✓ Loaded Text Embeddings file successfully! Shape: (43474, 4096)
+Knowledge embedding path: /root/fussion-and-verify-in-BKG/engine/poincare_embeddings.npy
+✓ Loaded Domain Knowledge Embeddings file successfully! Shape: (43474, 200)
+w: 0.75
+Data Processing...
+# entities: 43474
+# relations: 15
+# edges: 305986
 cuda
 ...
 Epoch 0-50 | Loss values
@@ -41,300 +50,121 @@ MRR: 0.812
 Hits @ 1 = 0.723
 ```
 
-✅ If you see this → Setup perfect!
+If you see both embeddings loaded successfully (✓) → You're ready! 🎉
 
----
+## 📊 Recommended Experiments
 
-### 2️⃣ DistMult + MedLLaMA (4K iterations, ~30 minutes)
+### Priority 1: Baseline Comparison (Choose ONE)
 
-**Your original experiment:**
-
+**Option A: Large embeddings (4096D)**
 ```bash
+# DistMult + Llama2 (30 min)
 cd ~/fussion-and-verify-in-BKG/fuselinker
-
 python main.py --data suppkg \
-    --text_embedding_file ../engine/medllama_pretrained_embeddings_4096.npy \
-    --knowledge_embedding_file ../engine/poincare_embeddings.npy \
-    --num_hidden_layers 2 \
-    --n_hidden 200 \
-    --iterations 4000 \
-    --evaluate_every 100 \
-    --neg_sample_size_eval 100 \
-    --w 0.75 \
-    --use_cuda True \
-    --model_state_file suppkg_distmult_medllama_4k.pth
+    --text_embedding_file ~/fussion-and-verify-in-BKG/engine/llama2_pretrained_embeddings_4096.npy \
+    --knowledge_embedding_file ~/fussion-and-verify-in-BKG/engine/poincare_embeddings.npy \
+    --num_hidden_layers 2 --n_hidden 200 --iterations 4000 --evaluate_every 100 \
+    --neg_sample_size_eval 100 --w 0.75 --use_cuda True \
+    --model_state_file suppkg_distmult_llama2_4k.pth
 ```
 
----
-
-### 3️⃣ ComplEx + MedLLaMA (4K iterations, ~40 minutes)
-
-**Expected best performance (+2-3% MRR):**
-
+**Option B: Biomedical-specific (768D) - RECOMMENDED**
 ```bash
-cd ~/fussion-and-verify-in-BKG/fuselinker-complex
-
-python main.py --data suppkg \
-    --text_embedding_file ../engine/medllama_pretrained_embeddings_4096.npy \
-    --knowledge_embedding_file ../engine/poincare_embeddings.npy \
-    --num_hidden_layers 2 \
-    --n_hidden 200 \
-    --iterations 4000 \
-    --evaluate_every 100 \
-    --neg_sample_size_eval 100 \
-    --w 0.75 \
-    --lr 0.005 \
-    --use_cuda True \
-    --model_state_file suppkg_complex_medllama_4k.pth
-```
-
-**Note**: ComplEx uses `--lr 0.005` (lower learning rate)
-
----
-
-### 4️⃣ Compare Embeddings: MedLLaMA vs PubMedBERT
-
-**PubMedBERT (768D, biomedical specialist):**
-
-```bash
+# DistMult + PubMedBERT (25 min)
 cd ~/fussion-and-verify-in-BKG/fuselinker
-
 python main.py --data suppkg \
-    --text_embedding_file ../engine/pubmedbert_pretrained_embeddings_768.npy \
-    --knowledge_embedding_file ../engine/poincare_embeddings.npy \
-    --num_hidden_layers 2 \
-    --n_hidden 200 \
-    --iterations 4000 \
-    --evaluate_every 100 \
-    --neg_sample_size_eval 100 \
-    --w 0.75 \
-    --use_cuda True \
+    --text_embedding_file ~/fussion-and-verify-in-BKG/engine/pubmedbert_pretrained_embeddings_768.npy \
+    --knowledge_embedding_file ~/fussion-and-verify-in-BKG/engine/poincare_embeddings.npy \
+    --num_hidden_layers 2 --n_hidden 200 --iterations 4000 --evaluate_every 100 \
+    --neg_sample_size_eval 100 --w 0.75 --use_cuda True \
     --model_state_file suppkg_distmult_pubmedbert_4k.pth
 ```
 
----
-
-### 5️⃣ ConvE + MedLLaMA (6K iterations, ~1 hour)
-
-**Ultimate performance (best MRR):**
+### Priority 2: Best Scoring Function
 
 ```bash
+# ComplEx + PubMedBERT (35 min)
+cd ~/fussion-and-verify-in-BKG/fuselinker-complex
+python main.py --data suppkg \
+    --text_embedding_file ~/fussion-and-verify-in-BKG/engine/pubmedbert_pretrained_embeddings_768.npy \
+    --knowledge_embedding_file ~/fussion-and-verify-in-BKG/engine/poincare_embeddings.npy \
+    --num_hidden_layers 2 --n_hidden 200 --iterations 4000 --evaluate_every 100 \
+    --neg_sample_size_eval 100 --w 0.75 --use_cuda True \
+    --model_state_file suppkg_complex_pubmedbert_4k.pth
+```
+
+### Priority 3: State-of-the-art
+
+```bash
+# ConvE + PubMedBERT (40 min)
 cd ~/fussion-and-verify-in-BKG/fuselinker-conve
-
 python main.py --data suppkg \
-    --text_embedding_file ../engine/medllama_pretrained_embeddings_4096.npy \
-    --knowledge_embedding_file ../engine/poincare_embeddings.npy \
-    --num_hidden_layers 2 \
-    --n_hidden 200 \
-    --iterations 6000 \
-    --evaluate_every 100 \
-    --neg_sample_size_eval 100 \
-    --w 0.75 \
-    --lr 0.003 \
-    --dropout 0.3 \
-    --use_cuda True \
-    --model_state_file suppkg_conve_medllama_6k.pth
+    --text_embedding_file ~/fussion-and-verify-in-BKG/engine/pubmedbert_pretrained_embeddings_768.npy \
+    --knowledge_embedding_file ~/fussion-and-verify-in-BKG/engine/poincare_embeddings.npy \
+    --num_hidden_layers 2 --n_hidden 200 --iterations 4000 --evaluate_every 100 \
+    --neg_sample_size_eval 100 --w 0.75 --use_cuda True \
+    --model_state_file suppkg_conve_pubmedbert_4k.pth
 ```
 
----
+## 📈 Monitor Training
 
-## 📊 Monitor Training
-
-**In another terminal:**
-
+Open a new terminal and watch GPU usage:
 ```bash
-# Real-time GPU monitoring
 watch -n 1 nvidia-smi
-
-# Detailed stats
-nvidia-smi dmon -s u
 ```
 
-**Expected GPU usage:**
-- Utilization: 70-95%
-- Memory: 3-5 GB (n_hidden=200)
-- Power: 300-350W
+## 🔍 All Available Experiments
 
----
+See `CORRECTED_COMMANDS.sh` for complete list:
+- 10 different configurations
+- 4 scoring functions: DistMult, TransE, ComplEx, ConvE
+- 5 text embeddings: Llama2, PubMedBERT, BERT, FlanT5
+- 1 domain embedding: Poincaré
 
-## 🎯 Recommended Workflow
+## 📊 Expected Results
 
-### Step 1: Quick Verify (2 minutes)
+| Method | Text Emb | MRR | Hits@1 | Hits@10 | Time |
+|--------|----------|-----|--------|---------|------|
+| DistMult | PubMedBERT | ~0.82 | ~0.72 | ~0.94 | 25 min |
+| DistMult | Llama2 | ~0.83 | ~0.73 | ~0.94 | 30 min |
+| ComplEx | PubMedBERT | ~0.85 | ~0.76 | ~0.96 | 35 min |
+| ConvE | PubMedBERT | ~0.87 | ~0.79 | ~0.97 | 40 min |
+| TransE | Llama2 | ~0.80 | ~0.70 | ~0.92 | 30 min |
 
+## 🐛 Troubleshooting
+
+### Embeddings not loading
+Run debug script:
 ```bash
-cd ~/fussion-and-verify-in-BKG/fuselinker
-python main.py --data suppkg \
-    --text_embedding_file ../engine/medllama_pretrained_embeddings_4096.npy \
-    --knowledge_embedding_file ../engine/poincare_embeddings.npy \
-    --iterations 100 --evaluate_every 50 --w 0.75 --use_cuda True
+conda activate fuselinker
+python debug_embeddings.py
 ```
 
-✅ Working? → Continue
-
-### Step 2: Baseline (30 minutes)
-
-Run DistMult + MedLLaMA (4K iterations) - Command #2
-
-### Step 3: Best Method (40 minutes)
-
-Run ComplEx + MedLLaMA (4K iterations) - Command #3
-
-### Step 4: Compare Results
-
-Check which performed better:
-- DistMult vs ComplEx
-- MedLLaMA vs PubMedBERT
-
----
-
-## 🔧 Optimizations for RTX 3090 (25GB)
-
-### Option A: Higher Hidden Dimension
-
-**Use n_hidden=300 instead of 200:**
-
+### CUDA out of memory
+Reduce batch size or hidden dimensions:
 ```bash
-cd ~/fussion-and-verify-in-BKG/fuselinker-complex
-
-python main.py --data suppkg \
-    --text_embedding_file ../engine/medllama_pretrained_embeddings_4096.npy \
-    --knowledge_embedding_file ../engine/poincare_embeddings.npy \
-    --num_hidden_layers 2 \
-    --n_hidden 300 \
-    --iterations 4000 \
-    --evaluate_every 100 \
-    --neg_sample_size_eval 100 \
-    --w 0.75 \
-    --lr 0.005 \
-    --use_cuda True \
-    --model_state_file suppkg_complex_medllama_4k_hd300.pth
-```
-
-### Option B: Full Training (40K iterations)
-
-**Best results, ~4 hours:**
-
-```bash
-cd ~/fussion-and-verify-in-BKG/fuselinker-complex
-
-python main.py --data suppkg \
-    --text_embedding_file ../engine/medllama_pretrained_embeddings_4096.npy \
-    --knowledge_embedding_file ../engine/poincare_embeddings.npy \
-    --num_hidden_layers 2 \
-    --n_hidden 200 \
-    --iterations 40000 \
-    --evaluate_every 1000 \
-    --neg_sample_size_eval 100 \
-    --w 0.75 \
-    --lr 0.005 \
-    --use_cuda True \
-    --model_state_file suppkg_complex_medllama_40k.pth
-```
-
-**Expected**: MRR ~0.87-0.88
-
----
-
-## 📝 All Available Embeddings
-
-Located in `~/fussion-and-verify-in-BKG/engine/`:
-
-| Embedding | Dimension | Best For |
-|-----------|-----------|----------|
-| **medllama_pretrained_embeddings_4096.npy** | 4096D | Medical LLM |
-| **pubmedbert_pretrained_embeddings_768.npy** | 768D | Biomedical (recommended) |
-| bert_pretrained_embeddings_768.npy | 768D | General purpose |
-| flant5_pretrained_embeddings_768.npy | 768D | Instruction-tuned |
-| llama2_pretrained_embeddings_4096.npy | 4096D | General LLM |
-| poincare_embeddings.npy | 50D | Domain knowledge |
-
----
-
-## ⚠️ Important Notes
-
-### Syntax
-- ✅ `--use_cuda True` (correct)
-- ❌ `--use_cuda` (error: expected one argument)
-
-### Path
-- Embeddings: `../engine/filename.npy`
-- Relative to fuselinker directory
-
-### Learning Rates
-- DistMult: default (0.01)
-- TransE: default (0.01)
-- ComplEx: `--lr 0.005` (lower!)
-- ConvE: `--lr 0.003` (even lower!)
-
-### Memory
-- n_hidden=200: ~3-5 GB GPU RAM
-- n_hidden=300: ~6-8 GB GPU RAM
-- n_hidden=400: ~10-12 GB GPU RAM
-
----
-
-## 🎓 Expected Results
-
-### 4K iterations (quick experiments)
-
-| Method | MRR | Hits@1 | Hits@10 |
-|--------|-----|--------|---------|
-| DistMult | ~0.82-0.84 | ~74-76% | ~95-96% |
-| TransE | ~0.80-0.83 | ~72-75% | ~94-96% |
-| ComplEx | ~0.84-0.86 | ~77-80% | ~96-97% |
-| ConvE | ~0.86-0.88 | ~80-83% | ~97-98% |
-
-### 40K iterations (full training)
-
-| Method | MRR | Hits@1 | Hits@10 |
-|--------|-----|--------|---------|
-| DistMult | ~0.85 | ~78% | ~97% |
-| ComplEx | ~0.87-0.88 | ~81-82% | ~98% |
-| ConvE | ~0.89-0.91 | ~84-87% | ~98-99% |
-
----
-
-## 🆘 Troubleshooting
-
-### Issue 1: File not found
-
-```bash
-# Check embeddings exist
-ls -lh ~/fussion-and-verify-in-BKG/engine/*.npy
-
-# Check data files
-ls -lh ~/fussion-and-verify-in-BKG/fuselinker/suppkg/*.tsv
-```
-
-### Issue 2: CUDA error
-
-```bash
-# Check GPU
-nvidia-smi
-
-# Test PyTorch CUDA
-python -c "import torch; print(torch.cuda.is_available())"
-```
-
-### Issue 3: Out of Memory
-
-```bash
-# Reduce hidden dimension
 --n_hidden 150  # instead of 200
-
-# Or use smaller embeddings
---text_embedding_file ../engine/pubmedbert_pretrained_embeddings_768.npy
 ```
 
----
+### File not found
+Check paths are absolute:
+```bash
+ls -lh ~/fussion-and-verify-in-BKG/engine/*.npy
+```
 
-## 📚 More Information
+## 💡 Tips
 
-- **All commands**: `cat CORRECTED_COMMANDS.sh`
-- **Detailed guide**: `RUN_COMMANDS.md`
-- **Setup help**: `INSTALLATION_STEPS.md`
-- **GPU optimization**: `check_gpu.py`
+- **For best biomedical performance:** Use PubMedBERT
+- **For largest capacity:** Use Llama2 (4096D)
+- **For fastest training:** Use BERT or FlanT5 (768D)
+- **For best accuracy:** Use ConvE scoring function
+- **For interpretability:** Use TransE scoring function
 
----
+## 📝 Next Steps
 
-**Start with Command #1 now!** 🚀
+After running experiments, compare results:
+```bash
+grep "MRR:" suppkg/*.log | sort -k2 -n
+```
+
+All model checkpoints saved as `.pth` files in respective directories.

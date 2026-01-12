@@ -292,12 +292,12 @@ def main():
     parser = argparse.ArgumentParser(description='Extract link predictions from trained model')
     parser.add_argument(
         '--viz_dir',
-        default='suppkg/visualization_outputs',
-        help='Directory containing exported visualization data'
+        default='fuselinker-complex/suppkg/visualization_outputs',
+        help='Directory containing exported visualization data (e.g., fuselinker-complex/suppkg/visualization_outputs)'
     )
     parser.add_argument(
         '--output_file',
-        default='suppkg/link_predictions.json',
+        default='fuselinker-complex/suppkg/link_predictions.json',
         help='Output file for predictions'
     )
     parser.add_argument(

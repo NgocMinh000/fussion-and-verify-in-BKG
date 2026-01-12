@@ -46,9 +46,9 @@ Tôi đã tạo một hệ thống visualization hoàn chỉnh để phân tích
 
 ### Bước 1: Train Model (Đã Có Kết Quả Rồi!)
 
-Model của bạn đã train và đã export visualization data:
+Model của bạn đã train và đã export visualization data vào thư mục tương ứng:
 ```
-suppkg/visualization_outputs/
+fuselinker-complex/suppkg/visualization_outputs/    (ComplEx model)
 ├── entity_embeddings.npy
 ├── relation_embeddings.npy
 ├── learned_embeddings.npy
@@ -59,6 +59,12 @@ suppkg/visualization_outputs/
 └── model_config.json
 ```
 
+**Lưu ý:** Mỗi variant có data riêng:
+- `fuselinker/suppkg/` → DistMult
+- `fuselinker-transe/suppkg/` → TransE
+- `fuselinker-complex/suppkg/` → ComplEx
+- `fuselinker-conve/suppkg/` → ConvE
+
 ✓ **Data đã sẵn sàng để visualize!**
 
 ### Bước 2: Tạo Static Visualizations
@@ -67,23 +73,23 @@ suppkg/visualization_outputs/
 # Activate conda environment
 conda activate fuselinker
 
-# Visualize embeddings (t-SNE + PCA)
+# Visualize embeddings (t-SNE + PCA) cho ComplEx model
 cd ~/fussion-and-verify-in-BKG
 python -m visualization.embedding_visualizer \
-    --viz_dir suppkg/visualization_outputs \
-    --output_dir suppkg/visualization_plots \
+    --viz_dir fuselinker-complex/suppkg/visualization_outputs \
+    --output_dir fuselinker-complex/suppkg/visualization_plots \
     --method both \
     --sample_size 1000
 
 # Visualize graph structure
 python -m visualization.graph_visualizer \
-    --viz_dir suppkg/visualization_outputs \
-    --output_dir suppkg/visualization_plots \
+    --viz_dir fuselinker-complex/suppkg/visualization_outputs \
+    --output_dir fuselinker-complex/suppkg/visualization_plots \
     --sample_nodes 50 \
     --sample_edges 100
 ```
 
-✓ **Plots được lưu tại: `suppkg/visualization_plots/`**
+✓ **Plots được lưu tại: `fuselinker-complex/suppkg/visualization_plots/`**
 
 ### Bước 3: Xem Interactive Dashboard
 

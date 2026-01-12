@@ -411,7 +411,7 @@ def main():
 
         prediction_file = st.text_input(
             "Prediction File",
-            "suppkg/link_predictions.json"
+            "fuselinker-complex/suppkg/link_predictions.json"
         )
 
         if not Path(prediction_file).exists():

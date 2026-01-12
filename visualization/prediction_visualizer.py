@@ -327,12 +327,12 @@ def main():
     parser = argparse.ArgumentParser(description='Visualize link predictions')
     parser.add_argument(
         '--prediction_file',
-        default='suppkg/link_predictions.json',
-        help='Prediction file from link_predictor.py'
+        default='fuselinker-complex/suppkg/link_predictions.json',
+        help='Prediction file from link_predictor.py (e.g., fuselinker-complex/suppkg/link_predictions.json)'
     )
     parser.add_argument(
         '--output_dir',
-        default='suppkg/prediction_plots',
+        default='fuselinker-complex/suppkg/prediction_plots',
         help='Directory to save plots'
     )
     parser.add_argument(

@@ -27,12 +27,14 @@ Chứng minh model đã link predict được bằng cách:
 
 Model ComplEx của bạn đã train và export visualization data:
 ```
-suppkg/visualization_outputs/
+fuselinker-complex/suppkg/visualization_outputs/
 ├── entity_embeddings.npy
 ├── relation_embeddings.npy
 ├── graph_structure.json (chứa train/test triples)
 └── ...
 ```
+
+**Lưu ý:** Mỗi variant (fuselinker, fuselinker-transe, fuselinker-complex, fuselinker-conve) có thư mục `suppkg/` riêng!
 
 ### Bước 2: Extract Link Predictions
 
@@ -40,14 +42,20 @@ suppkg/visualization_outputs/
 conda activate fuselinker
 cd ~/fussion-and-verify-in-BKG
 
-# Extract predictions từ test set
+# Extract predictions từ ComplEx model
 python -m visualization.link_predictor \
-    --viz_dir suppkg/visualization_outputs \
-    --output_file suppkg/link_predictions.json \
+    --viz_dir fuselinker-complex/suppkg/visualization_outputs \
+    --output_file fuselinker-complex/suppkg/link_predictions.json \
     --num_queries 100 \
     --top_k 10 \
     --model_type complex \
     --show_samples 5
+
+# Hoặc từ DistMult:
+# python -m visualization.link_predictor \
+#     --viz_dir fuselinker/suppkg/visualization_outputs \
+#     --output_file fuselinker/suppkg/link_predictions.json \
+#     --model_type distmult
 ```
 
 **Output:**
@@ -58,11 +66,11 @@ python -m visualization.link_predictor \
 ### Bước 3: Generate Explanations
 
 ```bash
-# Tạo explanations cho predictions
+# Tạo explanations cho ComplEx predictions
 python -m visualization.explainer \
-    --prediction_file suppkg/link_predictions.json \
-    --viz_dir suppkg/visualization_outputs \
-    --output_file suppkg/prediction_explanations.json \
+    --prediction_file fuselinker-complex/suppkg/link_predictions.json \
+    --viz_dir fuselinker-complex/suppkg/visualization_outputs \
+    --output_file fuselinker-complex/suppkg/prediction_explanations.json \
     --num_queries 10
 ```
 
@@ -75,25 +83,28 @@ python -m visualization.explainer \
 ### Bước 4: Visualize Predictions
 
 ```bash
-# Tạo static plots
+# Tạo static plots cho ComplEx
 python -m visualization.prediction_visualizer \
-    --prediction_file suppkg/link_predictions.json \
-    --output_dir suppkg/prediction_plots \
+    --prediction_file fuselinker-complex/suppkg/link_predictions.json \
+    --output_dir fuselinker-complex/suppkg/prediction_plots \
     --num_samples 10
 ```
 
 **Output plots:**
-- `rank_distribution.png` - Distribution of true answer ranks
-- `score_vs_rank.png` - Prediction scores vs ranks
-- `query_1_predictions.png`, `query_2_predictions.png`, ... - Individual query predictions
-- `query_1_similarities.png`, ... - Similarity heatmaps
-- `prediction_summary.txt` - Text summary report
+- `fuselinker-complex/suppkg/prediction_plots/rank_distribution.png` - Distribution of true answer ranks
+- `fuselinker-complex/suppkg/prediction_plots/score_vs_rank.png` - Prediction scores vs ranks
+- `fuselinker-complex/suppkg/prediction_plots/query_1_predictions.png`, ... - Individual query predictions
+- `fuselinker-complex/suppkg/prediction_plots/query_1_similarities.png`, ... - Similarity heatmaps
+- `fuselinker-complex/suppkg/prediction_plots/prediction_summary.txt` - Text summary report
 
 ### Bước 5: Interactive Dashboard
 
 ```bash
-# Launch dashboard
+# Launch dashboard (sẽ prompt để chọn file)
 streamlit run visualization/prediction_app.py
+
+# Trong dashboard, set Prediction File path:
+# fuselinker-complex/suppkg/link_predictions.json
 ```
 
 **Dashboard features:**
@@ -443,8 +454,12 @@ python -m visualization.prediction_visualizer \
 
 ## 🐛 Troubleshooting
 
-### "File not found: suppkg/visualization_outputs"
-→ Model chưa train. Run training với visualization export enabled.
+### "File not found: fuselinker-complex/suppkg/visualization_outputs"
+→ Model chưa train. Train model trước để export visualization data:
+```bash
+cd fuselinker-complex
+python main.py --data suppkg --iterations 4000 --w 0.75 --use_cuda True
+```
 
 ### "No module named 'sklearn'"
 ```bash
@@ -459,9 +474,9 @@ pip install scikit-learn
 # Install dependencies
 pip install streamlit plotly
 
-# Check files exist
-ls suppkg/link_predictions.json
-ls suppkg/prediction_explanations.json
+# Check files exist (từ root directory)
+ls fuselinker-complex/suppkg/link_predictions.json
+ls fuselinker-complex/suppkg/prediction_explanations.json
 ```
 
 ### Explanations quá chậm
@@ -529,20 +544,40 @@ ls suppkg/prediction_explanations.json
 conda activate fuselinker
 cd ~/fussion-and-verify-in-BKG
 
+# Đảm bảo model đã train (nếu chưa, train trước):
+# cd fuselinker-complex
+# python main.py --data suppkg --iterations 4000 --w 0.75 --use_cuda True
+# cd ..
+
+# Extract predictions từ ComplEx model
 python -m visualization.link_predictor \
-    --viz_dir suppkg/visualization_outputs \
+    --viz_dir fuselinker-complex/suppkg/visualization_outputs \
+    --output_file fuselinker-complex/suppkg/link_predictions.json \
     --num_queries 100 \
     --top_k 10 \
     --model_type complex
 
+# Generate explanations
 python -m visualization.explainer \
-    --prediction_file suppkg/link_predictions.json \
+    --prediction_file fuselinker-complex/suppkg/link_predictions.json \
+    --viz_dir fuselinker-complex/suppkg/visualization_outputs \
+    --output_file fuselinker-complex/suppkg/prediction_explanations.json \
     --num_queries 10
 
+# Create visualizations
 python -m visualization.prediction_visualizer \
-    --prediction_file suppkg/link_predictions.json
+    --prediction_file fuselinker-complex/suppkg/link_predictions.json \
+    --output_dir fuselinker-complex/suppkg/prediction_plots
 
+# Launch dashboard
 streamlit run visualization/prediction_app.py
+# Trong dashboard, nhập path: fuselinker-complex/suppkg/link_predictions.json
+```
+
+**Với DistMult, TransE, hoặc ConvE:**
+```bash
+# Thay 'fuselinker-complex' bằng 'fuselinker', 'fuselinker-transe', hoặc 'fuselinker-conve'
+# Thay '--model_type complex' bằng 'distmult', 'transe', hoặc 'conve'
 ```
 
 **🎊 Hoàn thành!**

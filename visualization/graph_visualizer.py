@@ -260,12 +260,12 @@ def main():
     parser = argparse.ArgumentParser(description='Visualize FuseLinker knowledge graph structure')
     parser.add_argument(
         '--viz_dir',
-        default='suppkg/visualization_outputs',
-        help='Directory containing exported visualization data'
+        default='fuselinker-complex/suppkg/visualization_outputs',
+        help='Directory containing exported visualization data (e.g., fuselinker-complex/suppkg/visualization_outputs)'
     )
     parser.add_argument(
         '--output_dir',
-        default='suppkg/visualization_plots',
+        default='fuselinker-complex/suppkg/visualization_plots',
         help='Directory to save visualization plots'
     )
     parser.add_argument(

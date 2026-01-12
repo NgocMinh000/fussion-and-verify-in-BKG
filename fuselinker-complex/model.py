@@ -180,13 +180,15 @@ class LinkPredict(nn.Module):
     def __init__(self, input_dim, hidden_dim, num_relations, num_bases=-1,
                  num_hidden_layers=1, dropout=0.0, use_cuda=False, regularization_param=0.0,
                  pretrained_text_embeddings=None, pretrained_domain_embeddings=None,
-                 pretrained_relation_embeddings=None, freeze=False, w=0.5):
+                 pretrained_relation_embeddings=None, freeze=False, w=0.5, use_n3_reg=False):
         super(LinkPredict, self).__init__()
         self.rgcn = RGCN(input_dim, hidden_dim, hidden_dim, num_relations * 2, num_bases,
                          num_hidden_layers, dropout, use_cuda, pretrained_text_embeddings=pretrained_text_embeddings,
                          pretrained_domain_embeddings=pretrained_domain_embeddings, freeze=freeze,w=w)
         self.regularization_param = regularization_param
         self.hidden_dim = hidden_dim
+        self.use_n3_reg = use_n3_reg
+        self.num_entities = input_dim
 
         # ComplEx requires real and imaginary parts for relations
         # Real part
@@ -207,24 +209,29 @@ class LinkPredict(nn.Module):
         self.relation_weights_imag = nn.Parameter(torch.Tensor(num_relations, hidden_dim))
         nn.init.xavier_uniform_(self.relation_weights_imag, gain=nn.init.calculate_gain('relu'))
 
-        # Project entity embeddings to imaginary space
-        self.entity_to_imag = nn.Linear(hidden_dim, hidden_dim, bias=False)
-        print("Initialized ComplEx imaginary components.")
+        # CRITICAL FIX: Independent imaginary entity embeddings (not derived from real!)
+        # Initialize to small values so R-GCN embeddings dominate initially
+        self.entity_embeddings_imag = nn.Parameter(torch.Tensor(input_dim, hidden_dim))
+        nn.init.uniform_(self.entity_embeddings_imag, -0.01, 0.01)
+
+        print(f"Initialized ComplEx with independent imaginary embeddings (N3 reg: {use_n3_reg}).")
 
     def calculate_score(self, embeddings, triplets):
         """
         Calculate the score for triplets using ComplEx.
         ComplEx scoring: f(h,r,t) = Re(<h, r, conj(t)>)
+
+        CRITICAL FIX: Uses independent imaginary embeddings (not derived from real).
         """
         # Get real parts (from RGCN embeddings)
         h_real = embeddings[triplets[:, 0]]
         r_real = self.relation_weights[triplets[:, 1]]
         t_real = embeddings[triplets[:, 2]]
 
-        # Get imaginary parts
-        h_imag = self.entity_to_imag(h_real)
+        # Get imaginary parts (INDEPENDENT parameters - not derived!)
+        h_imag = self.entity_embeddings_imag[triplets[:, 0]]
         r_imag = self.relation_weights_imag[triplets[:, 1]]
-        t_imag = self.entity_to_imag(t_real)
+        t_imag = self.entity_embeddings_imag[triplets[:, 2]]
 
         # ComplEx score: Re(<h, r, conj(t)>)
         # = Re(h) * Re(r) * Re(t) + Re(h) * Im(r) * Im(t) + Im(h) * Re(r) * Im(t) - Im(h) * Im(r) * Re(t)
@@ -243,11 +250,26 @@ class LinkPredict(nn.Module):
     def regularization_loss(self, embeddings):
         """
         Compute regularization loss for embeddings and relation weights (ComplEx version).
+        Supports both L2 and N3 regularization.
+
+        N3 regularization (nuclear 3-norm) is superior for ComplEx:
+        - L2: penalizes large values
+        - N3: penalizes sum of cubes, better for complex-valued embeddings
         """
-        return (torch.mean(embeddings.pow(2)) +
-                torch.mean(self.relation_weights.pow(2)) +
-                torch.mean(self.relation_weights_imag.pow(2)) +
-                torch.mean(self.entity_to_imag.weight.pow(2)))
+        if self.use_n3_reg:
+            # N3 regularization: mean(|x|^3) for all parameters
+            reg_loss = (torch.mean(torch.abs(embeddings) ** 3) +
+                       torch.mean(torch.abs(self.relation_weights) ** 3) +
+                       torch.mean(torch.abs(self.relation_weights_imag) ** 3) +
+                       torch.mean(torch.abs(self.entity_embeddings_imag) ** 3))
+        else:
+            # L2 regularization: mean(x^2) for all parameters
+            reg_loss = (torch.mean(embeddings.pow(2)) +
+                       torch.mean(self.relation_weights.pow(2)) +
+                       torch.mean(self.relation_weights_imag.pow(2)) +
+                       torch.mean(self.entity_embeddings_imag.pow(2)))
+
+        return reg_loss
 
     def get_loss(self, graph, embeddings, triplets, labels):
         """

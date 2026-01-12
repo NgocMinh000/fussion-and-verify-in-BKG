@@ -295,6 +295,26 @@ class LinkPredict(nn.Module):
     def forward(self, graph, node_ids, rel_ids, norm):
         return self.rgcn(graph, node_ids, rel_ids, norm)
 
+    def set_eval_mode_for_inference(self):
+        """
+        Set batch normalization layers to evaluation mode.
+        CRITICAL for correct inference - ensures BN uses running statistics, not batch statistics.
+
+        Call this before evaluation/inference, even if model.eval() was already called.
+        """
+        self.bn0.eval()
+        self.bn1.eval()
+        self.bn2.eval()
+
+    def set_train_mode(self):
+        """
+        Set batch normalization layers to training mode.
+        Call this when resuming training.
+        """
+        self.bn0.train()
+        self.bn1.train()
+        self.bn2.train()
+
     def regularization_loss(self, embeddings):
         """
         Compute regularization loss for embeddings and ConvE parameters.

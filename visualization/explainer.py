@@ -25,18 +25,25 @@ def load_prediction_data(prediction_file, viz_dir):
 
     # Load visualization data
     data = {}
-    data['entity_embeddings'] = np.load(f'{viz_dir}/entity_embeddings.npy')
+
+    # PKL files are in parent directory (suppkg/), not in visualization_outputs/
+    from pathlib import Path
+    pkl_dir = str(Path(viz_dir).parent)
+
+    # Load embeddings from visualization_outputs/
+    data['entity_embeddings'] = np.load(f'{viz_dir}/node_embeddings.npy')
     data['relation_embeddings'] = np.load(f'{viz_dir}/relation_embeddings.npy')
 
-    with open(f'{viz_dir}/index2entity.pkl', 'rb') as f:
+    # Load mappings from suppkg/
+    with open(f'{pkl_dir}/index2entity.pkl', 'rb') as f:
         data['index2entity'] = pickle.load(f)
-    with open(f'{viz_dir}/index2relation.pkl', 'rb') as f:
+    with open(f'{pkl_dir}/index2relation.pkl', 'rb') as f:
         data['index2relation'] = pickle.load(f)
 
-    # Load graph for pattern analysis
-    with open(f'{viz_dir}/graph_structure.json', 'r') as f:
-        graph_data = json.load(f)
-        data['train_triples'] = np.array(graph_data['train_triples'])
+    # Load graph for pattern analysis from visualization_outputs/
+    with open(f'{viz_dir}/train_graph.json', 'r') as f:
+        train_graph = json.load(f)
+        data['train_triples'] = np.array(train_graph['triples'])
 
     print(f"  ✓ Loaded predictions and embeddings")
 

@@ -19,25 +19,34 @@ def load_model_and_data(model_dir, data_dir):
 
     data = {}
 
-    # Load mappings
-    with open(f'{data_dir}/entity2index.pkl', 'rb') as f:
+    # PKL files are in parent directory (suppkg/), not in visualization_outputs/
+    # viz_dir = fuselinker-complex/suppkg/visualization_outputs
+    # pkl_dir = fuselinker-complex/suppkg
+    from pathlib import Path
+    pkl_dir = str(Path(data_dir).parent)
+
+    # Load mappings from suppkg/ directory
+    with open(f'{pkl_dir}/entity2index.pkl', 'rb') as f:
         data['entity2index'] = pickle.load(f)
-    with open(f'{data_dir}/index2entity.pkl', 'rb') as f:
+    with open(f'{pkl_dir}/index2entity.pkl', 'rb') as f:
         data['index2entity'] = pickle.load(f)
-    with open(f'{data_dir}/relation2index.pkl', 'rb') as f:
+    with open(f'{pkl_dir}/relation2index.pkl', 'rb') as f:
         data['relation2index'] = pickle.load(f)
-    with open(f'{data_dir}/index2relation.pkl', 'rb') as f:
+    with open(f'{pkl_dir}/index2relation.pkl', 'rb') as f:
         data['index2relation'] = pickle.load(f)
 
-    # Load embeddings
-    data['entity_embeddings'] = np.load(f'{data_dir}/entity_embeddings.npy')
+    # Load embeddings from visualization_outputs/ directory
+    data['entity_embeddings'] = np.load(f'{data_dir}/node_embeddings.npy')
     data['relation_embeddings'] = np.load(f'{data_dir}/relation_embeddings.npy')
 
-    # Load graph structure
-    with open(f'{data_dir}/graph_structure.json', 'r') as f:
-        graph_data = json.load(f)
-        data['train_triples'] = np.array(graph_data['train_triples'])
-        data['test_triples'] = np.array(graph_data['test_triples'])
+    # Load graph structure from visualization_outputs/ directory
+    with open(f'{data_dir}/train_graph.json', 'r') as f:
+        train_graph = json.load(f)
+        data['train_triples'] = np.array(train_graph['triples'])
+
+    with open(f'{data_dir}/test_graph.json', 'r') as f:
+        test_graph = json.load(f)
+        data['test_triples'] = np.array(test_graph['triples'])
 
     print(f"  ✓ Loaded {len(data['entity2index'])} entities, {len(data['relation2index'])} relations")
     print(f"  ✓ Train: {len(data['train_triples'])} triples, Test: {len(data['test_triples'])} triples")

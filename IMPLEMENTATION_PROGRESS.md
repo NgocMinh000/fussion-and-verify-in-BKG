@@ -1,6 +1,6 @@
 # Implementation Progress Report - Option A Full Implementation
 
-## ✅ COMPLETED (Phases 1-3)
+## ✅ COMPLETED (ALL PHASES 1-5)
 
 ### **Phase 1: Fix Critical Evaluation Bug** ✅ DONE
 
@@ -77,33 +77,33 @@ object_embeddings = F.normalize(object_embeddings, p=2, dim=1)
 
 ---
 
-## 🚧 IN PROGRESS / TODO
-
 ---
 
-### **Phase 4: Fix ComplEx** ⏳ HIGH PRIORITY
+### **Phase 4: Fix ComplEx** ✅ DONE
 
 **Problem Identified:**
-- Imaginary parts currently derived from real parts via linear transformation
+- Imaginary parts were derived from real parts via linear transformation
 - Should be INDEPENDENT parameters
 - Missing N3 regularization (superior to L2 for ComplEx)
 
-**Changes Needed:**
-1. ⬜ Redesign ComplEx architecture:
-   - Add `self.entity_embeddings_imag` as independent parameters
-   - OR use hybrid approach: R-GCN for real, learn imaginary as offset
+**Changes Made:**
+1. ✅ Redesigned ComplEx architecture:
+   - Added `self.entity_embeddings_imag` as independent parameters
+   - Removed `entity_to_imag` linear layer (no longer derived!)
+   - Initialize imaginary embeddings small (-0.01, 0.01) for stability
 
-2. ⬜ Update `calculate_score()` to use independent imaginary embeddings
+2. ✅ Updated `calculate_score()` to use independent imaginary embeddings
 
-3. ⬜ Add N3 regularization:
+3. ✅ Added N3 regularization:
    ```python
    reg = torch.mean(torch.abs(embeddings) ** 3)
    ```
 
-4. ⬜ Add `self.use_n3_reg` flag
+4. ✅ Added `self.use_n3_reg` flag and `--use_n3_reg` command-line argument
 
-**Files To Change:**
-- `fuselinker-complex/model.py`
+**Files Changed:**
+- `fuselinker-complex/model.py` (architecture redesign)
+- `fuselinker-complex/main.py` (add use_n3_reg parameter)
 
 **Impact:**
 - Major improvement: MRR 0.20 → 0.86 (+320%)
@@ -111,14 +111,14 @@ object_embeddings = F.normalize(object_embeddings, p=2, dim=1)
 
 ---
 
-### **Phase 5: Fix ConvE** ⏳ MEDIUM PRIORITY
+### **Phase 5: Fix ConvE** ✅ DONE
 
 **Problem Identified:**
 - Batch normalization mode not explicitly controlled during inference
 - Can cause train/test performance mismatch
 
-**Changes Needed:**
-1. ⬜ Add methods to control batch norm mode:
+**Changes Made:**
+1. ✅ Added methods to control batch norm mode:
    ```python
    def set_eval_mode_for_inference(self):
        self.bn0.eval()
@@ -126,15 +126,52 @@ object_embeddings = F.normalize(object_embeddings, p=2, dim=1)
        self.bn2.eval()
    ```
 
-2. ⬜ Update evaluation code in main.py to call this before evaluation
+2. ✅ Updated evaluation code in main.py to call this before evaluation
 
-**Files To Change:**
-- `fuselinker-conve/model.py`
-- `fuselinker-conve/main.py`
+**Files Changed:**
+- `fuselinker-conve/model.py` (add batch norm control methods)
+- `fuselinker-conve/main.py` (call set_eval_mode_for_inference())
 
 **Impact:**
 - Ensures correct evaluation behavior
 - May improve metrics by 5-10%
+
+---
+
+## 🧪 TEST SCRIPTS CREATED
+
+### **Quick Test Script** (`quick_test.sh`)
+- Fast validation: 10 iterations per method
+- Tests all 4 methods sequentially
+- Verifies all fixes are working
+- Runtime: ~5-10 minutes
+- **Use this first** to verify everything works
+
+**Run with:**
+```bash
+cd ~/fussion-and-verify-in-BKG
+./quick_test.sh
+```
+
+### **Comprehensive Test Script** (`test_all_methods.sh`)
+- Full testing: 100 iterations per method
+- Tests 8 configurations:
+  1. DistMult baseline
+  2. DistMult + reciprocal
+  3. TransE fixed
+  4. TransE + reciprocal
+  5. ComplEx + L2
+  6. ComplEx + N3 + reciprocal
+  7. ConvE fixed
+  8. ConvE + reciprocal
+- Runtime: ~2-3 hours
+- **Use this for full validation**
+
+**Run with:**
+```bash
+cd ~/fussion-and-verify-in-BKG
+./test_all_methods.sh
+```
 
 ---
 
@@ -285,19 +322,26 @@ python main.py --data suppkg \
 
 ## 📋 SUMMARY
 
-**Completed:**
-- ✅ Fixed ROOT CAUSE (evaluation bug)
-- ✅ Fixed TransE (L2 normalization)
-- ✅ Added reciprocal relations (ALL 4 variants)
+**ALL PHASES COMPLETED! ✅**
 
-**Estimated Current Improvements:**
-- TransE: From broken → working (+100%)
-- ComplEx: +150% (eval fix alone)
-- ConvE: +150% (eval fix alone)
+**What Was Fixed:**
+1. ✅ Fixed ROOT CAUSE (evaluation bug affecting all methods)
+2. ✅ Fixed TransE (L2 normalization)
+3. ✅ Added reciprocal relations (ALL 4 variants)
+4. ✅ Redesigned ComplEx (independent imaginary + N3 reg)
+5. ✅ Fixed ConvE (batch norm control)
+6. ✅ Created comprehensive test scripts
+
+**Expected Improvements:**
+- TransE: From broken (Hits@1=0) → MRR ~0.85 (+100%+)
+- ComplEx: From MRR 0.20 → MRR ~0.86 (+320%)
+- ConvE: From MRR 0.20 → MRR ~0.90 (+350%)
 - All methods: +3-5% additional with --use_reciprocal flag
 
-**To Reach Full Potential:**
-- Need Phase 4 (ComplEx redesign) for +340% total
-- Need Phase 5 (ConvE batch norm) for +350% total
+**Next Steps:**
+1. Run `./quick_test.sh` to verify all fixes work (10 min)
+2. Run `./test_all_methods.sh` for full validation (2-3 hours)
+3. Verify TransE Hits@1 > 0 (critical check!)
+4. Compare results and pick best method for production
 
-**Total Work: ~60% Complete**
+**Total Work: 100% Complete ✅**

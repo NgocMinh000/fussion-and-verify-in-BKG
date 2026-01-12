@@ -12,7 +12,9 @@ from data_loader import Data
 def add_reciprocal_relations(data_df, num_relations):
     """
     Add reciprocal (inverse) relations for each triple.
-    For each (h, r, t), add (t, r_inv, h) where r_inv = r + num_relations.
+    For each (h, r, t), add (t, r_inv, h).
+
+    Handles both string relations (appends "_INV") and numeric relations (adds offset).
 
     Args:
         data_df: DataFrame with columns [head, relation, tail]
@@ -28,7 +30,14 @@ def add_reciprocal_relations(data_df, num_relations):
     inverse_data = data_np.copy()
     inverse_data[:, 0] = data_np[:, 2]  # head <- tail
     inverse_data[:, 2] = data_np[:, 0]  # tail <- head
-    inverse_data[:, 1] = data_np[:, 1] + num_relations  # relation <- relation + offset
+
+    # Handle both string and numeric relations
+    if isinstance(data_np[0, 1], str):
+        # String relations: append "_INV" suffix
+        inverse_data[:, 1] = np.array([f"{rel}_INV" for rel in data_np[:, 1]])
+    else:
+        # Numeric relations: add offset
+        inverse_data[:, 1] = data_np[:, 1] + num_relations
 
     # Concatenate original and inverse
     augmented_data = np.vstack([data_np, inverse_data])
@@ -63,7 +72,8 @@ def main(args):
 
     # Add reciprocal relations (best practice for KGE)
     if args.use_reciprocal:
-        num_relations_original = int(train[1].max()) + 1
+        # Count unique relations (handle both string and numeric relations)
+        num_relations_original = train[1].nunique()
         print(f"Adding reciprocal relations... Original relations: {num_relations_original}")
 
         train, num_relations = add_reciprocal_relations(train, num_relations_original)

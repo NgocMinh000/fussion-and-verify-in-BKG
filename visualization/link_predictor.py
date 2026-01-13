@@ -260,11 +260,28 @@ def analyze_predictions(all_results):
     return stats
 
 
+def convert_to_serializable(obj):
+    """Convert numpy types to native Python types for JSON serialization."""
+    if isinstance(obj, np.integer):
+        return int(obj)
+    elif isinstance(obj, np.floating):
+        return float(obj)
+    elif isinstance(obj, np.ndarray):
+        return obj.tolist()
+    elif isinstance(obj, dict):
+        return {key: convert_to_serializable(value) for key, value in obj.items()}
+    elif isinstance(obj, list):
+        return [convert_to_serializable(item) for item in obj]
+    else:
+        return obj
+
+
 def save_predictions(all_results, stats, output_file):
     """Save predictions to JSON file."""
+    # Convert numpy types to native Python types
     output_data = {
-        'statistics': stats,
-        'predictions': all_results
+        'statistics': convert_to_serializable(stats),
+        'predictions': convert_to_serializable(all_results)
     }
 
     with open(output_file, 'w') as f:

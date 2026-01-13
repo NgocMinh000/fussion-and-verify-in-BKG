@@ -54,7 +54,7 @@ def export_full_visualization_data(
         entity_embeddings = model(graph, node_ids, rel_ids, norm)
         entity_embeddings_np = entity_embeddings.cpu().numpy()
 
-    np.save(f'{output_dir}/entity_embeddings.npy', entity_embeddings_np)
+    np.save(f'{output_dir}/node_embeddings.npy', entity_embeddings_np)
     print(f"      ✓ Saved entity embeddings: shape {entity_embeddings_np.shape}")
 
     # 2. Export relation embeddings
@@ -86,16 +86,26 @@ def export_full_visualization_data(
 
     # 4. Export graph structure
     print("  4/7 Exporting graph structure...")
-    graph_data = {
+
+    # Export train and test graphs separately (for link_predictor compatibility)
+    train_graph_data = {
         'num_nodes': graph.number_of_nodes(),
         'num_edges': graph.number_of_edges(),
-        'train_triples': train_data.tolist(),
-        'test_triples': test_data.tolist()
+        'triples': train_data.tolist()
     }
 
-    with open(f'{output_dir}/graph_structure.json', 'w') as f:
-        json.dump(graph_data, f, indent=2)
-    print(f"      ✓ Saved graph structure: {graph_data['num_nodes']} nodes, {graph_data['num_edges']} edges")
+    test_graph_data = {
+        'num_nodes': graph.number_of_nodes(),
+        'num_edges': graph.number_of_edges(),
+        'triples': test_data.tolist()
+    }
+
+    with open(f'{output_dir}/train_graph.json', 'w') as f:
+        json.dump(train_graph_data, f, indent=2)
+    with open(f'{output_dir}/test_graph.json', 'w') as f:
+        json.dump(test_graph_data, f, indent=2)
+
+    print(f"      ✓ Saved graph structure: {train_graph_data['num_nodes']} nodes, {len(train_data)} train triples, {len(test_data)} test triples")
 
     # 5. Export entity and relation mappings
     print("  5/7 Exporting entity/relation mappings...")
@@ -163,12 +173,12 @@ def export_full_visualization_data(
 
     print(f"\n✓ Export complete! All data saved to {output_dir}/")
     print(f"\nFiles created:")
-    print(f"  - entity_embeddings.npy ({entity_embeddings_np.shape})")
+    print(f"  - node_embeddings.npy ({entity_embeddings_np.shape})")
     print(f"  - relation_embeddings.npy ({relation_embeddings_np.shape})")
     if hasattr(model, 'entity_embeddings'):
         print(f"  - learned_embeddings.npy")
-    print(f"  - graph_structure.json")
-    print(f"  - entity2index.pkl, index2entity.pkl")
-    print(f"  - relation2index.pkl, index2relation.pkl")
+    print(f"  - train_graph.json, test_graph.json")
+    print(f"  - entity2index.pkl, index2entity.pkl (in parent directory)")
+    print(f"  - relation2index.pkl, index2relation.pkl (in parent directory)")
     print(f"  - statistics.json")
     print(f"  - model_config.json")

@@ -87,27 +87,8 @@ def main(args):
 
     graph = pd.concat([train, valid, test])
 
-    print("Loading Pretrained Embeddings files...")
-    print(f"Text embedding path: {text_embedding_path}")
-    try:
-        text_embeddings = np.load(text_embedding_path)
-        print(f"✓ Loaded Text Embeddings file successfully! Shape: {text_embeddings.shape}")
-    except Exception as e:
-        text_embeddings = None
-        print(f"✗ Failed to load Text Embeddings file: {e}")
-        print("  Random embeddings will be created.")
-
-    print(f"Knowledge embedding path: {knowledge_embedding_path}")
-    try:
-        ontology_embeddings = np.load(knowledge_embedding_path)
-        print(f"✓ Loaded Domain Knowledge Embeddings file successfully! Shape: {ontology_embeddings.shape}")
-    except Exception as e:
-        ontology_embeddings = None
-        print(f"✗ Failed to load Domain Knowledge Embeddings file: {e}")
-        print("  Random embeddings will be created.")
-
     print(f"w: {args.w}")
-    
+
     print("Data Processing...")
     knowledge_graph = Data(graph, train, valid, test)
     num_nodes, num_rels, num_edges = knowledge_graph.get_stats()
@@ -122,6 +103,38 @@ def main(args):
         pickle.dump(knowledge_graph.entity2index, file)
     with open(f'{args.data}/index2entity.pkl', 'wb') as file:
         pickle.dump(knowledge_graph.index2entity, file)
+
+    # Load embeddings AFTER creating knowledge graph (needed for SapBERT)
+    print("\nLoading Pretrained Embeddings files...")
+
+    # Import SapBERT loader
+    import sys
+    sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+    from sapbert_loader import load_text_embeddings
+
+    # Load text embeddings (handles both .npy files and SapBERT keyword)
+    print(f"Text embedding path: {text_embedding_path}")
+    try:
+        text_embeddings = load_text_embeddings(
+            embedding_path=text_embedding_path,
+            index2entity=knowledge_graph.index2entity,
+            use_cuda=args.use_cuda
+        )
+        print(f"✓ Loaded Text Embeddings successfully! Shape: {text_embeddings.shape}")
+    except Exception as e:
+        text_embeddings = None
+        print(f"✗ Failed to load Text Embeddings: {e}")
+        print("  Random embeddings will be created.")
+
+    # Load knowledge embeddings (standard .npy file loading)
+    print(f"\nKnowledge embedding path: {knowledge_embedding_path}")
+    try:
+        ontology_embeddings = np.load(knowledge_embedding_path)
+        print(f"✓ Loaded Domain Knowledge Embeddings successfully! Shape: {ontology_embeddings.shape}")
+    except Exception as e:
+        ontology_embeddings = None
+        print(f"✗ Failed to load Domain Knowledge Embeddings: {e}")
+        print("  Random embeddings will be created.")
 
     train_data_np = knowledge_graph.train_data
     valid_data_np = knowledge_graph.valid_data

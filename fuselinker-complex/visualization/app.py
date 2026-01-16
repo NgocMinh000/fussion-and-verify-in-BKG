@@ -425,7 +425,7 @@ def main(data_dir: str, host: str = '0.0.0.0', port: int = 8050, debug: bool = T
     print("Press Ctrl+C to stop")
     print("=" * 60 + "\n")
 
-    app.run_server(host=host, port=port, debug=debug)
+    app.run(host=host, port=port, debug=debug)
 
 
 if __name__ == '__main__':
@@ -434,8 +434,8 @@ if __name__ == '__main__':
                        help='Directory containing visualization data')
     parser.add_argument('--host', type=str, default='0.0.0.0',
                        help='Host address (default: 0.0.0.0)')
-    parser.add_argument('--port', type=int, default=8050,
-                       help='Port number (default: 8050)')
+    parser.add_argument('--port', type=int, default=5000,
+                       help='Port number (default: 5000)')
     parser.add_argument('--debug', action='store_true',
                        help='Run in debug mode')
 

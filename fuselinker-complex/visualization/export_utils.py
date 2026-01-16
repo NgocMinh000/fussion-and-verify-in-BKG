@@ -87,16 +87,61 @@ def export_full_visualization_data(
     # 4. Export graph structure
     print("  4/7 Exporting graph structure...")
 
-    # Export train and test graphs separately (for link_predictor compatibility)
+    # Create nodes list for visualization
+    nodes_list = []
+    for idx, entity_name in index2entity.items():
+        nodes_list.append({
+            'id': entity_name,
+            'index': int(idx),
+            'label': entity_name.split('_')[0] if '_' in entity_name else entity_name[:20],
+            'type': entity_name.split('_')[0] if '_' in entity_name else 'unknown'
+        })
+
+    # Create edges list for train graph
+    train_edges_list = []
+    for triple in train_data:
+        h_idx, r_idx, t_idx = int(triple[0]), int(triple[1]), int(triple[2])
+        train_edges_list.append({
+            'source': index2entity.get(h_idx, f'entity_{h_idx}'),
+            'target': index2entity.get(t_idx, f'entity_{t_idx}'),
+            'relation': str(index2relation.get(r_idx, f'rel_{r_idx}'))
+        })
+
+    # Create edges list for test graph
+    test_edges_list = []
+    for triple in test_data:
+        h_idx, r_idx, t_idx = int(triple[0]), int(triple[1]), int(triple[2])
+        test_edges_list.append({
+            'source': index2entity.get(h_idx, f'entity_{h_idx}'),
+            'target': index2entity.get(t_idx, f'entity_{t_idx}'),
+            'relation': str(index2relation.get(r_idx, f'rel_{r_idx}'))
+        })
+
+    # Export train graph (for visualization)
     train_graph_data = {
-        'num_nodes': graph.number_of_nodes(),
-        'num_edges': graph.number_of_edges(),
+        'nodes': nodes_list,
+        'edges': train_edges_list,
+        'metadata': {
+            'num_nodes': graph.number_of_nodes(),
+            'num_edges': len(train_data),
+            'num_relations': len(relation2index),
+            'data_split': 'train'
+        },
+        # Keep triples for link_predictor compatibility
         'triples': train_data.tolist()
     }
 
+    # Export test graph (for visualization)
     test_graph_data = {
-        'num_nodes': graph.number_of_nodes(),
-        'num_edges': graph.number_of_edges(),
+        'nodes': nodes_list,
+        'edges': test_edges_list,
+        'metadata': {
+            'num_nodes': graph.number_of_nodes(),
+            'num_edges': len(test_data),
+            'num_relations': len(relation2index),
+            'data_split': 'test'
+        },
+        # Keep triples for link_predictor compatibility
         'triples': test_data.tolist()
     }
 
@@ -105,7 +150,7 @@ def export_full_visualization_data(
     with open(f'{output_dir}/test_graph.json', 'w') as f:
         json.dump(test_graph_data, f, indent=2)
 
-    print(f"      ✓ Saved graph structure: {train_graph_data['num_nodes']} nodes, {len(train_data)} train triples, {len(test_data)} test triples")
+    print(f"      ✓ Saved graph structure: {len(nodes_list)} nodes, {len(train_data)} train triples, {len(test_data)} test triples")
 
     # 5. Export entity and relation mappings
     print("  5/7 Exporting entity/relation mappings...")

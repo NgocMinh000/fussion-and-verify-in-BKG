@@ -82,7 +82,7 @@ def print_statistics(df, name="Dataset"):
         print(f"    {rel}: {count} ({percentage:.1f}%)")
 
 
-def split_data(df, train_ratio=0.8, valid_ratio=0.1, test_ratio=0.1, random_seed=42):
+def split_data(df, train_ratio=0.8, valid_ratio=0.1, test_ratio=0.1, random_seed=42, shuffle=True):
     """
     Split data into train/valid/test sets.
 
@@ -92,6 +92,7 @@ def split_data(df, train_ratio=0.8, valid_ratio=0.1, test_ratio=0.1, random_seed
         valid_ratio: Ratio for validation set (default: 0.1)
         test_ratio: Ratio for test set (default: 0.1)
         random_seed: Random seed for reproducibility
+        shuffle: Whether to shuffle data before splitting (default: True)
 
     Returns:
         train_df, valid_df, test_df
@@ -101,8 +102,12 @@ def split_data(df, train_ratio=0.8, valid_ratio=0.1, test_ratio=0.1, random_seed
 
     print(f"\nSplitting data: {train_ratio:.0%} train, {valid_ratio:.0%} valid, {test_ratio:.0%} test")
 
-    # Shuffle data
-    df_shuffled = df.sample(frac=1, random_state=random_seed).reset_index(drop=True)
+    if shuffle:
+        print("Shuffling data before split...")
+        df_shuffled = df.sample(frac=1, random_state=random_seed).reset_index(drop=True)
+    else:
+        print("Keeping original order (no shuffle)...")
+        df_shuffled = df.copy()
 
     # Calculate split indices
     n = len(df_shuffled)
@@ -211,6 +216,8 @@ def main():
                        help='Test set ratio')
     parser.add_argument('--seed', type=int, default=42,
                        help='Random seed for reproducibility')
+    parser.add_argument('--no-shuffle', action='store_true',
+                       help='Do NOT shuffle data before splitting (keep original order)')
     parser.add_argument('--stats', action='store_true',
                        help='Print detailed statistics for each split')
 
@@ -223,6 +230,7 @@ def main():
     print(f"Output: {args.output}")
     print(f"Split:  train={args.train}, valid={args.valid}, test={args.test}")
     print(f"Seed:   {args.seed}")
+    print(f"Shuffle: {'No (keeping original order)' if args.no_shuffle else 'Yes'}")
     print("="*70)
 
     # Load data
@@ -237,7 +245,8 @@ def main():
         train_ratio=args.train,
         valid_ratio=args.valid,
         test_ratio=args.test,
-        random_seed=args.seed
+        random_seed=args.seed,
+        shuffle=not args.no_shuffle  # Shuffle by default, unless --no-shuffle is specified
     )
 
     # Print split statistics if requested

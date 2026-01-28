@@ -229,6 +229,8 @@ def main(args):
 
     print("Evaluating...")
     model.eval()
+    # CRITICAL: Explicitly set batch norm layers to eval mode for ConvE
+    model.set_eval_mode_for_inference()
     test_data = torch.LongTensor(test_data_np)
     test_graph = test_graph.to(device)
     test_node_id = test_node_id.to(device)

@@ -1,0 +1,2062 @@
+# Entity	CUI_Code	Source
+0 4 1  of pregnancies	C6303765_enty	NOT_FOUND
+0 5 2 hours	C1780148_enty	NOT_FOUND
+1 03	C6494779_enty	NOT_FOUND
+1 1 4 hours	C3783105_enty	NOT_FOUND
+1 1 5	C2284671_enty	NOT_FOUND
+1 10 000 to 1 50 000 live births	C8327210_enty	NOT_FOUND
+1 100 000	C9622560_enty	NOT_FOUND
+1 1000 to 1 2000 births	C9882601_enty	NOT_FOUND
+1 1000000 individuals worldwide	C7510785_enty	NOT_FOUND
+1 2 2 hours	C2052463_enty	NOT_FOUND
+1 2 cases per million	C6038088_enzy	NOT_FOUND
+1 2 hours	C4668568_enty	NOT_FOUND
+1 20 000 to 1 50 000 live births	C6311552_enty	NOT_FOUND
+1 2500 live births	C8665205_enty	NOT_FOUND
+1 3 1 7 hours	C3687221_enty	NOT_FOUND
+1 3 hours	C8685594_enty	NOT_FOUND
+1 4 hours	C5648332_enty	NOT_FOUND
+1 5 10 000 births	C8260122_enty	NOT_FOUND
+1 5 hours	C9109031_enty	NOT_FOUND
+1 5 individuals per 10 000	C3598568_enty	NOT_FOUND
+1 5 to 7 years	C0261428_enty	NOT_FOUND
+1 50 000 births	C1789038_enty	NOT_FOUND
+1 50 000 individuals worldwide	C1083956_enty	NOT_FOUND
+1 50 000 live births	C1379478_enty	NOT_FOUND
+1 6 000 births	C7642158_enty	NOT_FOUND
+1 7 6 1 hours	C4205345_enty	NOT_FOUND
+1 76	C4321082_enty	NOT_FOUND
+1 8 hours	C9678703_enty	NOT_FOUND
+1 9 individuals per million worldwide	C7310117_elmt	NOT_FOUND
+1 9 per 100 000	C8016284_enty	NOT_FOUND
+1 9 per 100 000 individuals	C3953162_enty	NOT_FOUND
+1 9 per 100 000 live births	C5805675_enty	NOT_FOUND
+1 9 per million individuals	C1536979_elmt	NOT_FOUND
+1 adrenergic receptor	C6554024_aapp	NOT_FOUND
+1 in 1 000 000	C7299271_enty	NOT_FOUND
+1 in 1 000 000 individuals worldwide	C3266696_enty	NOT_FOUND
+1 in 1 000 live births	C1697205_enty	NOT_FOUND
+1 in 1 million	C7757469_elmt	NOT_FOUND
+1 in 1 million individuals	C9864089_elmt	NOT_FOUND
+1 in 10 000	C5231637_enty	NOT_FOUND
+1 in 10 000 000 individuals worldwide	C8912629_enty	NOT_FOUND
+1 in 10 000 births	C0372899_enty	NOT_FOUND
+1 in 10 000 individuals	C3673515_enty	NOT_FOUND
+1 in 10 000 individuals worldwide	C2642695_enty	NOT_FOUND
+1 in 10 000 live births	C4988431_enty	NOT_FOUND
+1 in 10 000 to 1 in 20 000 live births	C1845077_enty	NOT_FOUND
+1 in 10 000 to 1 in 50 000 births	C8518256_enty	NOT_FOUND
+1 in 10 000 to 1 in 50 000 individuals worldwide	C4391580_enty	NOT_FOUND
+1 in 10 000 to 1 in 50 000 live births	C8243225_enty	NOT_FOUND
+1 in 10 million individuals	C6721046_elmt	NOT_FOUND
+1 in 100 000	C7533809_enty	NOT_FOUND
+1 in 100 000 and 1 in 500 000	C6403889_enty	NOT_FOUND
+1 in 100 000 births	C7153410_enty	NOT_FOUND
+1 in 100 000 births worldwide	C2105876_enty	NOT_FOUND
+1 in 100 000 individuals	C2620057_enty	NOT_FOUND
+1 in 100 000 individuals worldwide	C2016293_enty	NOT_FOUND
+1 in 100 000 live births	C2829633_enty	NOT_FOUND
+1 in 100 000 people worldwide	C4402274_enty	NOT_FOUND
+1 in 100 000 to 1 in 200 000 individuals	C3366844_enty	NOT_FOUND
+1 in 100 000 to 1 in 200 000 live births	C5460195_enty	NOT_FOUND
+1 in 100 000 to 1 in 50 000 individuals	C9189467_enty	NOT_FOUND
+1 in 100 000 to 1 in 50 000 individuals worldwide	C0895851_enty	NOT_FOUND
+1 in 100 000 to 1 in 500 000 births	C8703448_enty	NOT_FOUND
+1 in 100 000 to 1 in 500 000 births worldwide	C5343077_enty	NOT_FOUND
+1 in 100 000 to 1 in 500 000 individuals worldwide	C3233510_enty	NOT_FOUND
+1 in 100 000 to 1 in 500 000 live births	C9737578_enty	NOT_FOUND
+1 in 100 individuals worldwide	C6737711_enty	NOT_FOUND
+1 in 100000 live births	C1447359_enty	NOT_FOUND
+1 in 125 000 individuals	C1706791_enty	NOT_FOUND
+1 in 15 000 individuals	C2914854_enty	NOT_FOUND
+1 in 2 000 individuals	C9736666_enty	NOT_FOUND
+1 in 2 000 individuals worldwide	C7405883_enty	NOT_FOUND
+1 in 20 000 individuals	C9975419_enty	NOT_FOUND
+1 in 20 000 individuals worldwide	C5387099_enty	NOT_FOUND
+1 in 20 000 to 1 in 50 000 individuals worldwide	C0434332_enty	NOT_FOUND
+1 in 200 000 individuals worldwide	C4697261_enty	NOT_FOUND
+1 in 200 000 live births	C6668993_enty	NOT_FOUND
+1 in 25 000 births	C4891898_enty	NOT_FOUND
+1 in 250 000 births	C2728404_enty	NOT_FOUND
+1 in 250 000 individuals	C8432925_enty	NOT_FOUND
+1 in 250 000 individuals worldwide	C4560560_enty	NOT_FOUND
+1 in 30 000 to 50 000 individuals	C2286656_enty	NOT_FOUND
+1 in 333 300 live births	C9185540_enty	NOT_FOUND
+1 in 5 000 live births	C2876686_enty	NOT_FOUND
+1 in 50 000 births	C7096732_enty	NOT_FOUND
+1 in 50 000 individuals	C7213543_enty	NOT_FOUND
+1 in 50 000 individuals worldwide	C4484682_enty	NOT_FOUND
+1 in 50 000 live births	C6883856_enty	NOT_FOUND
+1 in 50 000 to 1 in 100 000 births	C1699591_enty	NOT_FOUND
+1 in 50 000 to 1 in 100 000 individuals worldwide	C5076132_enty	NOT_FOUND
+1 in 50 000 to 1 in 100 000 live births	C6019737_enty	NOT_FOUND
+1 in 50 000 to 1 in 20 000 live births	C5169766_enty	NOT_FOUND
+1 in 500 000 individuals	C1859991_enty	NOT_FOUND
+1 in 500 000 individuals worldwide	C1791905_enty	NOT_FOUND
+1 in 65 000 births	C7688172_enty	NOT_FOUND
+1 in 70 000 to 100 000 live births	C9246681_enty	NOT_FOUND
+1 in every 10 000 individuals	C4064491_enty	NOT_FOUND
+1 in every 10 000 live births	C3397643_enty	NOT_FOUND
+1 in every 10 000 to 50 000 individuals	C6865467_enty	NOT_FOUND
+1 in every 100 000 births	C5014500_enty	NOT_FOUND
+1 in every 100 000 individuals	C9119348_enty	NOT_FOUND
+1 in every 100 000 live births	C7535534_enty	NOT_FOUND
+1 in every 2 000 live births	C5124399_enty	NOT_FOUND
+1 in every 2 500 individuals worldwide	C3835373_enty	NOT_FOUND
+1 in every 20 000 live births	C1987223_enty	NOT_FOUND
+1 in every 20 000 to 50 000 individuals	C3694079_enty	NOT_FOUND
+1 in every 30 000 to 50 000 live births	C3722698_enty	NOT_FOUND
+1 in every 5 000 births	C8851606_enty	NOT_FOUND
+1 in every 5 000 live births	C7687572_enty	NOT_FOUND
+1 in every 50 000 live births	C4575584_enty	NOT_FOUND
+1 in every 500 individuals	C1303955_enty	NOT_FOUND
+1 in every 700 births	C4545366_enty	NOT_FOUND
+1 million individuals	C4733381_elmt	NOT_FOUND
+1 per 10 000 live births	C9387962_enty	NOT_FOUND
+1 per 100 000 live births	C0300400_enty	NOT_FOUND
+1 per million individuals	C0697981_elmt	NOT_FOUND
+1 to 2 5 hours	C1558453_enty	NOT_FOUND
+1 to 2 hours	C4003406_enty	NOT_FOUND
+10 20	C6144983_enty	NOT_FOUND
+10 6 hours	C4534135_enty	NOT_FOUND
+100 000 individuals worldwide	C5227781_enty	NOT_FOUND
+100 reported cases	C8793644_enzy	NOT_FOUND
+13 18 hours	C3108136_enty	NOT_FOUND
+13 hours	C8890257_enty	NOT_FOUND
+14 15 hours	C5758271_enty	NOT_FOUND
+15 20  of patients receiving long term amiodarone therapy	C8788232_enty	NOT_FOUND
+150 reported cases	C3618228_enzy	NOT_FOUND
+16 24 hours	C4376803_enty	NOT_FOUND
+16 34 hours	C4559090_enty	NOT_FOUND
+19 individuals from nine families	C5301182_enty	NOT_FOUND
+1997	C6907100_enty	NOT_FOUND
+2 2 4 7 hours	C8009147_enty	NOT_FOUND
+2 2 5 hours	C9810388_enty	NOT_FOUND
+2 3 5 hours	C5448005_enty	NOT_FOUND
+2 3 6 hours	C7503325_enty	NOT_FOUND
+2 3 hours	C5298783_enty	NOT_FOUND
+2 4   3 8 hours	C6588725_enty	NOT_FOUND
+2 4 3 6 hours	C3143718_enty	NOT_FOUND
+2 4 hours	C9469206_enty	NOT_FOUND
+2 5 3 hours	C8709913_enty	NOT_FOUND
+2 5 hours	C4889346_enty	NOT_FOUND
+2 55	C4615743_enty	NOT_FOUND
+2 57	C4271212_enty	NOT_FOUND
+2 6 hours	C9880839_enty	NOT_FOUND
+2 7 to 5 5 hours	C2058388_enty	NOT_FOUND
+2 76	C7958926_enty	NOT_FOUND
+2 8 hours	C7171947_enty	NOT_FOUND
+2 hours	C7059824_enty	NOT_FOUND
+2 to 5 5 hours	C8626584_enty	NOT_FOUND
+2 to 5 hours	C9394793_enty	NOT_FOUND
+20  of patients	C7828568_enty	NOT_FOUND
+20 30  of patients	C9014365_enty	NOT_FOUND
+20 individuals worldwide	C1416291_enty	NOT_FOUND
+20 reported cases	C6735661_enzy	NOT_FOUND
+200 reported cases	C1082095_enzy	NOT_FOUND
+25  of patients	C1649594_enty	NOT_FOUND
+268 36	C6538961_enty	NOT_FOUND
+3 0   4 5 hours	C0096366_enty	NOT_FOUND
+3 1 3 4 hours	C3037900_enty	NOT_FOUND
+3 2 hours	C0665959_enty	NOT_FOUND
+3 4   1 2 hours	C1133245_enty	NOT_FOUND
+3 4 hours	C3166891_enty	NOT_FOUND
+3 5 5 hours	C7662691_enty	NOT_FOUND
+3 5 hours	C6136653_enty	NOT_FOUND
+3 6 hours	C0248535_enty	NOT_FOUND
+3 7 7 4 hours	C5345125_enty	NOT_FOUND
+3 7 hours	C3732564_enty	NOT_FOUND
+3 hours	C5951130_enty	NOT_FOUND
+3 to 5 hours	C1808691_enty	NOT_FOUND
+30  of patients	C1738341_enty	NOT_FOUND
+30 60  of patients	C2756086_enty	NOT_FOUND
+30 hours	C3915679_enty	NOT_FOUND
+30 reported cases	C8481509_enzy	NOT_FOUND
+30 to 60  of patients	C9935964_enty	NOT_FOUND
+33 50 hours	C3892033_enty	NOT_FOUND
+4 2 8 5 hours	C1501093_enty	NOT_FOUND
+4 38	C0778573_enty	NOT_FOUND
+4 5 hours	C8872073_enty	NOT_FOUND
+4 6 hours	C1400539_enty	NOT_FOUND
+4 76	C0849745_enty	NOT_FOUND
+4 hours	C2216352_enty	NOT_FOUND
+40  of patients	C6663093_enty	NOT_FOUND
+40 000 newborns each year	C7452944_enty	NOT_FOUND
+40 60 hours	C4871954_enty	NOT_FOUND
+450 reported cases	C0593968_enzy	NOT_FOUND
+454 61	C5051898_enty	NOT_FOUND
+46 61	C6825702_enty	NOT_FOUND
+5  3 carbamoylbenzyl  5 6 7 8 9 10 hexahydrocycloheptaindole 4 carboxylic acid	C7803277_orch	NOT_FOUND
+5 10 hours	C6161913_enty	NOT_FOUND
+5 14 hours	C9525402_enty	NOT_FOUND
+5 5h	C7114049_enty	NOT_FOUND
+5 6 14 8h	C1408682_enty	NOT_FOUND
+5 6 5 hours	C8211545_enty	NOT_FOUND
+5 6 hours	C1741585_enty	NOT_FOUND
+5 7 hours	C1767523_enty	NOT_FOUND
+5 8 8 7 hours	C9212485_enty	NOT_FOUND
+5 8 hours	C4004192_enty	NOT_FOUND
+5 hours	C4089176_enty	NOT_FOUND
+5 ht	C5159596_enty	NOT_FOUND
+5 ht1a serotonergic receptors	C9230108_aapp	NOT_FOUND
+5 ht1b	C7334049_enty	NOT_FOUND
+5 ht2a	C3153174_enty	NOT_FOUND
+5 ht2a receptor	C3817748_aapp	NOT_FOUND
+5 ht2a serotonergic receptors	C0815408_aapp	NOT_FOUND
+5 ht2a serotonin receptors	C1668784_aapp	NOT_FOUND
+5 times as potent as methyltestosterone	C8622847_enty	NOT_FOUND
+5 to 7 hours	C5352147_enty	NOT_FOUND
+50  of patients	C1258400_enty	NOT_FOUND
+50 8	C0707642_enty	NOT_FOUND
+50 hours	C8093379_enty	NOT_FOUND
+50 reported cases	C2716687_enzy	NOT_FOUND
+6 03 hours	C1411142_enty	NOT_FOUND
+6 10 hours	C5075126_enty	NOT_FOUND
+6 12 hours	C9436980_enty	NOT_FOUND
+6 17  dimethyl 6 dehydroprogesterone	C1820198_enty	NOT_FOUND
+6 2 hours	C4986889_enty	NOT_FOUND
+6 4	C5882793_enty	NOT_FOUND
+6 7 hours	C7223034_enty	NOT_FOUND
+6 8 hours	C2852301_enty	NOT_FOUND
+6 9 hours	C8155370_enty	NOT_FOUND
+6 to 8 hours	C8088930_enty	NOT_FOUND
+60  of patients	C5130699_enty	NOT_FOUND
+7 10 hours	C4351916_enty	NOT_FOUND
+7 11 hours	C6051425_enty	NOT_FOUND
+7 2 hours	C7858313_enty	NOT_FOUND
+7 5 hours	C1621858_enty	NOT_FOUND
+7 8 hours	C1036114_enty	NOT_FOUND
+7 hours	C3226181_enty	NOT_FOUND
+70  of patients	C3435275_enty	NOT_FOUND
+70 reported cases	C0805471_enzy	NOT_FOUND
+75 07	C5425433_enty	NOT_FOUND
+8 10 hours	C1295630_enty	NOT_FOUND
+8 12 hours	C7794939_enty	NOT_FOUND
+8 2 hours	C8698795_enty	NOT_FOUND
+8 4 19 3 hours	C9869126_enty	NOT_FOUND
+8 5 hours	C0967838_enty	NOT_FOUND
+8 8 hours following oral administration	C5802678_elmt	NOT_FOUND
+8 hours	C1589144_enty	NOT_FOUND
+80  of cases	C5869018_enzy	NOT_FOUND
+80  of patients	C4905422_enty	NOT_FOUND
+85 95  of cases presenting as intense abdominal pain	C1185328_enzy	NOT_FOUND
+9 2 hours	C5302798_enty	NOT_FOUND
+9 5 hours	C4704489_enty	NOT_FOUND
+90  of patients	C0056948_enty	NOT_FOUND
+94  99  protein bound	C4161138_aapp	NOT_FOUND
+a genetic mutation	C2180292_elmt	NOT_FOUND
+a healthcare provider	C0728944_enty	NOT_FOUND
+a protein involved in skin and hair development	C9396088_aapp	NOT_FOUND
+a rare disorder	C0913510_dsyn	NOT_FOUND
+a seizure	C5590462_enty	NOT_FOUND
+abdominal pain	C0733423_enty	NOT_FOUND
+abnormal brain development in utero	C1807966_enty	NOT_FOUND
+abnormal renal function indices	C9103354_elmt	NOT_FOUND
+abnormal response to sensory stimuli	C6331766_enty	NOT_FOUND
+abnormal skull shape	C8994930_enty	NOT_FOUND
+abnormalities	C6547615_enty	NOT_FOUND
+abnormalities in striatal structure and function	C2536909_elmt	NOT_FOUND
+about 20  of patients	C1220019_enty	NOT_FOUND
+about 30  of patients	C1424488_enty	NOT_FOUND
+about 8 hours	C3398678_enty	NOT_FOUND
+absence	C5688740_enty	NOT_FOUND
+absence deformity of one leg	C1677289_enty	NOT_FOUND
+absence of hair	C3622141_enty	NOT_FOUND
+absence or severe reduction of limbs	C9589507_elmt	NOT_FOUND
+absent	C0546169_enty	NOT_FOUND
+accumulation of glycine in body fluids	C7204091_elmt	NOT_FOUND
+accumulation of toxic levels of lysine	C4450652_elmt	NOT_FOUND
+acids	C9965667_orch	NOT_FOUND
+acral anomalies	C8287769_enty	NOT_FOUND
+acrofacial dysostosis	C6669952_enty	NOT_FOUND
+acrokeratosis verruciformis	C3227094_enty	NOT_FOUND
+active duodenal ulcers	C6035657_enty	NOT_FOUND
+activity of cytochrome p 450	C2994820_enty	NOT_FOUND
+addressing cardiac and auditory manifestations	C5384362_elmt	NOT_FOUND
+addressing underlying anxiety	C7807722_enty	NOT_FOUND
+addressing underlying condition	C8907512_elmt	NOT_FOUND
+addressing underlying medical conditions	C0991668_elmt	NOT_FOUND
+adenine phosphoribosyltransferase deficiency	C7843269_enzy	NOT_FOUND
+adolescence	C0585641_enty	NOT_FOUND
+adolescents	C6035870_enty	NOT_FOUND
+adrenal cortex hormones	C6384911_enty	NOT_FOUND
+adrenergic agonists	C2923318_enty	NOT_FOUND
+adrenergic alpha 1 receptor agonists	C6576054_aapp	NOT_FOUND
+adrenergic alpha 1 receptor antagonists	C0778009_aapp	NOT_FOUND
+adrenergic alpha 2 receptor agonists	C2920382_aapp	NOT_FOUND
+adrenergic alpha antagonists	C3792574_enty	NOT_FOUND
+adrenergic antagonists	C3427977_enty	NOT_FOUND
+adrenergic beta 1 receptor agonists	C8643010_aapp	NOT_FOUND
+adrenergic beta 1 receptor antagonists	C0501054_aapp	NOT_FOUND
+adrenergic beta 2 receptor agonists	C3613499_aapp	NOT_FOUND
+adrenergic beta 3 receptor agonists	C5855527_aapp	NOT_FOUND
+adrenergic beta agonists	C2149416_enty	NOT_FOUND
+adrenergic beta antagonists	C6881279_enty	NOT_FOUND
+adrenergic receptors	C0645872_aapp	NOT_FOUND
+adult onset distal myopathy	C4672155_enty	NOT_FOUND
+adult patients	C8681384_enty	NOT_FOUND
+adulthood	C5415955_enty	NOT_FOUND
+adults	C4781557_enty	NOT_FOUND
+advanced cases	C3142050_enzy	NOT_FOUND
+adverse effect profile	C1193366_enty	NOT_FOUND
+affected individual	C8437876_enty	NOT_FOUND
+affected individuals	C4866195_enty	NOT_FOUND
+agat deficiency	C0733183_dsyn	NOT_FOUND
+age	C1479506_enty	NOT_FOUND
+age 5 7	C4555049_enty	NOT_FOUND
+aggregation and deposition of amyloid fibrils	C9832209_elmt	NOT_FOUND
+aicardi gouti res syndrome	C5205428_dsyn	NOT_FOUND
+airway responsiveness to methacholine	C5351779_enty	NOT_FOUND
+al amyloidosis	C4965339_enty	NOT_FOUND
+alacrima	C3332663_enty	NOT_FOUND
+albumin	C4842502_enty	NOT_FOUND
+alendronic acid	C6750975_orch	NOT_FOUND
+alimentary tract and metabolism	C3987130_biof	NOT_FOUND
+alkaline earth	C2417738_enty	NOT_FOUND
+all trans retinol	C6268870_enty	NOT_FOUND
+alleviate symptoms	C3060703_enty	NOT_FOUND
+allogeneic hematopoietic stem cell transplantation	C5348254_elmt	NOT_FOUND
+allogenic hematopoietic stem cell transplantation	C1943013_elmt	NOT_FOUND
+allogenic stem cell transplantation	C3107363_elmt	NOT_FOUND
+almond shaped palpebral fissures	C5038315_enty	NOT_FOUND
+almost complete absence of secondary ossification centers	C4764400_elmt	NOT_FOUND
+alpha 1 acid glycoprotein	C5448167_aapp	NOT_FOUND
+alpha 1 acid glycoprotein 1	C8131228_aapp	NOT_FOUND
+alpha 1 adrenergic receptors	C2216018_aapp	NOT_FOUND
+alpha adrenergic receptors	C7097779_aapp	NOT_FOUND
+alpha and beta adrenergic receptors	C6836757_aapp	NOT_FOUND
+alpha1 adrenergic receptors	C2846411_aapp	NOT_FOUND
+alveolar soft part sarcoma	C1645631_enty	NOT_FOUND
+amides drug category	C0727976_enty	NOT_FOUND
+amine	C1192592_enty	NOT_FOUND
+amines	C2003735_enty	NOT_FOUND
+amino acids	C8004118_orch	NOT_FOUND
+amino alcohols	C7583545_enty	NOT_FOUND
+amyotrophic neuralgia	C3736908_enty	NOT_FOUND
+an ophthalmologist	C3091975_enty	NOT_FOUND
+anabolic agent	C5708755_enty	NOT_FOUND
+anabolic agents	C6954699_enty	NOT_FOUND
+analgesia	C7119821_enty	NOT_FOUND
+analgesics	C2400011_enty	NOT_FOUND
+androgen receptor protein receptor sites	C7283921_aapp	NOT_FOUND
+androstan derivatives	C7496250_enty	NOT_FOUND
+anemia	C7971269_enty	NOT_FOUND
+angiogenesis inhibitors	C5421224_enty	NOT_FOUND
+ankyloblepharon ectodermal defects cleft lip palate syndrome	C7667748_dsyn	NOT_FOUND
+anomalies	C2248770_enty	NOT_FOUND
+anonychia oonychodystrophy	C1717078_enty	NOT_FOUND
+anophthalmia	C8496603_enty	NOT_FOUND
+antagonism of adrenergic receptors	C8766266_aapp	NOT_FOUND
+antagonist	C9348519_enty	NOT_FOUND
+anti bacterial agents	C4652080_enty	NOT_FOUND
+anti epileptic drug	C2292469_enty	NOT_FOUND
+anti infective agents	C8140139_enty	NOT_FOUND
+anti inflammatory	C6926738_enty	NOT_FOUND
+anti inflammatory agents	C5217774_enty	NOT_FOUND
+anti inflammatory medications	C3259472_elmt	NOT_FOUND
+antibacterials for systemic use	C7565715_enty	NOT_FOUND
+antibiotic	C5976088_enty	NOT_FOUND
+antibiotics	C0917397_enty	NOT_FOUND
+antibiotics for secondary infections	C1768858_elmt	NOT_FOUND
+anticholinergics	C3973412_enty	NOT_FOUND
+anticoagulant effects of warfarin	C2671531_enty	NOT_FOUND
+anticonvulsant medications	C4929295_elmt	NOT_FOUND
+anticonvulsant properties	C5318830_enty	NOT_FOUND
+anticonvulsants	C2852208_enty	NOT_FOUND
+antidepressant effects	C3803190_enty	NOT_FOUND
+antiepileptic drugs	C6819626_enty	NOT_FOUND
+antiinfectives for systemic use	C4759302_enty	NOT_FOUND
+antineoplastic agent	C2320870_enty	NOT_FOUND
+antineoplastic agents	C2385454_enty	NOT_FOUND
+antineoplastic and immunomodulating agents	C5450538_enty	NOT_FOUND
+antineoplastic compound	C7767552_orch	NOT_FOUND
+antirheumatic	C2819877_enty	NOT_FOUND
+antirheumatic drugs	C7257729_enty	NOT_FOUND
+anxiety	C1967228_enty	NOT_FOUND
+any age	C9378034_enty	NOT_FOUND
+apo b	C1686136_enty	NOT_FOUND
+apoprotein c iii	C7567783_aapp	NOT_FOUND
+approved	C6342640_enty	NOT_FOUND
+approximately 1 5 hours	C7373311_enty	NOT_FOUND
+approximately 1 hour	C6308782_enty	NOT_FOUND
+approximately 1 in 100 000 births	C6338342_enty	NOT_FOUND
+approximately 10  of cases	C8350461_enzy	NOT_FOUND
+approximately 100 patients	C1708484_enty	NOT_FOUND
+approximately 11 15 hours	C1845457_enty	NOT_FOUND
+approximately 11 8    5 1  hours	C9251171_enty	NOT_FOUND
+approximately 2 hours	C3174539_enty	NOT_FOUND
+approximately 2 hours in rats	C7334017_enty	NOT_FOUND
+approximately 20  of patients	C7972154_enty	NOT_FOUND
+approximately 3 hours	C0494855_enty	NOT_FOUND
+approximately 30  of cases	C8004539_enzy	NOT_FOUND
+approximately 30  of patients	C5044562_enty	NOT_FOUND
+approximately 4 hours	C5661442_enty	NOT_FOUND
+approximately 43 cases reported	C0222200_enzy	NOT_FOUND
+approximately 5  of cases	C4495432_enzy	NOT_FOUND
+approximately 5 hours	C4620758_enty	NOT_FOUND
+approximately 50 cases	C0356051_enzy	NOT_FOUND
+approximately 6 hours	C7122101_enty	NOT_FOUND
+approximately 60  of patients	C6225341_enty	NOT_FOUND
+approximately 7 4 hours	C5555673_enty	NOT_FOUND
+approximately 7 hours	C8368452_enty	NOT_FOUND
+approximately 80  of cases	C6253682_enzy	NOT_FOUND
+approximately 80 documented cases	C0007772_enzy	NOT_FOUND
+approximately 90  of cases	C2428367_enzy	NOT_FOUND
+approximately 95  of cases	C0437244_enzy	NOT_FOUND
+arachidonic acid	C8376278_orch	NOT_FOUND
+aranidipine	C0291100_enty	NOT_FOUND
+aripiprazole lauroxil	C8647547_enty	NOT_FOUND
+around 2 hours	C0974582_enty	NOT_FOUND
+around 4 hours	C0857945_enty	NOT_FOUND
+arterial thrombosis	C8512251_enty	NOT_FOUND
+arthritis	C4404112_enty	NOT_FOUND
+artinolol	C4765858_enty	NOT_FOUND
+asd	C5916822_enty	NOT_FOUND
+asian	C4764400_enty	NOT_FOUND
+assessing polydactyly	C6405980_enty	NOT_FOUND
+assistive devices	C2866300_medd	NOT_FOUND
+asthma	C0389923_enty	NOT_FOUND
+asymptomatic	C0409236_enty	NOT_FOUND
+asymptomatic carriers	C1848437_enty	NOT_FOUND
+ataxia	C3150022_enty	NOT_FOUND
+ataxia due to copper accumulation	C9158489_elmt	NOT_FOUND
+ataxia hypogonadism choroidal dystrophy syndrome	C4316592_dsyn	NOT_FOUND
+ataxia telangiectasia	C4802272_enty	NOT_FOUND
+athetosis	C5905340_enty	NOT_FOUND
+atii	C0774168_enty	NOT_FOUND
+atorvastatin	C1502790_enty	NOT_FOUND
+atresia or stenosis of the external auditory canal	C8460622_enty	NOT_FOUND
+atrophy	C3700832_enty	NOT_FOUND
+atypical rett syndrome	C5568901_dsyn	NOT_FOUND
+auranofin as an antirheumatic agent	C7566615_enty	NOT_FOUND
+autistic spectrum disorder	C9422156_dsyn	NOT_FOUND
+autoimmune disease	C1948954_enzy	NOT_FOUND
+autoimmune diseases	C4889199_enzy	NOT_FOUND
+autoimmune disorders	C4747842_dsyn	NOT_FOUND
+autoimmune features	C8665870_enty	NOT_FOUND
+autosomal dominant	C8914826_enty	NOT_FOUND
+autosomal dominant condition	C5611965_elmt	NOT_FOUND
+autosomal dominant disorder	C5111471_dsyn	NOT_FOUND
+autosomal dominant inheritance pattern	C2263761_enty	NOT_FOUND
+autosomal dominant inherited disorder	C8077306_dsyn	NOT_FOUND
+autosomal dominant pattern	C6961293_enty	NOT_FOUND
+autosomal dominant pattern of inheritance	C2004038_enty	NOT_FOUND
+autosomal dominantly	C8438901_enty	NOT_FOUND
+autosomal recessive	C3376410_enty	NOT_FOUND
+autosomal recessive condition	C5100308_elmt	NOT_FOUND
+autosomal recessive disorder	C6249039_dsyn	NOT_FOUND
+autosomal recessive inheritance pattern	C5686287_enty	NOT_FOUND
+autosomal recessive inherited disorder	C8230556_dsyn	NOT_FOUND
+autosomal recessive pattern	C3690275_enty	NOT_FOUND
+autosomal recessive trait	C7588029_enty	NOT_FOUND
+autosomal recessive types	C3996531_enty	NOT_FOUND
+avoiding secondhand smoke	C2283231_enty	NOT_FOUND
+avoiding triggers	C0540422_enty	NOT_FOUND
+b cells	C6758911_cell	NOT_FOUND
+bacteria	C6128154_enty	NOT_FOUND
+bacterial cell	C9564444_cell	NOT_FOUND
+bacterial growth	C7138654_enty	NOT_FOUND
+bacterial infections	C2512785_elmt	NOT_FOUND
+bacterial skin infections	C6316986_elmt	NOT_FOUND
+base of the skull	C0577646_enzy	NOT_FOUND
+basis for future rational pharmacological treatment	C4697687_elmt	NOT_FOUND
+bathing suit ichthyosis	C0143921_enty	NOT_FOUND
+bcrp abcg2 inhibitors	C8219360_enty	NOT_FOUND
+bcrp abcg2 substrates	C8222363_enty	NOT_FOUND
+beckwith wiedemann syndrome	C8080587_dsyn	NOT_FOUND
+being female	C7921805_enty	NOT_FOUND
+benign	C8313158_enty	NOT_FOUND
+benign neoplasm	C0920606_enty	NOT_FOUND
+benzodiazepine receptors	C0175089_aapp	NOT_FOUND
+benzodiazepines	C4277804_enty	NOT_FOUND
+benzothiazepine derivative	C9621781_enty	NOT_FOUND
+beta 1 adrenergic receptors	C7023369_aapp	NOT_FOUND
+beta 2 adrenergic receptors	C0097548_aapp	NOT_FOUND
+beta 3 adrenergic receptor agonist	C0208029_aapp	NOT_FOUND
+beta adrenergic receptors	C6179131_aapp	NOT_FOUND
+beta carotene	C8811191_enty	NOT_FOUND
+betamethasone phosphate	C4245799_enty	NOT_FOUND
+better quality of life	C6398699_enty	NOT_FOUND
+bfpp	C1624164_enty	NOT_FOUND
+bietti crystalline corneoretinal dystrophy	C2214010_enty	NOT_FOUND
+bilateral	C3878108_enty	NOT_FOUND
+bilateral adrenalectomy	C3312092_enty	NOT_FOUND
+bilateral and progressive	C1877910_enty	NOT_FOUND
+bilateral anophthalmia	C6150007_enty	NOT_FOUND
+bilateral choanal atresia	C9970028_enty	NOT_FOUND
+bilateral vision loss	C7248723_elmt	NOT_FOUND
+biliary malformation with renal tubular insufficiency	C8133696_elmt	NOT_FOUND
+birth	C1846252_enty	NOT_FOUND
+bismuth subgallate	C6293566_enty	NOT_FOUND
+bizarre calcified overgrowth	C1602280_enty	NOT_FOUND
+black individuals	C3985183_enty	NOT_FOUND
+bleeding	C8200166_enty	NOT_FOUND
+blepharophimosis intellectual disability syndrome	C8007712_dsyn	NOT_FOUND
+blindness	C9999721_enty	NOT_FOUND
+blomstrand lethal chondrodysplasia	C0958174_enty	NOT_FOUND
+blood pressure	C5084377_enty	NOT_FOUND
+blood transfusions	C0145388_elmt	NOT_FOUND
+bone	C3538433_enty	NOT_FOUND
+bone marrow disorders	C9404294_dsyn	NOT_FOUND
+bone problems	C1894340_enty	NOT_FOUND
+bone sarcomas	C1785103_enty	NOT_FOUND
+bones become weak and brittle	C6304418_enty	NOT_FOUND
+both men and women equally	C7469440_enty	NOT_FOUND
+bowel obstruction	C8320038_elmt	NOT_FOUND
+brachydactyly	C1442482_enty	NOT_FOUND
+breast cancer	C2145735_dsyn	NOT_FOUND
+breast tenderness	C6971002_enty	NOT_FOUND
+broader syndrome	C0343099_dsyn	NOT_FOUND
+bronchitis	C3628731_enty	NOT_FOUND
+bronchodilation	C2774136_elmt	NOT_FOUND
+bronchodilators	C2368413_enty	NOT_FOUND
+building strong bones	C1438758_enty	NOT_FOUND
+calcifediol	C2685947_enty	NOT_FOUND
+calcium	C2832919_elmt	NOT_FOUND
+camptodactyly	C9159412_enty	NOT_FOUND
+cancer	C7855653_dsyn	NOT_FOUND
+cancer treatment	C0998310_dsyn	NOT_FOUND
+captopril	C7783444_enty	NOT_FOUND
+carbonic anhydrase inhibitors	C8305138_enzy	NOT_FOUND
+carcinoid syndrome	C1796723_dsyn	NOT_FOUND
+cardiac defects	C2593180_enty	NOT_FOUND
+cardiac tumor	C4149423_enty	NOT_FOUND
+cardiomyopathy	C1153100_enty	NOT_FOUND
+cardiothoracic surgery	C4573637_enty	NOT_FOUND
+cardiovascular	C3202416_enty	NOT_FOUND
+cardiovascular abnormalities	C9150620_enty	NOT_FOUND
+cardiovascular disease	C1540813_enzy	NOT_FOUND
+cardiovascular diseases	C3073838_enzy	NOT_FOUND
+cardiovascular manifestations	C9948534_elmt	NOT_FOUND
+cardiovascular risk factors	C0662802_aapp	NOT_FOUND
+cardiovascular specialists	C3132682_enty	NOT_FOUND
+careful monitoring	C7287083_enty	NOT_FOUND
+careful monitoring for complications	C7799706_elmt	NOT_FOUND
+carefully monitored	C9017249_enty	NOT_FOUND
+cat eye syndrome	C4812205_dsyn	NOT_FOUND
+cataract	C0426841_enty	NOT_FOUND
+cataracts	C9975746_enty	NOT_FOUND
+causes of neurodevelopmental disorder with ataxia  hypotonia  and microcephaly	C7304024_dsyn	NOT_FOUND
+ceftriaxone	C6161797_enty	NOT_FOUND
+cells of the pancreas	C6743367_cell	NOT_FOUND
+cellulitis	C5689365_cell	NOT_FOUND
+central nervous system	C8408868_enty	NOT_FOUND
+central nervous system abnormalities	C7489087_enty	NOT_FOUND
+central nervous system agents	C3898831_enty	NOT_FOUND
+central nervous system depressants	C8831007_enty	NOT_FOUND
+central nervous system depressants category	C0849435_enty	NOT_FOUND
+central nervous system involvement	C4478457_enty	NOT_FOUND
+cephacetrile	C9141767_enty	NOT_FOUND
+cephalexin	C6698216_enty	NOT_FOUND
+cerebellar ataxia	C1769490_enty	NOT_FOUND
+cerebellar ataxia areflexia pes cavus optic atrophy sensorineural hearing loss syndrome	C3307745_dsyn	NOT_FOUND
+cerebellar atrophy	C8854052_enty	NOT_FOUND
+challenging management strategies	C5211377_enty	NOT_FOUND
+characteristic clinical features	C7094785_enty	NOT_FOUND
+characteristic facial dysmorphisms	C9709454_enty	NOT_FOUND
+characteristic fundoscopic findings	C9464448_enty	NOT_FOUND
+characterized by early onset cerebellar ataxia	C3199567_enty	NOT_FOUND
+charcot marie tooth disease	C7233147_enzy	NOT_FOUND
+ched ii	C3979855_enty	NOT_FOUND
+chenodiol	C3885589_enty	NOT_FOUND
+chest	C1582570_enty	NOT_FOUND
+chest pain	C1550720_enty	NOT_FOUND
+childhood	C0318102_enty	NOT_FOUND
+childhood onset stress induced neurodegeneration	C6004447_elmt	NOT_FOUND
+childhood or adolescence	C1932996_enty	NOT_FOUND
+children	C0376396_enty	NOT_FOUND
+chlorphenesin	C3154699_enty	NOT_FOUND
+chlorpropamide	C4282229_enty	NOT_FOUND
+choanal atresia	C8697166_enty	NOT_FOUND
+cholestatic jaundice	C1952869_enty	NOT_FOUND
+choline salicylate	C2213055_enty	NOT_FOUND
+chromium	C5753359_enty	NOT_FOUND
+chromosomal abnormalities	C9107318_enty	NOT_FOUND
+chromosome 13q14	C2826951_enty	NOT_FOUND
+chromosome 14q13 q21	C5832893_enty	NOT_FOUND
+chromosome 15q24 deletion syndrome	C1271493_elmt	NOT_FOUND
+chromosome 1q21 1 duplication syndrome	C4656864_elmt	NOT_FOUND
+chromosome 5q deletion syndrome	C2886485_elmt	NOT_FOUND
+chromosome 6q21	C2731625_enty	NOT_FOUND
+chromosome 6q24	C7176629_enty	NOT_FOUND
+chronic cardiac decompensation	C1454281_elmt	NOT_FOUND
+chronic central nervous system degeneration	C7479459_elmt	NOT_FOUND
+chronic infections	C8649034_elmt	NOT_FOUND
+chronic metabolic acidosis	C2075710_orch	NOT_FOUND
+chronic non specific manifestations	C5699164_elmt	NOT_FOUND
+chronic pancreatitis	C6696641_enty	NOT_FOUND
+chronic viral hepatitis	C3134755_enty	NOT_FOUND
+circadian rhythm sleep disorders	C9125014_dsyn	NOT_FOUND
+cirrhosis	C8188640_enty	NOT_FOUND
+class of p glycoprotein substrates	C2373192_aapp	NOT_FOUND
+classical chronic myeloid leukemia  cml	C8150703_enty	NOT_FOUND
+cleft lip or palate	C0617881_enty	NOT_FOUND
+cleft lip with or without cleft palate	C5136478_enty	NOT_FOUND
+cleft palate	C2377410_enty	NOT_FOUND
+clinical evaluation	C0552103_elmt	NOT_FOUND
+clinical features	C2817422_enty	NOT_FOUND
+clinical presentation	C0341634_elmt	NOT_FOUND
+clinical presentation and laboratory findings	C3584242_elmt	NOT_FOUND
+clinical settings	C3088182_enty	NOT_FOUND
+clinical use	C0354090_enty	NOT_FOUND
+close medical supervision	C5048316_elmt	NOT_FOUND
+close monitoring	C0905528_enty	NOT_FOUND
+close monitoring for infections	C7902879_elmt	NOT_FOUND
+cns lesions	C0260682_elmt	NOT_FOUND
+cocaine	C3265034_enty	NOT_FOUND
+cognitive consequences	C7389248_enty	NOT_FOUND
+cognitive development	C0375035_enty	NOT_FOUND
+cognitive impairment	C1868118_enty	NOT_FOUND
+cognitive impairments	C0249425_enty	NOT_FOUND
+cognitive performance	C4986664_enty	NOT_FOUND
+colitis	C4551012_enty	NOT_FOUND
+combined immunodeficiency	C4622025_dsyn	NOT_FOUND
+comedone like lesions	C1524748_elmt	NOT_FOUND
+comorbidities	C7195541_enty	NOT_FOUND
+comp gene	C3120801_enty	NOT_FOUND
+complete gonadal dysgenesis	C2065691_enty	NOT_FOUND
+complications	C9469205_elmt	NOT_FOUND
+complications from chronic inflammation	C2113650_elmt	NOT_FOUND
+complications of endometriosis	C6482836_elmt	NOT_FOUND
+complications of the disorder	C4489623_elmt	NOT_FOUND
+comprehensive care by a multidisciplinary team	C5707727_enty	NOT_FOUND
+comprehensive diagnosis	C8121897_enty	NOT_FOUND
+condition	C6656140_elmt	NOT_FOUND
+conductive hearing loss	C8884219_enty	NOT_FOUND
+confirming the diagnosis	C8802374_enty	NOT_FOUND
+confusion	C6758557_elmt	NOT_FOUND
+congenital	C2183536_enty	NOT_FOUND
+congenital anomalies	C0166970_enty	NOT_FOUND
+congenital bilateral aplasia of vas deferens	C8276867_enty	NOT_FOUND
+congenital cardiovascular abnormalities	C0916086_enty	NOT_FOUND
+congenital cataract	C2912245_enty	NOT_FOUND
+congenital cataract progressive muscular hypotonia hearing loss developmental delay syndrome	C4766636_dsyn	NOT_FOUND
+congenital cataracts syndrome	C9479453_dsyn	NOT_FOUND
+congenital cerebellar ataxia	C0880440_enty	NOT_FOUND
+congenital disorder	C0271138_dsyn	NOT_FOUND
+congenital heart defect	C2845654_enty	NOT_FOUND
+congenital heart defects	C8952441_enty	NOT_FOUND
+congenital heart disease	C2682800_enzy	NOT_FOUND
+congenital lactic acidosis	C7084430_orch	NOT_FOUND
+congenital multicore myopathy with external ophthalmoplegia	C0164569_enty	NOT_FOUND
+congenital muscle hypotonia	C0310252_bpoc	NOT_FOUND
+congenital myopathy	C2875213_enty	NOT_FOUND
+consideration of hematopoietic stem cell transplantation	C3468146_elmt	NOT_FOUND
+continued research and investigation	C5607038_elmt	NOT_FOUND
+controlling cell division in neoplastic diseases	C8389257_enzy	NOT_FOUND
+controlling infections	C9868694_elmt	NOT_FOUND
+copper  ii  oxide	C8360680_elmt	NOT_FOUND
+copper absorption inhibitor	C7362798_elmt	NOT_FOUND
+correct genital anomalies	C9655608_enty	NOT_FOUND
+correct the defect	C2249028_enty	NOT_FOUND
+corticosteroid	C3750144_enty	NOT_FOUND
+corticosteroids	C9951616_enty	NOT_FOUND
+cortisol deficiency	C8077250_dsyn	NOT_FOUND
+cosmesis	C2407351_enty	NOT_FOUND
+coughing	C7506258_enty	NOT_FOUND
+covid 19	C9746629_enty	NOT_FOUND
+cranial nerves	C6517592_enty	NOT_FOUND
+craniectomy	C1439486_enty	NOT_FOUND
+craniofacial dysmorphism	C6911282_enty	NOT_FOUND
+craniosynostosis	C0200372_enty	NOT_FOUND
+crowded teeth	C2226478_enty	NOT_FOUND
+curry jones syndrome	C0888485_dsyn	NOT_FOUND
+cyp2c9 inhibitor	C3970565_enty	NOT_FOUND
+cystic fibrosis gastritis megaloblastic anemia syndrome	C5411741_dsyn	NOT_FOUND
+cystic fibrosis transmembrane conductance regulator	C7771318_bpoc	NOT_FOUND
+cystinosis	C9377535_enty	NOT_FOUND
+cytochrome	C4957908_enty	NOT_FOUND
+cytochrome p 450	C3883458_enty	NOT_FOUND
+cytochrome p 450 c	C7379000_enty	NOT_FOUND
+cytochrome p 450 cyp	C4837169_enty	NOT_FOUND
+cytochrome p 450 cyp1a2	C1549184_enty	NOT_FOUND
+cytochrome p 450 cyp1a2 inducers	C4202875_enty	NOT_FOUND
+cytochrome p 450 cyp1a2 inhibitor	C6117206_enty	NOT_FOUND
+cytochrome p 450 cyp1a2 inhibitors	C9044433_enty	NOT_FOUND
+cytochrome p 450 cyp1a2 substrate	C1117447_enty	NOT_FOUND
+cytochrome p 450 cyp1a2 substrates	C9434514_enty	NOT_FOUND
+cytochrome p 450 cyp2	C3535386_enty	NOT_FOUND
+cytochrome p 450 cyp2a6	C2635566_enty	NOT_FOUND
+cytochrome p 450 cyp2a6 inducers	C1975310_enty	NOT_FOUND
+cytochrome p 450 cyp2a6 inhibitors	C2764901_enty	NOT_FOUND
+cytochrome p 450 cyp2a6 substrates	C6681436_enty	NOT_FOUND
+cytochrome p 450 cyp2b6	C2986252_enty	NOT_FOUND
+cytochrome p 450 cyp2b6 inducers	C3029995_enty	NOT_FOUND
+cytochrome p 450 cyp2b6 inducers drug category	C4476814_enty	NOT_FOUND
+cytochrome p 450 cyp2b6 inhibitors	C4633433_enty	NOT_FOUND
+cytochrome p 450 cyp2b6 inhibitors drug category	C2586339_enty	NOT_FOUND
+cytochrome p 450 cyp2b6 substrates	C1703180_enty	NOT_FOUND
+cytochrome p 450 cyp2c19	C7923269_enty	NOT_FOUND
+cytochrome p 450 cyp2c19 inducers	C2972219_enty	NOT_FOUND
+cytochrome p 450 cyp2c19 inhibitors	C3377531_enty	NOT_FOUND
+cytochrome p 450 cyp2c19 inhibitors  weak	C2627539_enty	NOT_FOUND
+cytochrome p 450 cyp2c19 substrate	C0178420_enty	NOT_FOUND
+cytochrome p 450 cyp2c19 substrates	C2348740_enty	NOT_FOUND
+cytochrome p 450 cyp2c8	C3939301_enty	NOT_FOUND
+cytochrome p 450 cyp2c8 inhibitors	C7202169_enty	NOT_FOUND
+cytochrome p 450 cyp2c8 substrate	C1663973_enty	NOT_FOUND
+cytochrome p 450 cyp2c8 substrates	C7464872_enty	NOT_FOUND
+cytochrome p 450 cyp2c9	C3662558_enty	NOT_FOUND
+cytochrome p 450 cyp2c9 inhibitor	C6737783_enty	NOT_FOUND
+cytochrome p 450 cyp2c9 inhibitors	C0453825_enty	NOT_FOUND
+cytochrome p 450 cyp2c9 substrates	C7930546_enty	NOT_FOUND
+cytochrome p 450 cyp2c9 substrates class	C4891070_enty	NOT_FOUND
+cytochrome p 450 cyp2d6	C5122082_enty	NOT_FOUND
+cytochrome p 450 cyp2d6 inhibitors	C2449147_enty	NOT_FOUND
+cytochrome p 450 cyp2d6 substrates	C0225636_enty	NOT_FOUND
+cytochrome p 450 cyp2e	C9838302_enty	NOT_FOUND
+cytochrome p 450 cyp2e1	C2892712_enty	NOT_FOUND
+cytochrome p 450 cyp2e1 inducers	C5864962_enty	NOT_FOUND
+cytochrome p 450 cyp2e1 inhibitors	C5901707_enty	NOT_FOUND
+cytochrome p 450 cyp2e1 substrates	C2547954_enty	NOT_FOUND
+cytochrome p 450 cyp3a	C1942240_enty	NOT_FOUND
+cytochrome p 450 cyp3a enzymes	C3441576_aapp	NOT_FOUND
+cytochrome p 450 cyp3a inducers	C3906665_enty	NOT_FOUND
+cytochrome p 450 cyp3a inhibitor	C5017295_enty	NOT_FOUND
+cytochrome p 450 cyp3a inhibitors	C3264483_enty	NOT_FOUND
+cytochrome p 450 cyp3a substrate	C4399557_enty	NOT_FOUND
+cytochrome p 450 cyp3a substrates	C0701898_enty	NOT_FOUND
+cytochrome p 450 cyp3a4	C8613746_enty	NOT_FOUND
+cytochrome p 450 cyp3a4 inducers	C4159705_enty	NOT_FOUND
+cytochrome p 450 cyp3a4 inhibitor	C2314032_enty	NOT_FOUND
+cytochrome p 450 cyp3a4 inhibitors	C8442311_enty	NOT_FOUND
+cytochrome p 450 cyp3a4 substrate	C7213451_enty	NOT_FOUND
+cytochrome p 450 cyp3a4 substrates	C6629231_enty	NOT_FOUND
+cytochrome p 450 cyp3a5 substrates	C8541494_enty	NOT_FOUND
+cytochrome p 450 cyp3a7 substrates	C3696015_enty	NOT_FOUND
+cytochrome p 450 enzyme	C0468207_aapp	NOT_FOUND
+cytochrome p 450 enzyme inhibitors	C3299678_aapp	NOT_FOUND
+cytochrome p 450 enzyme system	C2022350_aapp	NOT_FOUND
+cytochrome p 450 enzymes	C4878520_aapp	NOT_FOUND
+cytochrome p 450 enzymes  cyp2b6	C5975787_aapp	NOT_FOUND
+cytochrome p 450 enzymes  cyp2c8	C8609954_aapp	NOT_FOUND
+cytochrome p 450 s	C2302333_enty	NOT_FOUND
+cytochrome p 450 substrates	C3514016_enty	NOT_FOUND
+cytochrome p 450 substrates class	C0441363_enty	NOT_FOUND
+cytochrome p450 3a4 enzyme pathway	C1662078_aapp	NOT_FOUND
+cytochromes	C7128125_enty	NOT_FOUND
+deafness	C1752640_enty	NOT_FOUND
+decreased motor function	C1876882_enzy	NOT_FOUND
+decreased oxygen delivery to the fetal brain	C5861611_enzy	NOT_FOUND
+deep soft tissues of the thigh	C0930573_bpoc	NOT_FOUND
+defect in the cystic fibrosis transmembrane conductance regulator gene	C8760674_bpoc	NOT_FOUND
+defective epiphyseal growth	C3402948_enty	NOT_FOUND
+defects in collagen	C5229092_enty	NOT_FOUND
+deficiency of enzymes	C8680276_aapp	NOT_FOUND
+deficiency of lysosomal acid lipase enzyme	C7229985_aapp	NOT_FOUND
+degradation of platelet activating factor	C8690976_aapp	NOT_FOUND
+dehydroepiandrosterone	C9751892_enty	NOT_FOUND
+dehydroepiandrosterone sulfate	C8614315_enty	NOT_FOUND
+delayed development	C7629801_enty	NOT_FOUND
+delayed motor and cognitive development	C0320848_enty	NOT_FOUND
+delayed onset of ataxia	C4962959_enty	NOT_FOUND
+delayed physical milestones	C7464373_enty	NOT_FOUND
+delivery by cesarean section	C0205815_elmt	NOT_FOUND
+dementia	C5847522_enty	NOT_FOUND
+dental interventions	C0544831_elmt	NOT_FOUND
+dentinogenesis imperfecta	C9533134_enty	NOT_FOUND
+depression	C2753951_elmt	NOT_FOUND
+desmoplastic medulloblastoma	C2201616_enty	NOT_FOUND
+development of female reproductive system	C1765594_enty	NOT_FOUND
+developmental delay	C6866410_enty	NOT_FOUND
+developmental delays	C2943999_enty	NOT_FOUND
+dexamethasone acetate	C1244210_enty	NOT_FOUND
+dha	C0717589_enty	NOT_FOUND
+dhmsn	C9761322_enty	NOT_FOUND
+dht	C4963867_enty	NOT_FOUND
+diabetes	C4846237_dsyn	NOT_FOUND
+diabetes mellitus	C3989528_dsyn	NOT_FOUND
+diabetes mellitus outcomes	C0885930_dsyn	NOT_FOUND
+diabetic ketoacidosis	C6284742_orch	NOT_FOUND
+diagnosing the condition	C3640456_elmt	NOT_FOUND
+diagnosing tumor s location and size	C3787502_elmt	NOT_FOUND
+diagnosis	C8709892_enty	NOT_FOUND
+diagnosis of ectodermal dysplasia	C5437363_enty	NOT_FOUND
+diagnosis of methylmalonic aciduria	C4169964_orch	NOT_FOUND
+diagnosis of microspherophakia	C2512715_enty	NOT_FOUND
+diagnosis of scid	C0796674_enty	NOT_FOUND
+diarrhea	C3063260_enty	NOT_FOUND
+dicer1 related multinodular goiter	C0217765_enty	NOT_FOUND
+dietary modifications	C0449413_elmt	NOT_FOUND
+dietary restriction of galactose	C4180293_elmt	NOT_FOUND
+dietary restrictions	C1702704_elmt	NOT_FOUND
+dietary supplement	C5002217_enty	NOT_FOUND
+dietary supplementation	C6514658_elmt	NOT_FOUND
+diethylstilbestrol	C0182002_enty	NOT_FOUND
+difficulties in communication	C7446107_elmt	NOT_FOUND
+digital anomalies	C7814974_enty	NOT_FOUND
+dilated blood vessels in the retina	C7528871_enty	NOT_FOUND
+dilution  pigmentary	C9755493_elmt	NOT_FOUND
+dish	C3476060_enty	NOT_FOUND
+disorder	C4537493_dsyn	NOT_FOUND
+distal myopathy	C4945536_enty	NOT_FOUND
+distinct combination of neurologic  motor  and cognitive deficits	C7156105_elmt	NOT_FOUND
+distinctive craniofacial features	C9777408_enty	NOT_FOUND
+distinctive facial features	C1248949_enty	NOT_FOUND
+distinctive skeletal abnormalities	C0872883_enty	NOT_FOUND
+distortion or loss of vision	C6570814_elmt	NOT_FOUND
+diuretics	C5006933_enty	NOT_FOUND
+dock2 deficiency	C8336901_dsyn	NOT_FOUND
+dopamine	C5560641_enty	NOT_FOUND
+dopamine d4 receptor	C2922743_aapp	NOT_FOUND
+dopamine receptor blockers	C8764214_aapp	NOT_FOUND
+dopamine transporter	C7751973_aapp	NOT_FOUND
+doripenem	C9831293_enty	NOT_FOUND
+dorsal kyphosis	C5644449_enty	NOT_FOUND
+doxercalciferol	C6631463_enty	NOT_FOUND
+dramatic relief of disabling symptoms	C0169723_enty	NOT_FOUND
+drug	C5974037_enty	NOT_FOUND
+drugs	C6735934_enty	NOT_FOUND
+drugs for treatment of tuberculosis	C2611906_enty	NOT_FOUND
+dry cough	C5269681_enty	NOT_FOUND
+during childhood and adolescence	C0061795_enty	NOT_FOUND
+dwarfism	C1589035_enty	NOT_FOUND
+dysautonomia	C2185755_enty	NOT_FOUND
+dysmorphic facial features	C1853788_enty	NOT_FOUND
+dysplasia	C1762830_enty	NOT_FOUND
+dysplasia of the fourth toe	C3102489_enty	NOT_FOUND
+dystonia	C1396547_enty	NOT_FOUND
+ear deformities	C5105863_enty	NOT_FOUND
+ear pits	C2508879_enty	NOT_FOUND
+early childhood	C1658707_enty	NOT_FOUND
+early coronary disease	C8563470_enzy	NOT_FOUND
+early detection	C6392755_elmt	NOT_FOUND
+early detection and intervention	C2648483_elmt	NOT_FOUND
+early detection and management	C7583012_elmt	NOT_FOUND
+early diagnosis	C7151273_enty	NOT_FOUND
+early diagnosis and intervention	C4075386_elmt	NOT_FOUND
+early diagnosis and management	C1975158_enty	NOT_FOUND
+early diagnosis and treatment	C0884234_enty	NOT_FOUND
+early infancy	C2261394_enty	NOT_FOUND
+early intervention	C9106889_elmt	NOT_FOUND
+early intervention and management	C3072934_elmt	NOT_FOUND
+early intervention and treatment	C4802257_elmt	NOT_FOUND
+early intervention therapies	C4773754_elmt	NOT_FOUND
+early intervention therapies for developmental delays	C9757186_elmt	NOT_FOUND
+early interventions	C8893281_elmt	NOT_FOUND
+early onset	C8275498_enty	NOT_FOUND
+early onset form	C8824320_enty	NOT_FOUND
+early onset hypertension	C0652964_elmt	NOT_FOUND
+early onset of cutaneous telangiectasias	C4642232_enty	NOT_FOUND
+early onset progressive diffuse brain atrophy microcephaly muscle weakness optic atrophy syndrome	C2515039_bpoc	NOT_FOUND
+east asia	C9522072_enty	NOT_FOUND
+eating a low salt diet	C7408984_enty	NOT_FOUND
+ectodermal dysplasia	C4990547_enty	NOT_FOUND
+ectodermal syndrome	C2562038_dsyn	NOT_FOUND
+efavirenz	C1993585_enty	NOT_FOUND
+effective management	C8280740_enty	NOT_FOUND
+effector molecules downstream of insulin receptor  ir	C5740380_aapp	NOT_FOUND
+ehlers danlos syndrome	C9189996_dsyn	NOT_FOUND
+eight	C8610881_enty	NOT_FOUND
+eihi	C4761144_enty	NOT_FOUND
+electrical myotonia	C5127348_enty	NOT_FOUND
+electrocardiogram changes	C2918446_enty	NOT_FOUND
+electronic wastes	C5548028_enty	NOT_FOUND
+eletriptan	C8222205_enty	NOT_FOUND
+elevated homocysteine levels	C2768306_enty	NOT_FOUND
+elevated insulin levels	C6976498_enty	NOT_FOUND
+elevated serum insulin to c peptide ratio	C9612455_enty	NOT_FOUND
+elucidate underlying mechanisms	C5297542_enty	NOT_FOUND
+elucidating underlying molecular mechanisms	C6743323_enty	NOT_FOUND
+embryonal malignancies	C7634335_enty	NOT_FOUND
+emtricitabine	C3079338_enty	NOT_FOUND
+enalapril	C0607064_enty	NOT_FOUND
+enalaprilat	C1661392_enty	NOT_FOUND
+encephalomyopathy	C7103928_enty	NOT_FOUND
+encephalopathy	C4815890_enty	NOT_FOUND
+endocrine abnormalities	C2893097_enty	NOT_FOUND
+endogenous estrogens	C8441119_enty	NOT_FOUND
+endometrial hyperplasia	C8590481_enty	NOT_FOUND
+endometrial hyperplasia in postmenopausal women	C2793087_enty	NOT_FOUND
+endovascular stenting	C2588756_medd	NOT_FOUND
+enoxaparin	C7953996_enty	NOT_FOUND
+environmental factors	C9046468_aapp	NOT_FOUND
+enzymes	C6360280_aapp	NOT_FOUND
+eopeasdasm	C0620995_enty	NOT_FOUND
+ephedrine	C6677633_enty	NOT_FOUND
+epidural analgesia	C6448850_enty	NOT_FOUND
+epilepsy	C5444691_enty	NOT_FOUND
+essential nutrient	C6825390_enty	NOT_FOUND
+essential vitamin	C6436481_enty	NOT_FOUND
+estradiol	C0864963_enty	NOT_FOUND
+estradiol s rapid cellular effects	C3012489_cell	NOT_FOUND
+estrogen receptor	C9778760_aapp	NOT_FOUND
+estrogen response elements  eres	C5280315_elmt	NOT_FOUND
+estrogens	C1376908_enty	NOT_FOUND
+estrogens  non steroidal	C1965001_enty	NOT_FOUND
+estrone	C1970366_enty	NOT_FOUND
+ethacrynic acid	C2003195_orch	NOT_FOUND
+ethylmercury	C5761457_enty	NOT_FOUND
+exceedingly rare	C2234156_enty	NOT_FOUND
+exceptionally rare autosomal dominant developmental anomaly	C4197518_elmt	NOT_FOUND
+excessive hair growth on their brows	C3205928_enty	NOT_FOUND
+excessive magnesium and calcium renal wasting	C0542371_elmt	NOT_FOUND
+exercise induced hyperinsulinism	C5390857_enty	NOT_FOUND
+experimental drug	C9380743_enty	NOT_FOUND
+expressive language deficit	C1154885_enty	NOT_FOUND
+extra fingers on all four limbs	C5561573_enty	NOT_FOUND
+extracellular glucose	C8880071_cell	NOT_FOUND
+extremely low	C5807315_enty	NOT_FOUND
+extremely rare genetic disorder	C4236316_dsyn	NOT_FOUND
+facial dysmorphism	C7971164_enty	NOT_FOUND
+facial features of oas	C8345050_enty	NOT_FOUND
+facial obesity	C3938759_enty	NOT_FOUND
+factor vii	C6553392_aapp	NOT_FOUND
+factor viia replacement therapy	C4101061_aapp	NOT_FOUND
+failure to thrive	C4994420_enty	NOT_FOUND
+familial	C0833089_enty	NOT_FOUND
+familial amyloid polyneuropathy	C8623093_enty	NOT_FOUND
+familial hyperaldosteronism type i  fh i	C8390110_enty	NOT_FOUND
+familial hyperlipoproteinemia	C6167389_aapp	NOT_FOUND
+familial isolated congenital asplenia	C7386771_enty	NOT_FOUND
+familial localized heat	C4880692_enty	NOT_FOUND
+familial macrocytosis	C5220465_enty	NOT_FOUND
+families of mediterranean descent	C7887106_enty	NOT_FOUND
+family history	C8115365_enty	NOT_FOUND
+family history of dental anomalies	C7694152_enty	NOT_FOUND
+family members of affected individuals	C4373728_enty	NOT_FOUND
+fasting hypoglycemia	C7875271_enty	NOT_FOUND
+fatigue	C5916748_enty	NOT_FOUND
+fatty acids	C9762933_orch	NOT_FOUND
+fbn1	C5090744_enty	NOT_FOUND
+fda	C9040059_enty	NOT_FOUND
+fdfm	C2554106_enty	NOT_FOUND
+feeding difficulties	C3643782_enty	NOT_FOUND
+feeding difficulties in infancy	C5337459_enty	NOT_FOUND
+female carriers	C8913180_enty	NOT_FOUND
+females	C6924787_enty	NOT_FOUND
+females as carriers	C7281365_enty	NOT_FOUND
+females who are carriers	C2725032_enty	NOT_FOUND
+fenofibrate	C6446174_enty	NOT_FOUND
+fenofibric acid	C8780759_orch	NOT_FOUND
+fenretinide	C7567847_enty	NOT_FOUND
+fentanyl	C0026686_enty	NOT_FOUND
+fetal akinesia syndrome	C8363185_dsyn	NOT_FOUND
+fever	C3333792_enty	NOT_FOUND
+fever management	C3643150_enty	NOT_FOUND
+few families worldwide	C3157101_enty	NOT_FOUND
+few per 100 000 individuals worldwide	C7567767_enty	NOT_FOUND
+few reported cases	C3642415_enzy	NOT_FOUND
+fewer than 1 in 1 million individuals	C8397555_elmt	NOT_FOUND
+fewer than 1 in 100 000 individuals	C7399082_enty	NOT_FOUND
+fewer than 1 in 100 000 individuals worldwide	C5085292_enty	NOT_FOUND
+fewer than 1 in 100 000 people	C2403908_enty	NOT_FOUND
+fewer than 1 million individuals	C1923701_elmt	NOT_FOUND
+fewer than 1 per million individuals	C1675821_elmt	NOT_FOUND
+fewer than 30 cases reported	C5033560_enzy	NOT_FOUND
+fewer than one in a million individuals	C1904493_elmt	NOT_FOUND
+fewer than one in one million individuals	C2181432_elmt	NOT_FOUND
+fewer than one million individuals	C5092353_elmt	NOT_FOUND
+fhhncoi	C3751350_enty	NOT_FOUND
+finnish upper limb onset distal myopathy	C3069385_enty	NOT_FOUND
+first line treatment	C0195689_enty	NOT_FOUND
+first or second decade of life	C0199438_enty	NOT_FOUND
+flat and broad nasal bridges	C4486411_enty	NOT_FOUND
+flexural areas	C9495440_enty	NOT_FOUND
+flufenamic acid	C1277159_orch	NOT_FOUND
+fluoxymesterone	C7760287_enty	NOT_FOUND
+flupenthixol	C0509228_enty	NOT_FOUND
+flurbiprofen	C7596359_enty	NOT_FOUND
+folic acid	C8546235_orch	NOT_FOUND
+food	C3089854_enty	NOT_FOUND
+food sweetener	C8005231_enty	NOT_FOUND
+fospropofol	C2106921_enty	NOT_FOUND
+four limb postaxial polydactyly	C8705202_enty	NOT_FOUND
+four limbs	C3145178_enty	NOT_FOUND
+fragile tissues	C1561913_bpoc	NOT_FOUND
+frequent and persistent myoclonus symptoms	C2219479_medd	NOT_FOUND
+frequent urination	C0622313_elmt	NOT_FOUND
+fructose	C5429863_enty	NOT_FOUND
+fundus autofluorescence	C8629098_enty	NOT_FOUND
+furosemide	C8382255_enty	NOT_FOUND
+further research	C8554142_enty	NOT_FOUND
+further research and understanding	C1560952_enty	NOT_FOUND
+g protein coupled estrogen receptor	C2499756_aapp	NOT_FOUND
+gain of function mutations in tsc1	C4302023_elmt	NOT_FOUND
+gamma glutamyl transpeptidase deficiency	C4231912_enzy	NOT_FOUND
+gastric acid production	C1581622_elmt	NOT_FOUND
+gastritis associated with helicobacter pylori	C3640818_enty	NOT_FOUND
+gastritis associated with helicobacter pylori infection	C6740507_elmt	NOT_FOUND
+gastroesophageal fistula	C5768560_enty	NOT_FOUND
+gastrointestinal	C6511012_enty	NOT_FOUND
+gastrointestinal obstruction	C6528129_elmt	NOT_FOUND
+gbfhs	C9717059_enty	NOT_FOUND
+gdcd	C8140717_enty	NOT_FOUND
+gene mutations	C2318857_elmt	NOT_FOUND
+generalized	C8196447_enty	NOT_FOUND
+generalized basal epidermolysis bullosa simplex	C7320183_enty	NOT_FOUND
+generalized seizures	C1607013_enty	NOT_FOUND
+genetic	C0105544_enty	NOT_FOUND
+genetic counseling	C8474682_enty	NOT_FOUND
+genetic disorder	C7183021_dsyn	NOT_FOUND
+genetic disorders	C4364880_dsyn	NOT_FOUND
+genetic endocrine disorder	C4405916_dsyn	NOT_FOUND
+genetic form of heart disease	C2910899_enzy	NOT_FOUND
+genetic heterogeneity	C8936056_enty	NOT_FOUND
+genetic mutation	C2155590_elmt	NOT_FOUND
+genetic mutation affecting collagen type i	C7404587_elmt	NOT_FOUND
+genetic mutations	C9321613_elmt	NOT_FOUND
+genetic testing	C7578576_enty	NOT_FOUND
+genetics	C2353808_enty	NOT_FOUND
+genital abnormalities	C3781640_enty	NOT_FOUND
+genitalia	C6188539_enty	NOT_FOUND
+genitourinary malformations	C7445438_elmt	NOT_FOUND
+gins1 deficiency	C9569718_dsyn	NOT_FOUND
+glasdegib	C9132462_enty	NOT_FOUND
+global developmental delay	C6975613_enty	NOT_FOUND
+glucocorticoid	C5361233_enty	NOT_FOUND
+glucocorticoids	C4857939_enty	NOT_FOUND
+glucose	C2737926_enty	NOT_FOUND
+glucose tolerance assessments	C8317547_enty	NOT_FOUND
+glutamate release	C5426351_enzy	NOT_FOUND
+glycine	C1307122_enty	NOT_FOUND
+glycine gated chloride channel	C3537368_aapp	NOT_FOUND
+glycogen storage disease	C9319145_enzy	NOT_FOUND
+glycoside hydrolase	C0228242_enzy	NOT_FOUND
+glycyrrhizic acid	C2638522_orch	NOT_FOUND
+goiter is causing respiratory or swallowing difficulties	C3047510_enty	NOT_FOUND
+gonadotropin secretion	C8276747_elmt	NOT_FOUND
+gonadotropins	C2658302_enty	NOT_FOUND
+gonococcal septicemia	C4456905_enty	NOT_FOUND
+gracile syndrome	C6385443_dsyn	NOT_FOUND
+gracilis	C7099593_enty	NOT_FOUND
+gradual shrinking of the cerebellum	C1797869_enty	NOT_FOUND
+grapiprant	C5771146_enty	NOT_FOUND
+grooved nasal tip	C0714819_enty	NOT_FOUND
+growth of tumors	C4367381_enty	NOT_FOUND
+growth retardation	C1790672_elmt	NOT_FOUND
+h  influenzae	C6201574_enty	NOT_FOUND
+h  pylori	C7061282_enty	NOT_FOUND
+h2o	C3943679_enty	NOT_FOUND
+h2o2	C3351508_enty	NOT_FOUND
+hallucinations	C6613531_elmt	NOT_FOUND
+hands and feet	C3624200_enty	NOT_FOUND
+hardening and overgrowth of bone	C7055176_enty	NOT_FOUND
+headache	C8782768_enty	NOT_FOUND
+health complications	C2601091_elmt	NOT_FOUND
+hearing assessment	C0386793_enty	NOT_FOUND
+hearing loss	C5330236_enty	NOT_FOUND
+heart	C1943732_enty	NOT_FOUND
+heart disease	C9859205_enzy	NOT_FOUND
+heart failure	C1747202_enty	NOT_FOUND
+heifers	C8152228_enty	NOT_FOUND
+hematin	C4704866_enty	NOT_FOUND
+heme oxygenase 1 deficiency	C6608438_enzy	NOT_FOUND
+hemolytic anemia	C0166308_enty	NOT_FOUND
+hepatic glucose production	C5269418_elmt	NOT_FOUND
+her2 positive breast cancer	C5938046_dsyn	NOT_FOUND
+her2 positive carcinomas	C4571001_enty	NOT_FOUND
+hereditary disorder	C1564547_dsyn	NOT_FOUND
+hereditary genetic disorder	C6674552_dsyn	NOT_FOUND
+hereditary palmoplantar keratoderma	C1393400_enty	NOT_FOUND
+heterogeneous clinical presentation	C1869607_elmt	NOT_FOUND
+high arched palate	C3699480_enty	NOT_FOUND
+high blood cholesterol	C8763700_enty	NOT_FOUND
+high blood pressure	C3234358_enty	NOT_FOUND
+highly insoluble	C4503121_enty	NOT_FOUND
+hip dysplasia	C9458613_enty	NOT_FOUND
+hirsutism	C4468230_enty	NOT_FOUND
+histone deacetylase activator	C8335806_enzy	NOT_FOUND
+hiv	C3130139_enty	NOT_FOUND
+hiv aids treatment	C6348591_enty	NOT_FOUND
+hiv protease inhibitor	C4261660_enzy	NOT_FOUND
+hormonal disorders	C9335679_dsyn	NOT_FOUND
+hormonal problems	C0961983_enty	NOT_FOUND
+hormone replacement therapy	C3029979_enty	NOT_FOUND
+hormone substitute	C6448353_enty	NOT_FOUND
+hormones	C0766601_enty	NOT_FOUND
+hpnmhl	C2390040_enty	NOT_FOUND
+hsct	C7808727_enty	NOT_FOUND
+human fat	C7720065_enty	NOT_FOUND
+humoral or cellular immune reactions	C3844322_elmt	NOT_FOUND
+hyaluronidase  ovine	C4054220_enzy	NOT_FOUND
+hydrocephalus	C0354270_enty	NOT_FOUND
+hydrochlorothiazide	C4453068_enty	NOT_FOUND
+hydrocortisone	C7532928_enty	NOT_FOUND
+hydrogen	C3002951_enty	NOT_FOUND
+hydrops fetalis	C3562577_enty	NOT_FOUND
+hydroxychloroquine	C7427288_enty	NOT_FOUND
+hyperlysinaemia	C7917080_enty	NOT_FOUND
+hypertelorism	C7600116_enty	NOT_FOUND
+hypertension	C2544965_elmt	NOT_FOUND
+hyperthyroidism	C6119361_enty	NOT_FOUND
+hypertriglyceridemia	C4373807_enty	NOT_FOUND
+hyperuricemia	C8166309_enty	NOT_FOUND
+hypochondroplasia	C2640810_enty	NOT_FOUND
+hypoglycemia	C9776795_enty	NOT_FOUND
+hypogonadism	C6344731_enty	NOT_FOUND
+hypomethylating agent therapy	C6301551_enty	NOT_FOUND
+hypoplasia	C6980280_enty	NOT_FOUND
+hypoplasia of the fibula	C0170824_enty	NOT_FOUND
+hypoplasia of the lower iliac wings	C1340060_enty	NOT_FOUND
+hypoplasia of the mandibular condyles	C1033130_enty	NOT_FOUND
+hypoplastic or absent retina	C4082230_enty	NOT_FOUND
+hypoprolactinemia	C1918215_enty	NOT_FOUND
+hyporexia	C1731842_enty	NOT_FOUND
+hypothyroidism	C6625005_enty	NOT_FOUND
+hypotonia	C9889957_enty	NOT_FOUND
+identifying underlying etiology	C5249833_enty	NOT_FOUND
+idiopathic	C0022136_enty	NOT_FOUND
+idiopathic parkinson s disease	C5583131_enzy	NOT_FOUND
+imagawa matsumoto syndrome	C8474805_dsyn	NOT_FOUND
+imaging modality	C6602568_enty	NOT_FOUND
+imaging studies	C4102419_enty	NOT_FOUND
+imaging studies such as mri	C3949298_enty	NOT_FOUND
+iminoglycinuria	C6636930_enty	NOT_FOUND
+immune system functioning	C6182141_elmt	NOT_FOUND
+immunodeficiency	C2645299_dsyn	NOT_FOUND
+immunomodulatory therapies	C0793352_enty	NOT_FOUND
+impact on daily life	C4122862_enty	NOT_FOUND
+impaired glucose homeostasis	C6245006_enty	NOT_FOUND
+impaired glycogen synthesis	C2754656_biof	NOT_FOUND
+impaired growth	C2790917_enty	NOT_FOUND
+impairment of na  k  atpase enzyme	C5685840_aapp	NOT_FOUND
+impotence	C7919180_enty	NOT_FOUND
+improve clinical outcomes	C7934425_enty	NOT_FOUND
+improve lives of affected individuals	C1305072_enty	NOT_FOUND
+improve overall quality of life	C6280563_enty	NOT_FOUND
+improve quality of life	C1339413_enty	NOT_FOUND
+improve quality of life for affected individuals	C4300782_enty	NOT_FOUND
+improved metabolism	C1615083_biof	NOT_FOUND
+improved patient outcomes	C2959089_enty	NOT_FOUND
+improving ocular alignment	C9072754_enty	NOT_FOUND
+improving overall quality of life	C5879630_enty	NOT_FOUND
+improving quality of life	C8092695_enty	NOT_FOUND
+improving quality of life for affected individuals	C2590479_enty	NOT_FOUND
+in individuals	C5039225_enty	NOT_FOUND
+increased mortality rates	C2505800_enzy	NOT_FOUND
+increased risk of developing comorbidities	C1592965_enzy	NOT_FOUND
+indapamide	C8150396_enty	NOT_FOUND
+individual s functional abilities	C9496605_elmt	NOT_FOUND
+individuals	C4581677_enty	NOT_FOUND
+individuals across all age groups	C9174697_enty	NOT_FOUND
+individuals affected by x linked l1 syndrome	C2600671_dsyn	NOT_FOUND
+individuals between the ages of 15 and 40	C4490766_enty	NOT_FOUND
+individuals in northern sweden	C4553004_enty	NOT_FOUND
+individuals of all ages	C0485837_enty	NOT_FOUND
+individuals with charcot marie tooth peroneal muscular atrophy	C5941055_enty	NOT_FOUND
+individuals with family history of camsd	C2364096_enty	NOT_FOUND
+individuals with hiv aids	C9349016_enty	NOT_FOUND
+individuals with narcolepsy	C5417531_enty	NOT_FOUND
+individuals with oi	C5423836_enty	NOT_FOUND
+individuals worldwide	C4264456_enty	NOT_FOUND
+infancy	C7026245_enty	NOT_FOUND
+infant ventricular tachycardia	C6305358_enty	NOT_FOUND
+infantile forms	C5349983_enty	NOT_FOUND
+infantile onset psychomotor developmental delay	C6890680_enty	NOT_FOUND
+infantile ventricular tachycardia	C4567442_enty	NOT_FOUND
+infants	C2136015_enty	NOT_FOUND
+infection	C3355429_elmt	NOT_FOUND
+infection in the uterus during pregnancy	C6995271_elmt	NOT_FOUND
+infections	C8587983_elmt	NOT_FOUND
+infections passed from mother to child	C2923924_elmt	NOT_FOUND
+inflammation	C9240757_elmt	NOT_FOUND
+inflammation of the liver	C6948100_elmt	NOT_FOUND
+inflammatory conditions	C8026485_elmt	NOT_FOUND
+inflammatory genes	C8597060_enty	NOT_FOUND
+inherited disorder	C9735543_dsyn	NOT_FOUND
+inherited disorders	C8387079_dsyn	NOT_FOUND
+inhibitors	C3815103_enty	NOT_FOUND
+innate immune response	C2128812_enty	NOT_FOUND
+inosinic acid	C4779181_orch	NOT_FOUND
+insulin	C5365902_enty	NOT_FOUND
+insulin degludec	C2959089_enty	NOT_FOUND
+insulin like growth factor 1	C4193122_aapp	NOT_FOUND
+insulin receptor	C0543273_aapp	NOT_FOUND
+intellectual deficit	C6663171_enty	NOT_FOUND
+intellectual disabilities	C2390755_enty	NOT_FOUND
+intellectual disability	C3895342_enty	NOT_FOUND
+intellectual disability syndrome	C7528822_dsyn	NOT_FOUND
+interatrial septal defects	C2479072_enty	NOT_FOUND
+intercalary limb deficiencies	C3052467_enty	NOT_FOUND
+interferon alpha	C4535503_enty	NOT_FOUND
+interferon beta	C9309014_enty	NOT_FOUND
+interferon gamma production	C5517171_elmt	NOT_FOUND
+interferon type i	C2249218_enty	NOT_FOUND
+internal auditory canal	C2344233_enty	NOT_FOUND
+intervention	C3798593_elmt	NOT_FOUND
+interventions	C9700979_elmt	NOT_FOUND
+intestinal obstruction	C6675424_elmt	NOT_FOUND
+intractable seizures	C4945699_enty	NOT_FOUND
+intravenous immunoglobulin  ivig  replacement	C7918672_aapp	NOT_FOUND
+intravenously	C7884380_enty	NOT_FOUND
+investigational	C7944869_elmt	NOT_FOUND
+investigational stages	C5725171_elmt	NOT_FOUND
+involuntary eye movements	C6745463_enty	NOT_FOUND
+ipledge program	C2999753_enty	NOT_FOUND
+irak 4 deficiency	C8699077_dsyn	NOT_FOUND
+iris colobomas	C5305445_enty	NOT_FOUND
+iron	C7996999_elmt	NOT_FOUND
+iron sucrose	C3937701_elmt	NOT_FOUND
+iron transferrin complex	C6537169_elmt	NOT_FOUND
+irreversible potent inhibitor of burton s tyrosine kinase	C9259985_aapp	NOT_FOUND
+istradefylline	C8539661_enty	NOT_FOUND
+italy	C5775171_enty	NOT_FOUND
+jpls	C4654650_enty	NOT_FOUND
+kearns sayre syndrome	C8580359_dsyn	NOT_FOUND
+keeping cholesterol levels under control	C5104201_enty	NOT_FOUND
+keeping the skin and nails clean	C9305863_enty	NOT_FOUND
+keratoplasty	C4490521_enty	NOT_FOUND
+kidney	C0801208_enty	NOT_FOUND
+kidneys	C1576881_enty	NOT_FOUND
+kinase inhibitor drug	C6891383_aapp	NOT_FOUND
+l methionine	C3595455_elmt	NOT_FOUND
+laboratory tests	C4770255_enty	NOT_FOUND
+lactase	C3940405_enzy	NOT_FOUND
+lactic aciduria	C7332925_orch	NOT_FOUND
+lambotte syndrome	C8742699_dsyn	NOT_FOUND
+lansoprazole	C2185156_enty	NOT_FOUND
+largely irreversible	C1630827_enty	NOT_FOUND
+largely supportive	C1969190_enty	NOT_FOUND
+late adulthood	C7823212_enty	NOT_FOUND
+late onset form of multiple carboxylase deficiency	C7283454_enzy	NOT_FOUND
+learning difficulties	C9117606_enty	NOT_FOUND
+legius syndrome	C7816837_dsyn	NOT_FOUND
+lesions	C7592202_elmt	NOT_FOUND
+less than 1 100 000 individuals	C1278233_enty	NOT_FOUND
+less than 1 1000000	C4842234_enty	NOT_FOUND
+less than 1 1000000 individuals	C7679575_enty	NOT_FOUND
+less than 1 1000000 individuals worldwide	C4130410_enty	NOT_FOUND
+less than 1 in 1 000 000 individuals	C6084559_enty	NOT_FOUND
+less than 1 in 1 000 000 individuals worldwide	C0705910_enty	NOT_FOUND
+less than 1 in 1 million	C6380102_elmt	NOT_FOUND
+less than 1 in 1 million individuals	C4392664_elmt	NOT_FOUND
+less than 1 in 1 million individuals worldwide	C0719206_elmt	NOT_FOUND
+less than 1 in 1 million people	C2382625_elmt	NOT_FOUND
+less than 1 in 10 million people	C1794413_elmt	NOT_FOUND
+less than 1 in 100 000	C9068781_enty	NOT_FOUND
+less than 1 in 100 000 births	C7890790_enty	NOT_FOUND
+less than 1 in 100 000 individuals	C6465408_enty	NOT_FOUND
+less than 1 in 100 000 individuals worldwide	C8389435_enty	NOT_FOUND
+less than 1 in 100 000 live births	C8525685_enty	NOT_FOUND
+less than 1 in 1000000 individuals	C6843834_enty	NOT_FOUND
+less than 1 in 1000000 individuals worldwide	C5659705_enty	NOT_FOUND
+less than 1 per 100 000 individuals	C7302888_enty	NOT_FOUND
+less than 1 per million individuals	C5362102_elmt	NOT_FOUND
+less than 50 reported cases	C8359382_enzy	NOT_FOUND
+less than one in 1 million	C3367333_elmt	NOT_FOUND
+less than one in 1 million individuals	C6205320_elmt	NOT_FOUND
+less than one in a million	C4891221_elmt	NOT_FOUND
+less than one in a million individuals	C1926816_elmt	NOT_FOUND
+less than one in a million people	C9499629_elmt	NOT_FOUND
+less than one in one million	C7219348_elmt	NOT_FOUND
+less than one in one million individuals	C9430390_elmt	NOT_FOUND
+less than one per million individuals	C1167066_elmt	NOT_FOUND
+less vitamin d metabolized	C0862170_enty	NOT_FOUND
+leukemia	C2244575_enty	NOT_FOUND
+life threatening bleeding	C5627493_enty	NOT_FOUND
+lifelong high dose vitamin e supplementation	C1770312_elmt	NOT_FOUND
+lifelong management	C8440561_enty	NOT_FOUND
+lifestyle modifications	C7799636_elmt	NOT_FOUND
+limiting caffeine intake	C3987863_enty	NOT_FOUND
+lithium transport disorder	C0079659_biof	NOT_FOUND
+liver	C9505457_enty	NOT_FOUND
+liver disease	C9819284_enzy	NOT_FOUND
+liver dysfunction	C6358185_elmt	NOT_FOUND
+liver enzyme	C2066905_aapp	NOT_FOUND
+liver specialists	C9769936_enty	NOT_FOUND
+local therapies	C8694424_enty	NOT_FOUND
+long face	C0268606_enty	NOT_FOUND
+long term management	C6900551_enty	NOT_FOUND
+loss of motor function	C0525997_elmt	NOT_FOUND
+loss of motor speech production	C2278857_elmt	NOT_FOUND
+low	C7871192_enty	NOT_FOUND
+low set ears	C7677008_enty	NOT_FOUND
+low t3 levels	C2582865_enty	NOT_FOUND
+lower limbs	C7070793_enty	NOT_FOUND
+lower plasma glucose concentrations	C5775906_elmt	NOT_FOUND
+lymphedema posterior choanal atresia syndrome	C2102677_dsyn	NOT_FOUND
+lymphoproliferative disease	C1888730_enzy	NOT_FOUND
+lysyl hydroxylase 3 deficiency	C4628915_enzy	NOT_FOUND
+macrothrombocytopenia	C0404800_enty	NOT_FOUND
+magnesium	C8686738_elmt	NOT_FOUND
+maintaining a healthy diet	C1351042_enty	NOT_FOUND
+maintenance treatment of adult patients	C4077521_enty	NOT_FOUND
+males	C8699319_enty	NOT_FOUND
+males and females equally	C7819642_enty	NOT_FOUND
+malformation	C9398991_elmt	NOT_FOUND
+malignant lesions	C0755278_elmt	NOT_FOUND
+management	C9197253_enty	NOT_FOUND
+management and treatment options	C0257800_elmt	NOT_FOUND
+management and treatment strategies	C2225285_enty	NOT_FOUND
+management attempts	C6010183_enty	NOT_FOUND
+management of amaurosis hypertrichosis syndrome	C0159228_dsyn	NOT_FOUND
+management of ataxia intellectual disability oculomotor apraxia cerebellar cysts syndrome	C7795038_dsyn	NOT_FOUND
+management of congenital cerebral granuloma	C7417885_enty	NOT_FOUND
+management of cutaneous albinism ermine phenotype	C0718365_enty	NOT_FOUND
+management of distal hereditary motor and sensory neuropathy	C7432100_enty	NOT_FOUND
+management of heart defect   tongue hamartoma   polysyndactyly syndrome	C0743466_dsyn	NOT_FOUND
+management of hypertension	C7117903_elmt	NOT_FOUND
+management of hypertriglyceridemia	C5214636_enty	NOT_FOUND
+management of idxmn88	C5947927_enty	NOT_FOUND
+management of isolated optic nerve hypoplasia	C0017496_enty	NOT_FOUND
+management of megalencephalic leukoencephalopathy with subcortical cysts 2b	C1024351_enty	NOT_FOUND
+management of mungan syndrome	C0836366_dsyn	NOT_FOUND
+management of nasal septum deviation	C6807743_elmt	NOT_FOUND
+management of neurological symptoms	C8213778_enty	NOT_FOUND
+management of ocular cystinosis	C3466002_enty	NOT_FOUND
+management of symptoms	C3536431_enty	NOT_FOUND
+management of the syndrome	C3684327_dsyn	NOT_FOUND
+management of this complex disease	C1103245_enzy	NOT_FOUND
+management of this disorder	C9701822_dsyn	NOT_FOUND
+management of this syndrome	C6444065_dsyn	NOT_FOUND
+management of van der woude syndrome	C8611624_dsyn	NOT_FOUND
+management of wdm	C3567408_enty	NOT_FOUND
+management strategies	C2679888_enty	NOT_FOUND
+managing dystonia with gabapentin	C6622327_enty	NOT_FOUND
+managing secondary complications	C4179624_elmt	NOT_FOUND
+managing symptoms	C1375236_enty	NOT_FOUND
+many organisms	C7761086_bpoc	NOT_FOUND
+many patients	C0936188_enty	NOT_FOUND
+marked shortness of the metatarsal bones	C4020267_enty	NOT_FOUND
+mate 1 inhibitors	C8032163_enty	NOT_FOUND
+meclofenamic acid	C3424562_orch	NOT_FOUND
+medical and cosmetic interventions	C5628879_elmt	NOT_FOUND
+medical conditions	C4051316_elmt	NOT_FOUND
+medical consultation	C6605773_elmt	NOT_FOUND
+medical interventions	C7474671_elmt	NOT_FOUND
+medical therapies	C2640286_enty	NOT_FOUND
+medical treatment	C8631033_enty	NOT_FOUND
+medical treatments	C9392663_enty	NOT_FOUND
+medical use	C6185345_enty	NOT_FOUND
+medication	C5400894_elmt	NOT_FOUND
+medication to control inflammatory episodes	C7992384_elmt	NOT_FOUND
+medications	C9835825_elmt	NOT_FOUND
+medrogestone	C1308155_enty	NOT_FOUND
+megalencephalic leukoencephalopathy with subcortical cysts 2b	C7306423_enty	NOT_FOUND
+megaloblastic anemia	C1957466_enty	NOT_FOUND
+melatonin	C9533816_enty	NOT_FOUND
+men	C1233532_enty	NOT_FOUND
+men between 20 50 years	C5733405_enty	NOT_FOUND
+meningeal leukemia	C1433299_enty	NOT_FOUND
+meningococci	C1290885_enty	NOT_FOUND
+metabolism	C1916427_biof	NOT_FOUND
+metal cations	C9222337_elmt	NOT_FOUND
+methemoglobin reductase deficiency	C9550402_enzy	NOT_FOUND
+methotrexate	C4464528_enty	NOT_FOUND
+methylmalonic acidemia	C1958441_orch	NOT_FOUND
+microcephaly	C9833465_enty	NOT_FOUND
+microcytic anemia	C6667010_enty	NOT_FOUND
+micromelic bone dysplasia	C7155397_enty	NOT_FOUND
+micronutrients	C3408785_enty	NOT_FOUND
+mild	C3720183_enty	NOT_FOUND
+mild dysmorphic facial features	C1801493_enty	NOT_FOUND
+mild parkinsonism	C9673115_enty	NOT_FOUND
+mild platyspondyly	C3019866_enty	NOT_FOUND
+mild to severe vision loss	C4598461_elmt	NOT_FOUND
+mildest form of free sialic acid storage disorders	C4924053_orch	NOT_FOUND
+millions of people worldwide	C1999625_elmt	NOT_FOUND
+minimizing impact on daily life	C5517991_enty	NOT_FOUND
+mioop	C1950056_enty	NOT_FOUND
+mitigate complications of progressive muscle weakness	C3889374_elmt	NOT_FOUND
+mitigating long term consequences	C6132921_enty	NOT_FOUND
+moderate lymphopenia	C6606110_enty	NOT_FOUND
+molecular genetic analysis	C9797916_enty	NOT_FOUND
+mondo	C1241912_enty	NOT_FOUND
+mondo id	C0019003_enty	NOT_FOUND
+mondo id  13575	C0278040_enty	NOT_FOUND
+mondo id 7912	C3784561_enty	NOT_FOUND
+mondo id 8376	C2751772_enty	NOT_FOUND
+monitoring	C4263367_enty	NOT_FOUND
+more common conditions	C3934948_elmt	NOT_FOUND
+more than 35 reported cases	C6205806_enzy	NOT_FOUND
+most patients	C4124421_enty	NOT_FOUND
+motor speech production	C5942146_elmt	NOT_FOUND
+movement	C2407966_enty	NOT_FOUND
+movement and learning disorders	C6027109_dsyn	NOT_FOUND
+mpa	C5733248_enty	NOT_FOUND
+mri	C3394696_enty	NOT_FOUND
+mucous membranes	C2046050_bpoc	NOT_FOUND
+multidisciplinary	C6507562_enty	NOT_FOUND
+multidisciplinary approach	C2611319_enty	NOT_FOUND
+multidisciplinary care	C6662350_enty	NOT_FOUND
+multidisciplinary management	C6082158_enty	NOT_FOUND
+multidisciplinary team approach	C2975633_enty	NOT_FOUND
+multifactorial etiology	C2062683_aapp	NOT_FOUND
+multiple affected individuals	C0256104_enty	NOT_FOUND
+multiple carboxylase deficiency	C8118639_enzy	NOT_FOUND
+multiple congenital anomalies	C1511979_enty	NOT_FOUND
+multiple epiphyseal dysplasia	C1485585_enty	NOT_FOUND
+multiple family members	C4472955_enty	NOT_FOUND
+multiple procedures for hypospadias repair	C9093610_enty	NOT_FOUND
+multiple skeletal abnormalities	C5267955_enty	NOT_FOUND
+muscle weakness	C7193952_bpoc	NOT_FOUND
+muscle weakness in the feet and hands	C4165800_bpoc	NOT_FOUND
+muscular dystrophy	C3282974_enty	NOT_FOUND
+muscular hypotonia	C8968425_enty	NOT_FOUND
+muscular weakness	C2377992_enty	NOT_FOUND
+muscular weaknesses	C9416540_enty	NOT_FOUND
+mut	C5641700_enty	NOT_FOUND
+mut0	C9915058_enty	NOT_FOUND
+mutation	C3093006_elmt	NOT_FOUND
+mutation in a gene	C5286282_elmt	NOT_FOUND
+mutation in esco2 gene	C5086334_elmt	NOT_FOUND
+mutations	C2766442_elmt	NOT_FOUND
+mutations in	C2673960_elmt	NOT_FOUND
+mutations in genes	C8522086_elmt	NOT_FOUND
+mutations in hadh gene	C5349846_elmt	NOT_FOUND
+mutations in slc16a2 gene	C5459039_elmt	NOT_FOUND
+mutations in succinate dehydrogenase	C6775790_enzy	NOT_FOUND
+mutations in the c6 gene	C4379061_elmt	NOT_FOUND
+mutations in the comp gene	C8119413_elmt	NOT_FOUND
+mutations in the ears2 gene	C1113380_elmt	NOT_FOUND
+mutations in the gene encoding the cystic fibrosis transmembrane conductance regulator	C2625917_elmt	NOT_FOUND
+mutations in the kiaa1202 gene	C4124801_elmt	NOT_FOUND
+mutations in the was gene	C6301035_elmt	NOT_FOUND
+myanmar	C5812175_enty	NOT_FOUND
+mycobacteria grow slowly	C4792385_enty	NOT_FOUND
+mycolic acids	C5095255_orch	NOT_FOUND
+myelofibrosis	C7169508_enty	NOT_FOUND
+myopathy	C5994291_enty	NOT_FOUND
+mypn related myopathy	C7890970_enty	NOT_FOUND
+n  gononhoeae	C9164264_enty	NOT_FOUND
+na  k  atpase	C8660516_aapp	NOT_FOUND
+nager acrofacial dysostosis	C1400585_enty	NOT_FOUND
+naproxen	C4066350_enty	NOT_FOUND
+narcolepsy	C7578374_enty	NOT_FOUND
+narp syndrome	C6071904_dsyn	NOT_FOUND
+natural sweetener	C3058672_enty	NOT_FOUND
+nausea	C7536491_enty	NOT_FOUND
+ncmd	C9418304_enty	NOT_FOUND
+need for further research and clinical studies	C6903806_enty	NOT_FOUND
+neonates	C7507645_enty	NOT_FOUND
+neonates with achondroplasia	C5760505_enty	NOT_FOUND
+neoplastic disorders	C7421506_dsyn	NOT_FOUND
+nephrological interventions	C0564039_elmt	NOT_FOUND
+nephrology	C7694272_enty	NOT_FOUND
+nephropathy	C0949479_enty	NOT_FOUND
+nervous system	C6774847_enty	NOT_FOUND
+nervous system conditions	C6845621_elmt	NOT_FOUND
+neurodevelopmental disorder	C3097223_dsyn	NOT_FOUND
+neurodevelopmental disorders	C0061083_dsyn	NOT_FOUND
+neuroendocrine tumors	C5356082_enty	NOT_FOUND
+neurologic deficits	C2239399_enty	NOT_FOUND
+neurological deficits	C6180983_enty	NOT_FOUND
+neurological disorder	C9175902_dsyn	NOT_FOUND
+neurological disorders	C1735865_dsyn	NOT_FOUND
+neurological impairments	C1774401_enty	NOT_FOUND
+neurological manifestations	C4848564_elmt	NOT_FOUND
+neurological symptoms	C5343570_enty	NOT_FOUND
+neurosurgical intervention for hydrocephalus	C3227132_elmt	NOT_FOUND
+neutropenia	C1985502_enty	NOT_FOUND
+nitric oxide	C5414269_enty	NOT_FOUND
+nocgus	C3221194_enty	NOT_FOUND
+non pharmacological interventions	C0521542_elmt	NOT_FOUND
+non small cell lung cancer	C0081702_cell	NOT_FOUND
+non steroidal anti inflammatory drugs	C5366910_enty	NOT_FOUND
+noonan like facies	C0947574_enty	NOT_FOUND
+norepinephrine	C2319137_enty	NOT_FOUND
+norgestrel	C2517129_enty	NOT_FOUND
+normal growth and development in infants	C3791203_enty	NOT_FOUND
+normal in patients with hyperuricemia	C5479114_enty	NOT_FOUND
+normal lip anatomy and function	C2471096_elmt	NOT_FOUND
+normal lives with proper treatment	C6182801_enty	NOT_FOUND
+normal metabolic function	C4114192_elmt	NOT_FOUND
+normal or high arched palate	C2982831_enty	NOT_FOUND
+nsaids	C3092460_enty	NOT_FOUND
+nutraceutical compound	C4754957_orch	NOT_FOUND
+nutraceutical supplement	C0669076_enty	NOT_FOUND
+nutritional counseling	C6730163_elmt	NOT_FOUND
+nutritional support	C7526228_elmt	NOT_FOUND
+nystagmus	C1754063_enty	NOT_FOUND
+nystagmus or uncontrolled eye movements	C5129549_enty	NOT_FOUND
+oas	C1172086_enty	NOT_FOUND
+oat3	C1444950_enty	NOT_FOUND
+obesity	C6089663_enty	NOT_FOUND
+occlusive hydrocephalus	C6430769_enty	NOT_FOUND
+occupational therapy	C3133521_elmt	NOT_FOUND
+oculotrichodysplasia	C0273839_enty	NOT_FOUND
+oligodactyly	C2306744_enty	NOT_FOUND
+one in a million individuals	C6333545_elmt	NOT_FOUND
+one in every 100 000 individuals	C3224972_enty	NOT_FOUND
+one in one million individuals	C5853648_elmt	NOT_FOUND
+one in one million individuals worldwide	C5765430_elmt	NOT_FOUND
+ongoing multidisciplinary care	C4267411_enty	NOT_FOUND
+ongoing research	C8738976_enty	NOT_FOUND
+onset	C4038872_enty	NOT_FOUND
+onset of neurologic symptoms in early childhood	C2419764_enty	NOT_FOUND
+open heart surgery	C4112711_enty	NOT_FOUND
+ophthalmic applications	C6899085_elmt	NOT_FOUND
+ophthalmic examinations	C0533105_elmt	NOT_FOUND
+ophthalmological	C7449972_enty	NOT_FOUND
+ophthalmological specialists	C7077808_enty	NOT_FOUND
+ophthalmologists	C4705507_enty	NOT_FOUND
+ophthalmology	C0687456_enty	NOT_FOUND
+opioid analgesic	C3795521_enty	NOT_FOUND
+opmd	C6791321_enty	NOT_FOUND
+oral tyrosine kinase inhibitor	C3140002_aapp	NOT_FOUND
+orange vegetables	C7482148_enty	NOT_FOUND
+orthodontic treatment	C1736616_enty	NOT_FOUND
+orthopedic devices	C4869120_medd	NOT_FOUND
+orthopedic interventions	C5888235_elmt	NOT_FOUND
+orthopedics	C1070173_enty	NOT_FOUND
+orthotic devices	C5989630_medd	NOT_FOUND
+osteoarthritis	C1690933_enty	NOT_FOUND
+osteogenesis imperfecta	C1528162_enty	NOT_FOUND
+osteolytic bone lesions	C2583097_elmt	NOT_FOUND
+osteomalacia	C3312624_enty	NOT_FOUND
+osteomyelitis	C9206214_enty	NOT_FOUND
+osteoporosis	C8086989_enty	NOT_FOUND
+osteosclerosis	C3183045_enty	NOT_FOUND
+osteosclerotic metaphyseal dysplasia	C5844435_enty	NOT_FOUND
+osteotomies	C6163701_enty	NOT_FOUND
+other medications	C9362854_elmt	NOT_FOUND
+other prostaglandin pathways	C1902513_bpoc	NOT_FOUND
+other symptoms	C6954679_enty	NOT_FOUND
+other treatment options	C5603214_elmt	NOT_FOUND
+otitis media	C7377006_enty	NOT_FOUND
+outcomes	C2064396_enty	NOT_FOUND
+ovarian fibrothecomas	C9684268_enty	NOT_FOUND
+over 400 reported cases worldwide	C9436728_enzy	NOT_FOUND
+over 50 reported cases	C3403225_enzy	NOT_FOUND
+overall oral health outcomes	C9546573_enty	NOT_FOUND
+overgrowth of fungal organisms	C8472946_bpoc	NOT_FOUND
+oxcarbazepine	C8397751_enty	NOT_FOUND
+p glycoprotein substrates	C8261684_aapp	NOT_FOUND
+pachygyria associated syndrome	C3295402_dsyn	NOT_FOUND
+pain	C2230168_enty	NOT_FOUND
+pain in affected limbs	C3391706_enty	NOT_FOUND
+pain management strategies	C0353834_enty	NOT_FOUND
+painful chewing	C9475456_enty	NOT_FOUND
+palliative care	C9491393_enty	NOT_FOUND
+palmoplantar keratoderma	C1711091_enty	NOT_FOUND
+pancreas	C5530474_enty	NOT_FOUND
+papular lesions	C5996433_elmt	NOT_FOUND
+parkinson s disease	C8391750_enzy	NOT_FOUND
+partial syndactyly of the fingers and toes	C5588058_enty	NOT_FOUND
+patients	C5139677_enty	NOT_FOUND
+patients with adpkd3	C5500463_enty	NOT_FOUND
+patients with ahdc1 related intellectual disability obstructive sleep apnea mild dysmorphism syndrome	C1759060_dsyn	NOT_FOUND
+patients with apl	C3068610_enty	NOT_FOUND
+patients with nasal septum deviation	C6981230_elmt	NOT_FOUND
+patients with pallister hall syndrome	C9075503_dsyn	NOT_FOUND
+patients with platelet responsiveness to adrenaline	C1244963_enty	NOT_FOUND
+patients with radiolucent stones	C4624058_enty	NOT_FOUND
+patients with thromboembolism	C0618122_enty	NOT_FOUND
+pediatric autoimmune neuropsychiatric disorder	C7851072_dsyn	NOT_FOUND
+pediatric check ups	C8704256_enty	NOT_FOUND
+peripheral neuropathy myopathy hoarseness hearing loss syndrome	C1190394_dsyn	NOT_FOUND
+periventricular heterotopia	C8273274_enty	NOT_FOUND
+persistent cough	C4381423_medd	NOT_FOUND
+persistent ductus arteriosus	C5210437_medd	NOT_FOUND
+persistent intravascular hemolysis	C5075588_medd	NOT_FOUND
+pesifidabs	C1546508_enty	NOT_FOUND
+pharmaceutical intervention	C3731071_elmt	NOT_FOUND
+pharmacological interventions	C4493984_elmt	NOT_FOUND
+pharmacological treatment	C7095651_enty	NOT_FOUND
+phenytoin	C5412220_enty	NOT_FOUND
+pheochromocytoma	C0604857_enty	NOT_FOUND
+pheochromocytoma islet cell tumor syndrome	C5005817_cell	NOT_FOUND
+phs	C9328726_enty	NOT_FOUND
+physical and sensory impairments	C9555537_enty	NOT_FOUND
+physical harm due to sleep attacks	C5376543_enty	NOT_FOUND
+physical therapy	C9513029_enty	NOT_FOUND
+pioglitazone	C5999947_enty	NOT_FOUND
+pitcs	C6887461_enty	NOT_FOUND
+pituitary output of gonadotropins	C9375654_enty	NOT_FOUND
+pl	C2483778_enty	NOT_FOUND
+plasma proteins	C1817622_aapp	NOT_FOUND
+plasma proteins by 50 55	C6181317_aapp	NOT_FOUND
+plastic and reconstructive surgery	C0917508_enty	NOT_FOUND
+pneumonia	C8713640_enty	NOT_FOUND
+polydactyly	C6664687_enty	NOT_FOUND
+polydipsia	C5290928_enty	NOT_FOUND
+polymorphous cutaneous lesions	C4359753_elmt	NOT_FOUND
+polysyndactyly	C0734987_enty	NOT_FOUND
+portal fibrosis	C2430987_enty	NOT_FOUND
+post traumatic stress disorder	C2802197_dsyn	NOT_FOUND
+postprandial blood glucose	C2896526_enty	NOT_FOUND
+potassium containing salt replacements	C5464323_elmt	NOT_FOUND
+potent analgesic effects	C7882075_enty	NOT_FOUND
+potent antiandrogenic effects	C8001689_enty	NOT_FOUND
+potocki shaffer syndrome	C7394989_dsyn	NOT_FOUND
+prader willi syndrome	C3841048_dsyn	NOT_FOUND
+pralatrexate	C1597564_enty	NOT_FOUND
+prednisolone	C3750201_enty	NOT_FOUND
+prednisone	C7204198_enty	NOT_FOUND
+pregnancy	C0302019_enty	NOT_FOUND
+pregnancy complications	C0763589_elmt	NOT_FOUND
+pregnancy termination	C1296743_elmt	NOT_FOUND
+pregnanes	C9748497_enty	NOT_FOUND
+pregnant and lactating women	C2246126_enty	NOT_FOUND
+prenatal injury	C3746273_enty	NOT_FOUND
+presence of amyloid deposits	C6403197_enty	NOT_FOUND
+presence of ghr mutation	C0756785_elmt	NOT_FOUND
+pressure on the spinal cord at the base of the skull	C1546594_enzy	NOT_FOUND
+prevalence	C6532046_enty	NOT_FOUND
+prevalence of cog6 cgd	C9159679_enty	NOT_FOUND
+prevalence of genetic anorectal anomalies	C5322438_enty	NOT_FOUND
+prevalence of pnfa	C8238203_enty	NOT_FOUND
+prevalence of qps	C8224795_enty	NOT_FOUND
+prevalence of this disorder	C7926737_dsyn	NOT_FOUND
+prevalence of ulnar hypoplasia split foot syndrome	C8541757_dsyn	NOT_FOUND
+prevalence of x linked intellectual disability seizures psoriasis syndrome	C7695362_dsyn	NOT_FOUND
+prevent long term cognitive impairments	C3769957_enty	NOT_FOUND
+preventing complications	C5351529_elmt	NOT_FOUND
+prevention	C4060597_elmt	NOT_FOUND
+prevention of pregnancy	C2087944_elmt	NOT_FOUND
+prevention of stroke	C6800897_elmt	NOT_FOUND
+prevention of zinc deficiency	C9620348_elmt	NOT_FOUND
+prevention strategies	C3404527_elmt	NOT_FOUND
+previous joint injury	C1897307_enty	NOT_FOUND
+progressive bilateral retinal and choroidal atrophy	C5739524_enty	NOT_FOUND
+progressive muscle weakness	C5458265_bpoc	NOT_FOUND
+progressive muscular hypotonia	C6054428_enty	NOT_FOUND
+progressive myopathy	C8584469_enty	NOT_FOUND
+prolonged cholestatic jaundice	C5639235_enty	NOT_FOUND
+prominent low set  posteriorly rotated ears	C5827669_enty	NOT_FOUND
+prompt medical attention	C4138576_elmt	NOT_FOUND
+proper functioning of enzymes	C6356457_aapp	NOT_FOUND
+proper mineralization of bones	C6738798_elmt	NOT_FOUND
+prophylaxis and treatment of bacterial infections	C7347740_elmt	NOT_FOUND
+prostaglandins	C9862534_bpoc	NOT_FOUND
+prostate cancer brain cancer susceptibility	C4459587_dsyn	NOT_FOUND
+prostatitis	C3219786_enty	NOT_FOUND
+protecting one s ears from damaging noise	C7504595_enty	NOT_FOUND
+protein	C5774492_aapp	NOT_FOUND
+protein bound	C1890403_aapp	NOT_FOUND
+proteins	C6485470_aapp	NOT_FOUND
+proton pump inhibitors	C1582319_enty	NOT_FOUND
+proximal muscle involvement	C0814046_bpoc	NOT_FOUND
+pseudoarthrogryposis	C0318181_enty	NOT_FOUND
+psychological support	C5880940_enty	NOT_FOUND
+psychomotor developmental delay	C0659886_enty	NOT_FOUND
+ptosis	C9189105_enty	NOT_FOUND
+ptosis of upper lids	C3649588_enty	NOT_FOUND
+pulmonary function tests	C7652787_elmt	NOT_FOUND
+pulmonary hypertension	C4679712_elmt	NOT_FOUND
+pulmonary hypoplasia	C5791963_enty	NOT_FOUND
+purpura simplex	C2451102_enty	NOT_FOUND
+quality of life	C2626609_enty	NOT_FOUND
+quality of life for affected individuals	C3109858_enty	NOT_FOUND
+quality of life for affected patients	C1775412_enty	NOT_FOUND
+quality of life impairments	C1333265_enty	NOT_FOUND
+quality of life issues	C4758346_enty	NOT_FOUND
+quercetin	C9872681_enty	NOT_FOUND
+radial bone defects	C6559486_enty	NOT_FOUND
+radioactive iodine therapy	C2829385_enty	NOT_FOUND
+ragweed hypersensitivity	C0853275_enty	NOT_FOUND
+ramon syndrome	C3154758_dsyn	NOT_FOUND
+rapidly growing vascular lesions	C0982446_elmt	NOT_FOUND
+rare	C5773849_enty	NOT_FOUND
+rare and complex congenital disorder	C1533498_dsyn	NOT_FOUND
+rare and complex disorder	C9950307_dsyn	NOT_FOUND
+rare and complex genetic disorder	C7116867_dsyn	NOT_FOUND
+rare and complex hereditary disorder	C6974785_dsyn	NOT_FOUND
+rare and complex neurodegenerative disorder	C8215178_dsyn	NOT_FOUND
+rare and inherited genetic disorder	C2839379_dsyn	NOT_FOUND
+rare and progressive disorder	C0931532_dsyn	NOT_FOUND
+rare autosomal dominant disorder	C3719209_dsyn	NOT_FOUND
+rare autosomal dominant genetic disorder	C8181563_dsyn	NOT_FOUND
+rare autosomal dominant inherited bone growth disorder	C4170368_dsyn	NOT_FOUND
+rare autosomal recessive condition	C3074533_elmt	NOT_FOUND
+rare autosomal recessive disorder	C1772151_dsyn	NOT_FOUND
+rare autosomal recessive genetic disorder	C7183867_dsyn	NOT_FOUND
+rare autosomal recessive inherited disorder	C6154689_dsyn	NOT_FOUND
+rare autosomal recessive neurodegenerative disease	C1847441_enzy	NOT_FOUND
+rare blood disorder	C6218483_dsyn	NOT_FOUND
+rare condition	C6897548_elmt	NOT_FOUND
+rare congenital anomaly	C6229587_enty	NOT_FOUND
+rare congenital condition	C8249404_elmt	NOT_FOUND
+rare congenital disorder	C1004627_dsyn	NOT_FOUND
+rare congenital or acquired disorder	C3602033_dsyn	NOT_FOUND
+rare degenerative disorder	C4302498_dsyn	NOT_FOUND
+rare disease	C9814788_enzy	NOT_FOUND
+rare disorder	C1490539_dsyn	NOT_FOUND
+rare genetic bone disorder	C1792854_dsyn	NOT_FOUND
+rare genetic condition	C0037409_elmt	NOT_FOUND
+rare genetic congenital disorder	C7252556_dsyn	NOT_FOUND
+rare genetic disease	C9100136_enzy	NOT_FOUND
+rare genetic disorder	C2018652_dsyn	NOT_FOUND
+rare genetic disorders	C3927660_dsyn	NOT_FOUND
+rare genetic eye disease	C3766447_enzy	NOT_FOUND
+rare genetic neurodegenerative disorder	C2878458_dsyn	NOT_FOUND
+rare genetic neurological disorder	C9124746_dsyn	NOT_FOUND
+rare genetic neurometabolic disorder	C8608727_dsyn	NOT_FOUND
+rare genetic progeroid syndrome disorder	C2294539_dsyn	NOT_FOUND
+rare genetic skin pigmentation disorder	C7434722_elmt	NOT_FOUND
+rare genetic vascular disorder	C2683399_dsyn	NOT_FOUND
+rare genetically inherited disorder	C5060222_dsyn	NOT_FOUND
+rare hereditary disorder	C5115919_dsyn	NOT_FOUND
+rare inherited bone disorder	C8601475_dsyn	NOT_FOUND
+rare inherited disease	C4128043_enzy	NOT_FOUND
+rare inherited disorder	C4586798_dsyn	NOT_FOUND
+rare medical condition	C2504365_elmt	NOT_FOUND
+rare multiple congenital anomalies disorder	C7705757_dsyn	NOT_FOUND
+rare neurological disease	C7827147_enzy	NOT_FOUND
+rare neurological disorder	C5930796_dsyn	NOT_FOUND
+rare ophthalmic disorder	C2604116_dsyn	NOT_FOUND
+rare syndrome	C0147281_dsyn	NOT_FOUND
+receptor	C4033966_aapp	NOT_FOUND
+receptors	C1306674_aapp	NOT_FOUND
+reconstruction of the affected area	C0118123_elmt	NOT_FOUND
+recurrent acute pancreatitis	C2682738_enty	NOT_FOUND
+recurrent bacterial infections	C5813529_elmt	NOT_FOUND
+recurrent bcg infections	C6116731_elmt	NOT_FOUND
+recurrent episodes of spontaneous thromboses	C5097358_enty	NOT_FOUND
+recurrent infections	C1800935_elmt	NOT_FOUND
+recurrent painless eye infections	C9886711_elmt	NOT_FOUND
+recurrent respiratory infections	C4949199_elmt	NOT_FOUND
+recurrent sino pulmonary bacterial infections	C0087043_elmt	NOT_FOUND
+recurring infections	C4500740_elmt	NOT_FOUND
+reduce inflammation in the central nervous system	C5911352_elmt	NOT_FOUND
+reduced anxiety	C0341420_enty	NOT_FOUND
+reduced level of platelet activating factor acetylhydrolase	C6334138_aapp	NOT_FOUND
+reduced muscle tone	C2084600_bpoc	NOT_FOUND
+reducing pain and inflammation	C2152246_elmt	NOT_FOUND
+refractive errors	C1135960_enty	NOT_FOUND
+regular checkups	C6979250_enty	NOT_FOUND
+regular follow up with a healthcare provider	C7914126_enty	NOT_FOUND
+rehabilitation	C7566331_elmt	NOT_FOUND
+rehabilitation strategies	C4720470_elmt	NOT_FOUND
+rehabilitation therapy	C1099682_elmt	NOT_FOUND
+rehabilitative care	C0567191_enty	NOT_FOUND
+rehabilitative strategies	C6160910_enty	NOT_FOUND
+relatively normal lives	C7636436_enty	NOT_FOUND
+releasing contractures	C0757533_enty	NOT_FOUND
+renal	C2790331_enty	NOT_FOUND
+renal anomalies	C3270252_enty	NOT_FOUND
+renal blood flow	C2063283_enty	NOT_FOUND
+renal dysgenesis	C3333636_enty	NOT_FOUND
+repeated episodes of otitis media	C2483014_enty	NOT_FOUND
+repeated stress on joints	C9998861_enty	NOT_FOUND
+reported cases	C1050516_enzy	NOT_FOUND
+reported incidence	C6028843_enty	NOT_FOUND
+resection of affected segment	C2256555_elmt	NOT_FOUND
+respiratory complications	C2635197_elmt	NOT_FOUND
+respiratory distress	C8914557_enty	NOT_FOUND
+respiratory support	C7599981_enty	NOT_FOUND
+respiratory therapy	C8677016_enty	NOT_FOUND
+retina	C6071531_enty	NOT_FOUND
+retinal detachment	C3859644_enty	NOT_FOUND
+retinal disorder	C1536353_dsyn	NOT_FOUND
+retinal reattachment surgery	C4717421_enty	NOT_FOUND
+retinoid supplementation therapy	C4250250_elmt	NOT_FOUND
+retinoids	C7476717_enty	NOT_FOUND
+retrognathia	C3771948_enty	NOT_FOUND
+rett syndrome	C5021984_dsyn	NOT_FOUND
+rheumatoid arthritis	C9844387_enty	NOT_FOUND
+rickettsialpox	C5229672_enty	NOT_FOUND
+right heart failure	C7558248_enty	NOT_FOUND
+right sided heart failure	C0688487_enty	NOT_FOUND
+risk factors	C4458680_aapp	NOT_FOUND
+risk factors for developing gerd	C9904049_aapp	NOT_FOUND
+risk factors for developing melanoma	C8433792_aapp	NOT_FOUND
+risk factors for flqts	C9810610_aapp	NOT_FOUND
+risk of hearing loss	C0677797_enty	NOT_FOUND
+risk of morbid obesity	C3622834_enty	NOT_FOUND
+ritonavir	C2809792_enty	NOT_FOUND
+routine and surgical prophylaxis	C3052164_enty	NOT_FOUND
+routine prophylaxis	C8843250_enty	NOT_FOUND
+routine well baby checkups	C5825047_enty	NOT_FOUND
+rpe65 gene	C8396444_enty	NOT_FOUND
+s  typhosa	C1541579_enty	NOT_FOUND
+sacral anomalies	C7945526_enty	NOT_FOUND
+saguenay lac saint jean	C8132224_enty	NOT_FOUND
+salla disease	C0057984_enzy	NOT_FOUND
+salmonella	C2607503_enty	NOT_FOUND
+saturated fatty acid	C8341206_orch	NOT_FOUND
+saudi arabia	C7133950_enty	NOT_FOUND
+scarring	C5875875_enty	NOT_FOUND
+schwannoma	C2089240_enty	NOT_FOUND
+scoliosis	C0711662_enty	NOT_FOUND
+secondary myoclonus	C1916743_enty	NOT_FOUND
+seizure	C1217338_enty	NOT_FOUND
+seizure activity	C9428086_enty	NOT_FOUND
+seizures	C4945546_enty	NOT_FOUND
+sensorineural hearing loss	C1530926_enty	NOT_FOUND
+sensory impairment	C1316141_enty	NOT_FOUND
+sensory organs drug categories	C5952558_bpoc	NOT_FOUND
+serious complications	C3671982_elmt	NOT_FOUND
+serotonin	C0538039_enty	NOT_FOUND
+serotonin production	C9555987_elmt	NOT_FOUND
+serotonin receptor 5 ht2a	C5146221_aapp	NOT_FOUND
+serotonin transporters	C5512228_aapp	NOT_FOUND
+serum	C1654502_enty	NOT_FOUND
+serum albumin	C1990026_enty	NOT_FOUND
+severe	C2261590_enty	NOT_FOUND
+severe acute pancreatitis	C6511780_enty	NOT_FOUND
+severe congenital night blindness	C5244044_enty	NOT_FOUND
+severe covid 19 symptoms	C4350265_enty	NOT_FOUND
+severe dermatitis multiple allergies metabolic wasting syndrome	C5747075_dsyn	NOT_FOUND
+severe early onset retinitis pigmentosa	C9293753_enty	NOT_FOUND
+severe fatigue	C9409124_enty	NOT_FOUND
+severe hypotonia during the neonatal period	C2536486_enty	NOT_FOUND
+severe pain in the upper extremity	C5026569_enty	NOT_FOUND
+severe presentations	C2528862_elmt	NOT_FOUND
+severe symptoms	C2481736_enty	NOT_FOUND
+sex	C3137323_enty	NOT_FOUND
+sglt2 inhibitors	C8727229_enty	NOT_FOUND
+short  fragmented phrases	C5302033_enzy	NOT_FOUND
+short stature	C7940235_enty	NOT_FOUND
+shortened life span	C2521428_enty	NOT_FOUND
+shortened lifespan	C3809922_enty	NOT_FOUND
+shortness of breath	C2622186_enty	NOT_FOUND
+sickle cell anemia	C5006444_cell	NOT_FOUND
+side effects such as headache	C9032618_enty	NOT_FOUND
+significant delays in motor and cognitive milestones	C2208346_enty	NOT_FOUND
+significant impairment of cognitive function	C0921932_elmt	NOT_FOUND
+significant vision loss	C0299041_elmt	NOT_FOUND
+sinus thrombosis	C1196468_enty	NOT_FOUND
+six2 related frontonasal dysplasia	C1932043_enty	NOT_FOUND
+sj gren syndrome	C5138854_dsyn	NOT_FOUND
+sjogren syndrome	C1628437_dsyn	NOT_FOUND
+skeletal abnormalities	C5210231_enty	NOT_FOUND
+skeletal anomalies	C6001052_enty	NOT_FOUND
+skeletal defects	C0383985_enty	NOT_FOUND
+skeletal dysplasia	C8167803_enty	NOT_FOUND
+skeletal problems	C8845170_enty	NOT_FOUND
+skin	C8467491_enty	NOT_FOUND
+skin lesions	C4585001_elmt	NOT_FOUND
+skincare products	C4950790_enty	NOT_FOUND
+skull	C2921355_enty	NOT_FOUND
+small cell lung cancer  sclc	C5361202_cell	NOT_FOUND
+small head circumference	C7989165_enty	NOT_FOUND
+small intestine	C3999620_enty	NOT_FOUND
+smith magenis syndrome	C1962739_dsyn	NOT_FOUND
+smoking	C7264193_enty	NOT_FOUND
+soft tissue bleeding	C9623498_bpoc	NOT_FOUND
+solid	C7480209_enty	NOT_FOUND
+solid at room temperature	C0434199_enty	NOT_FOUND
+some cases	C3483139_enzy	NOT_FOUND
+some medications	C3582944_elmt	NOT_FOUND
+sparse eyelashes	C5683793_enty	NOT_FOUND
+sparse or absent hair on the eyebrows	C3427167_enty	NOT_FOUND
+spasticity	C3531759_enty	NOT_FOUND
+specialists from various fields	C6148784_enty	NOT_FOUND
+specialists in physical therapy	C8408438_enty	NOT_FOUND
+specific educational strategies for intellectual development	C0167805_elmt	NOT_FOUND
+specific hormonal therapies	C5736820_enty	NOT_FOUND
+specific pediatric multidisciplinary approach	C4335685_enty	NOT_FOUND
+specific receptors	C9077842_aapp	NOT_FOUND
+specific therapeutic interventions available	C3284870_elmt	NOT_FOUND
+speech delay	C6287683_enty	NOT_FOUND
+speech therapy	C1810305_enty	NOT_FOUND
+spondyloepiphyseal dysplasia	C2419803_enty	NOT_FOUND
+spondylometaphyseal dysplasia cone rod dystrophy syndrome	C6527758_dsyn	NOT_FOUND
+sreat	C0110820_enty	NOT_FOUND
+stabilizing bone density	C2868116_enty	NOT_FOUND
+stage 3 chronic kidney disease	C4351570_enzy	NOT_FOUND
+staphylococcal infections	C9201664_elmt	NOT_FOUND
+status epilepticus	C9806875_enty	NOT_FOUND
+stiff skin syndrome	C3460943_dsyn	NOT_FOUND
+stiffness	C8841397_enty	NOT_FOUND
+stiffness in the hands	C2374906_enty	NOT_FOUND
+stiffness in the neck	C5494806_enty	NOT_FOUND
+stocco dos santos type	C1992593_enty	NOT_FOUND
+streptokinase	C8707208_aapp	NOT_FOUND
+stroke	C7437575_enty	NOT_FOUND
+stroke volume	C2763749_enty	NOT_FOUND
+structural	C3339763_enty	NOT_FOUND
+sulfamethazine	C6193006_enty	NOT_FOUND
+sulfamethoxazole	C9357419_enty	NOT_FOUND
+sulfonamide antibiotic	C6468202_enty	NOT_FOUND
+supplements	C6262479_enty	NOT_FOUND
+supportive	C0380871_enty	NOT_FOUND
+supportive care	C6272249_enty	NOT_FOUND
+supportive care for nail abnormalities	C7782299_enty	NOT_FOUND
+supportive care for renal dysfunction	C5260870_elmt	NOT_FOUND
+supportive care for underlying systemic complications	C9975245_elmt	NOT_FOUND
+surgeons	C3617142_enty	NOT_FOUND
+surgery	C8368747_enty	NOT_FOUND
+surgery for cataracts	C1470118_enty	NOT_FOUND
+surgery to remove bony structures	C5121423_enty	NOT_FOUND
+surgical	C4983587_enty	NOT_FOUND
+surgical correction	C0262004_elmt	NOT_FOUND
+surgical correction for severe cardiac malformations	C6185732_elmt	NOT_FOUND
+surgical correction of craniosynostosis	C1204599_elmt	NOT_FOUND
+surgical excision or laser ablation	C8250974_enzy	NOT_FOUND
+surgical intervention	C3667983_elmt	NOT_FOUND
+surgical intervention for severe cases	C7503439_enzy	NOT_FOUND
+surgical interventions	C4810492_elmt	NOT_FOUND
+surgical procedure	C6327484_enty	NOT_FOUND
+surveillance to mitigate risks of related conditions	C5916387_elmt	NOT_FOUND
+survival	C7817272_enty	NOT_FOUND
+survival into teenage years	C6195104_enty	NOT_FOUND
+swallowing skills	C4624206_enty	NOT_FOUND
+sweden	C3545070_enty	NOT_FOUND
+swelling	C9920421_enty	NOT_FOUND
+swelling in the legs and ankles	C7619196_enty	NOT_FOUND
+swelling of lymph nodes	C0240899_enty	NOT_FOUND
+symptomatic	C8765897_enty	NOT_FOUND
+symptomatic treatment of neuropathic pain	C9480931_enty	NOT_FOUND
+symptoms	C4537394_enty	NOT_FOUND
+symptoms of hypopigmentation punctate palmoplantar keratoderma syndrome	C3138574_elmt	NOT_FOUND
+symptoms of myalgia	C2748726_enty	NOT_FOUND
+symptoms of parkinson s disease	C5774113_enzy	NOT_FOUND
+symptoms related to anorectal malformations	C6313918_elmt	NOT_FOUND
+symptoms until later in adulthood	C9128326_enty	NOT_FOUND
+syndrome	C4314442_dsyn	NOT_FOUND
+systemic disorder	C5204418_dsyn	NOT_FOUND
+systemic retinoids	C3600699_enty	NOT_FOUND
+t b  scid	C7898721_enty	NOT_FOUND
+t2 hyperintensities	C7440198_enty	NOT_FOUND
+takotsubo cardiomyopathy	C6341379_enty	NOT_FOUND
+tall stature	C7989825_enty	NOT_FOUND
+talonavicular coalition	C1862549_elmt	NOT_FOUND
+tau	C2879143_enty	NOT_FOUND
+tau proteins	C3391532_aapp	NOT_FOUND
+tcof1	C7519449_enty	NOT_FOUND
+tenascin x deficiency	C6719085_dsyn	NOT_FOUND
+tertiary amine	C3890633_enty	NOT_FOUND
+testicular anomalies	C2887045_enty	NOT_FOUND
+testosterone	C4061177_enty	NOT_FOUND
+testosterone propionate	C9639740_elmt	NOT_FOUND
+tetracycline	C9226621_enty	NOT_FOUND
+tfr	C0863872_enty	NOT_FOUND
+the age of 20	C9373662_enty	NOT_FOUND
+the diagnosis	C8357204_enty	NOT_FOUND
+the diagnosis of spondyloepimetaphyseal dysplasia abnormal dentition syndrome	C6153029_elmt	NOT_FOUND
+the mutation to their offspring	C3693136_elmt	NOT_FOUND
+the promoter element of slc16a1	C9861826_elmt	NOT_FOUND
+the united states	C4466020_enty	NOT_FOUND
+their doctor	C5578362_enty	NOT_FOUND
+their families	C1395750_enty	NOT_FOUND
+their symptoms	C4826594_enty	NOT_FOUND
+theophylline	C2512897_enty	NOT_FOUND
+therapies	C0157341_enty	NOT_FOUND
+therapy	C0848381_enty	NOT_FOUND
+thiamine responsive megaloblastic anemia syndrome	C6164278_dsyn	NOT_FOUND
+thick  sticky mucus production	C4891333_elmt	NOT_FOUND
+thimerosal	C9115323_enty	NOT_FOUND
+thin corpus callosum	C4382260_enty	NOT_FOUND
+this disorder	C6180979_dsyn	NOT_FOUND
+this rare condition	C0988193_elmt	NOT_FOUND
+this rare disorder	C2982512_dsyn	NOT_FOUND
+this response	C0432542_enty	NOT_FOUND
+thoracic abnormalities	C8701294_enty	NOT_FOUND
+those raised as male	C0029807_enty	NOT_FOUND
+thrombocytopenia	C9104105_enty	NOT_FOUND
+thromboxanes	C4897309_enty	NOT_FOUND
+thyroid disease	C4664588_enzy	NOT_FOUND
+thyroid gland	C8901008_bpoc	NOT_FOUND
+thyroid hormone	C0469612_enty	NOT_FOUND
+thyroidal hormone t3	C4063052_enty	NOT_FOUND
+timely and effective management	C0295430_enty	NOT_FOUND
+tissue death	C9683509_bpoc	NOT_FOUND
+tobacco use	C8236896_enty	NOT_FOUND
+toe syndactyly	C2345252_enty	NOT_FOUND
+tooth hypoplasia	C0254455_enty	NOT_FOUND
+topical ointment for corticosteroid responsive dermatoses	C5498238_enty	NOT_FOUND
+toxic properties	C3698096_enty	NOT_FOUND
+tracheal stent insertion	C9912583_elmt	NOT_FOUND
+transient bullous dermolysis of the newborn	C4933441_enty	NOT_FOUND
+transitional b cells	C2022751_elmt	NOT_FOUND
+transpeptidases	C8000516_enzy	NOT_FOUND
+treating bacterial infections such as staphylococcus aureus	C9082401_elmt	NOT_FOUND
+treating hearing loss can have a positive effect on cognitive performance	C1646810_enty	NOT_FOUND
+treating hypothyroidism	C4507384_enty	NOT_FOUND
+treatment	C3362538_enty	NOT_FOUND
+treatment approaches	C0695390_enty	NOT_FOUND
+treatment for diabetes mellitus type 2	C3518718_dsyn	NOT_FOUND
+treatment for occult macular dystrophy	C9822294_enty	NOT_FOUND
+treatment for qps	C1108627_enty	NOT_FOUND
+treatment of cancer	C6830871_dsyn	NOT_FOUND
+treatment of chronic thromboembolic pulmonary hypertension  cteph	C3169616_elmt	NOT_FOUND
+treatment of concomitant conditions	C7819632_elmt	NOT_FOUND
+treatment of infection	C6822634_elmt	NOT_FOUND
+treatment of infections	C8630988_elmt	NOT_FOUND
+treatment of inoperable adrenocortical tumors	C3733153_enty	NOT_FOUND
+treatment of moderate to severe pain	C9504362_enty	NOT_FOUND
+treatment of non small cell lung cancer	C4965260_cell	NOT_FOUND
+treatment of ovarian cancer	C5923308_dsyn	NOT_FOUND
+treatment of pulmonary arterial hypertension  pah	C8644976_elmt	NOT_FOUND
+treatment of schizophrenia	C2332046_enty	NOT_FOUND
+treatment of thyroid disorders	C7480053_dsyn	NOT_FOUND
+treatment of type ii diabetes mellitus	C9759104_dsyn	NOT_FOUND
+treatment option for various cancers	C8418946_elmt	NOT_FOUND
+treatment options	C9524403_elmt	NOT_FOUND
+treatment options for rheumatoid nodulosis	C7573306_elmt	NOT_FOUND
+treatment strategies	C2312380_enty	NOT_FOUND
+treatments	C4953320_enty	NOT_FOUND
+true	C7853648_enty	NOT_FOUND
+tsc1	C6576236_enty	NOT_FOUND
+tumor	C0995272_enty	NOT_FOUND
+tumor size	C7537182_enty	NOT_FOUND
+tumor spread to other organs	C2999890_bpoc	NOT_FOUND
+tumor stage	C4158121_enty	NOT_FOUND
+tumors	C3722730_enty	NOT_FOUND
+two families	C9576660_enty	NOT_FOUND
+type 1 diabetes	C2827032_dsyn	NOT_FOUND
+type 2 diabetes mellitus	C0870376_dsyn	NOT_FOUND
+type i	C4719132_enty	NOT_FOUND
+tyrosine	C8658693_enty	NOT_FOUND
+ulcers of oral mucous membranes	C3848529_bpoc	NOT_FOUND
+ulnar deviation of the hands	C5972123_elmt	NOT_FOUND
+uncontrolled cell growth	C2374281_cell	NOT_FOUND
+underestimated	C7611035_enty	NOT_FOUND
+underlying causes	C3121759_enty	NOT_FOUND
+underlying mechanisms	C2810396_enty	NOT_FOUND
+understand genetic basis	C0138859_enty	NOT_FOUND
+unique electrocardiographic abnormalities	C0758755_enty	NOT_FOUND
+united states	C2176925_enty	NOT_FOUND
+unknown prevalence	C9223803_enty	NOT_FOUND
+up to 80  of cases	C2122112_enzy	NOT_FOUND
+upper limb anomalies	C6131053_enty	NOT_FOUND
+urinary frequency	C4641101_enty	NOT_FOUND
+urogenital abnormalities	C2083527_enty	NOT_FOUND
+us food and drug administration  fda	C5254869_elmt	NOT_FOUND
+vaccination against influenza	C2132109_elmt	NOT_FOUND
+vaccines	C1531129_enty	NOT_FOUND
+vaginal anomalies	C1295383_enty	NOT_FOUND
+vaginal atrophy	C7343250_enty	NOT_FOUND
+vaginal infections	C4502418_elmt	NOT_FOUND
+valvular pulmonary stenosis	C3560934_enty	NOT_FOUND
+van der woude syndrome	C6628856_dsyn	NOT_FOUND
+variable combinations of nonspherocytic hemolytic anemia	C1168365_elmt	NOT_FOUND
+variable degrees of intellectual disability	C9143181_enty	NOT_FOUND
+variable degrees of neutropenia	C3510276_enty	NOT_FOUND
+variable tall stature	C4163280_enty	NOT_FOUND
+various abnormalities	C2901528_enty	NOT_FOUND
+various complications	C0576196_elmt	NOT_FOUND
+various drug categories	C9700468_enty	NOT_FOUND
+various formulations	C0116890_elmt	NOT_FOUND
+various indications	C6622932_elmt	NOT_FOUND
+various metabolic functions	C7851473_elmt	NOT_FOUND
+various symptoms	C0190822_enty	NOT_FOUND
+various treatments	C9247035_enty	NOT_FOUND
+various types of seizures	C3888015_enty	NOT_FOUND
+ventricular septal defects	C4810299_enty	NOT_FOUND
+ventriculomegaly cystic kidney disease	C6679103_enzy	NOT_FOUND
+vestibular symptoms	C6887168_enty	NOT_FOUND
+vici syndrome	C9304884_dsyn	NOT_FOUND
+viral and fungal	C2821540_enty	NOT_FOUND
+viral hepatitis	C0761213_enty	NOT_FOUND
+visible signs of craniosynostosis	C4087270_enty	NOT_FOUND
+vision loss	C5848816_elmt	NOT_FOUND
+visual impairment	C4055231_enty	NOT_FOUND
+visual impairments	C0817525_enty	NOT_FOUND
+visual outcomes	C7111145_enty	NOT_FOUND
+visualizing the pituitary gland	C5863387_bpoc	NOT_FOUND
+visualizing the sella turcica	C2999831_enty	NOT_FOUND
+vitamin a	C1859694_enty	NOT_FOUND
+vitamin d	C9114136_enty	NOT_FOUND
+vitamin e supplementation	C5485102_elmt	NOT_FOUND
+vitamin k	C2188211_enty	NOT_FOUND
+vka	C0562255_enty	NOT_FOUND
+vocal tics	C1060420_enty	NOT_FOUND
+vomiting	C3001830_enty	NOT_FOUND
+voxelotor	C1957600_enty	NOT_FOUND
+warfarin	C6622176_enty	NOT_FOUND
+weakness	C1515455_enty	NOT_FOUND
+weakness and wasting of limb and bulbar muscles	C9199974_bpoc	NOT_FOUND
+weakness of the muscles	C4405946_bpoc	NOT_FOUND
+weight loss	C9739556_enty	NOT_FOUND
+wide	C2013722_enty	NOT_FOUND
+wilson s disease	C2840786_enzy	NOT_FOUND
+with only a handful of reported cases	C9937310_enzy	NOT_FOUND
+with only fewer than 30 reported cases	C0122766_enzy	NOT_FOUND
+women	C6739342_enty	NOT_FOUND
+women should see their doctor if	C4031084_enty	NOT_FOUND
+worldwide	C7202860_enty	NOT_FOUND
+x linked	C8690019_enty	NOT_FOUND
+x linked disorder	C7062497_dsyn	NOT_FOUND
+x linked dystonia parkinsonism	C4075635_enty	NOT_FOUND
+x linked inheritance	C1743985_enty	NOT_FOUND
+x linked intellectual disability plagiocephaly syndrome	C0004261_dsyn	NOT_FOUND
+x linked recessive inheritance pattern	C6707253_enty	NOT_FOUND
+yellow vegetables	C4961354_enty	NOT_FOUND
+young and middle aged adults	C6769764_enty	NOT_FOUND
+zinc	C1356256_elmt	NOT_FOUND
+zinc deficiency	C2569626_elmt	NOT_FOUND
+zn	C5154350_enty	NOT_FOUND

@@ -72,8 +72,7 @@ def main(args):
 
     # Add reciprocal relations (best practice for KGE)
     if args.use_reciprocal:
-        # Count unique relations (handle both string and numeric relations)
-        num_relations_original = train[1].nunique()
+        num_relations_original = train[1].nunique()  # Count unique relations
         print(f"Adding reciprocal relations... Original relations: {num_relations_original}")
 
         train, num_relations = add_reciprocal_relations(train, num_relations_original)
@@ -157,7 +156,8 @@ def main(args):
                         pretrained_text_embeddings=text_embeddings,
                         pretrained_domain_embeddings=ontology_embeddings,
                         freeze=freeze,
-                        w=args.w)
+                        w=args.w,
+                        use_n3_reg=args.use_n3_reg)
 
 
     if torch.cuda.is_available():
@@ -342,6 +342,11 @@ if __name__ == "__main__":
         type=float,
         default=0.5,
         help="The weight for fusing embedings",
+    )
+
+    parser.add_argument(
+        "--use_n3_reg", action="store_true",
+        help="Use N3 regularization instead of L2 (recommended for ComplEx)"
     )
 
     parser.add_argument(

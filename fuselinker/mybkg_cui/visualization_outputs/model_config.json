@@ -1,0 +1,8 @@
+{
+  "model_type": "LinkPredict",
+  "num_entities": 28888,
+  "num_relations": 4078,
+  "embedding_dim": 200,
+  "has_text_embeddings": false,
+  "has_domain_embeddings": false
+}

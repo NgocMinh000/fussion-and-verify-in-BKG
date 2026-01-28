@@ -1,0 +1,33 @@
+{
+  "relation_distribution": {
+    "('head', 'parent-child', 'tail')": 41114,
+    "('head', 'expression present', 'tail')": 37473,
+    "('head', 'associated with', 'tail')": 8617,
+    "('head', 'contraindication', 'tail')": 4610,
+    "('head', 'interacts with', 'tail')": 11130,
+    "('head', 'synergistic interaction', 'tail')": 15284,
+    "('head', 'ppi', 'tail')": 3522,
+    "('head', 'phenotype present', 'tail')": 511,
+    "('head', 'indication', 'tail')": 1595,
+    "('head', 'off-label use', 'tail')": 673,
+    "('head', 'expression absent', 'tail')": 501,
+    "('head', 'carrier', 'tail')": 8,
+    "('head', 'side effect', 'tail')": 218,
+    "('head', 'enzyme', 'tail')": 47,
+    "('head', 'target', 'tail')": 179,
+    "('head', 'transporter', 'tail')": 6
+  },
+  "entity_degree_stats": {
+    "mean": 16.840636113534188,
+    "std": 65.52030464514367,
+    "min": 0,
+    "max": 2123,
+    "median": 4.0
+  },
+  "embedding_stats": {
+    "entity_emb_mean": -0.052775997668504715,
+    "entity_emb_std": 0.5742857456207275,
+    "relation_emb_mean": -0.06485392898321152,
+    "relation_emb_std": 0.19537320733070374
+  }
+}

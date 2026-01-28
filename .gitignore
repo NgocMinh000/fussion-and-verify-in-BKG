@@ -7,7 +7,7 @@ __pycache__/
 
 # Virtual environments
 venv/
-env/
+.env
 ENV/
 
 # IDE
@@ -29,3 +29,6 @@ engine/
 
 # Logs
 *.log
+
+kg.csv
+mondo.obo

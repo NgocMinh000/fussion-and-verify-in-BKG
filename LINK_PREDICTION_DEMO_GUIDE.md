@@ -2,26 +2,33 @@
 
 ## Giới thiệu
 
-Tool `demo_link_prediction.py` giúp bạn kiểm tra chất lượng dự đoán của model đã train bằng cách:
+Tool `demo_link_prediction.py` giúp bạn kiểm tra chất lượng dự đoán của **model đã train** bằng cách:
+- **Load trained model weights** từ file .pth
+- **Sử dụng model's scoring function** (ComplEx, DistMult, TransE, ConvE)
 - Che đi head hoặc tail entity
 - Dự đoán entity bị che
 - **Kiểm tra đáp án đúng nằm ở vị trí (rank) thứ bao nhiêu**
 
+⚠️ **QUAN TRỌNG**: Tool này **YÊU CẦU** model state file (.pth) đã được train. Không thể chạy nếu chưa có model weights!
+
 ## Quick Start
 
-### 1. Demo với test triples ngẫu nhiên
+### 1. Demo với test triples ngẫu nhiên (TỪ TEST SET THẬT)
 
 ```bash
 conda activate fuselinker
 cd ~/fussion-and-verify-in-BKG
 
-# Demo 5 triples ngẫu nhiên từ test set
+# Demo 5 triples ngẫu nhiên từ TEST SET
 python demo_link_prediction.py \
     --model_dir fuselinker-complex \
     --data primekg \
+    --model_state_file primekg_complex_model.pth \
     --num_samples 5 \
     --top_k 10
 ```
+
+⚠️ **Lưu ý**: Thay `primekg_complex_model.pth` bằng tên file model .pth của bạn!
 
 ### 2. Demo với triple cụ thể
 
@@ -30,10 +37,33 @@ python demo_link_prediction.py \
 python demo_link_prediction.py \
     --model_dir fuselinker-complex \
     --data primekg \
+    --model_state_file primekg_complex_model.pth \
     --head "Gene_APOE" \
     --relation "ppi" \
     --tail "Gene_APP" \
     --top_k 20
+```
+
+## Tìm Model State File của bạn
+
+Model state file (.pth) được tạo khi bạn train model với argument `--model_state_file`:
+
+```bash
+# Ví dụ khi train:
+python main.py \
+    --data primekg \
+    --model_state_file primekg_complex_model.pth \
+    ...
+```
+
+File sẽ được lưu trong thư mục hiện tại. Kiểm tra:
+
+```bash
+# Tìm file .pth trong project
+find . -name "*.pth" -type f
+
+# Hoặc kiểm tra trong model directory
+ls fuselinker-complex/*.pth
 ```
 
 ## Output Ví dụ
@@ -113,8 +143,9 @@ Top-10 Head Predictions:
 
 | Argument | Mô tả | Ví dụ |
 |----------|-------|-------|
-| `--model_dir` | Thư mục chứa trained model | `fuselinker-complex` |
-| `--data` | Thư mục data | `primekg`, `suppkg`, `mybkg_cui` |
+| `--model_dir` | Thư mục chứa model architecture | `fuselinker-complex` |
+| `--data` | Tên thư mục data | `primekg`, `suppkg`, `mybkg_cui` |
+| `--model_state_file` | **⚠️ BẮT BUỘC** - Path đến file .pth đã train | `primekg_model.pth` |
 
 ### Optional Arguments
 
@@ -123,8 +154,9 @@ Top-10 Head Predictions:
 | `--head` | Head entity name (cho specific triple demo) | None | `"Gene_APOE"` |
 | `--relation` | Relation name (cho specific triple demo) | None | `"ppi"` |
 | `--tail` | Tail entity name (cho specific triple demo) | None | `"Gene_APP"` |
-| `--num_samples` | Số triples ngẫu nhiên để demo | 5 | `10` |
+| `--num_samples` | Số triples ngẫu nhiên **TỪ TEST SET** | 5 | `10` |
 | `--top_k` | Số predictions hiển thị | 10 | `20` |
+| `--use_cuda` | Sử dụng CUDA nếu có | `False` | `True` |
 
 ## Các Use Cases
 
@@ -272,7 +304,7 @@ Các files này được tạo tự động khi:
 ### Workflow: Train → Demo
 
 ```bash
-# Step 1: Train model
+# Step 1: Train model (QUAN TRỌNG - phải train model trước!)
 conda activate fuselinker
 cd ~/fussion-and-verify-in-BKG/fuselinker-complex
 
@@ -285,15 +317,16 @@ python main.py \
     --w 0.75 \
     --use_cuda True \
     --use_n3_reg \
-    --model_state_file primekg_complex_model.pth
+    --model_state_file primekg_complex_model.pth  # ⚠️ Tên file này quan trọng!
 
-# Step 2: Demo predictions
+# Step 2: Demo predictions với TRAINED MODEL
 cd ~/fussion-and-verify-in-BKG
 
-# Demo random samples
+# Demo random samples từ TEST SET
 python demo_link_prediction.py \
     --model_dir fuselinker-complex \
     --data primekg \
+    --model_state_file primekg_complex_model.pth \
     --num_samples 10 \
     --top_k 10
 
@@ -301,6 +334,7 @@ python demo_link_prediction.py \
 python demo_link_prediction.py \
     --model_dir fuselinker-complex \
     --data primekg \
+    --model_state_file primekg_complex_model.pth \
     --head "Gene_APOE" \
     --relation "ppi" \
     --tail "Gene_APP" \
@@ -308,6 +342,23 @@ python demo_link_prediction.py \
 ```
 
 ## Troubleshooting
+
+### Lỗi: "Model state file not found"
+
+**Nguyên nhân**: Chưa chỉ định đúng path đến file .pth hoặc chưa train model
+
+**Giải pháp**:
+```bash
+# Kiểm tra file .pth có tồn tại không
+ls -la primekg_complex_model.pth
+
+# Hoặc tìm trong thư mục
+find . -name "*.pth"
+
+# Nếu chưa có file .pth, bạn PHẢI train model trước!
+cd fuselinker-complex
+python main.py --data primekg ... --model_state_file primekg_model.pth
+```
 
 ### Lỗi: "Could not find entities/relation"
 
@@ -329,19 +380,22 @@ with open('fuselinker-complex/primekg/relation2index.pkl', 'rb') as f:
     print("Relations:", list(relation2index.keys()))
 ```
 
-### Lỗi: "visualization_outputs not found"
+### Lỗi: "No test triples available"
 
-**Nguyên nhân**: Model chưa export visualization data
+**Nguyên nhân**: Không tìm thấy test data
 
-**Giải pháp**: Train lại model, visualization outputs sẽ được export tự động
+**Giải pháp**:
+- Đảm bảo file `test.tsv` hoặc `visualization_outputs/test_graph.json` tồn tại
+- Train model sẽ tự động tạo visualization outputs
 
 ### Demo chạy chậm
 
-**Nguyên nhân**: Scoring tất cả entities mất thời gian với dataset lớn
+**Nguyên nhân**: Scoring tất cả entities mất thời gian với dataset lớn (vd: 14,903 entities)
 
 **Giải pháp**:
 - Giảm `--num_samples` xuống 3-5
 - Chỉ demo specific triples thay vì random samples
+- Dùng `--use_cuda True` nếu có GPU
 
 ## Best Practices
 
@@ -378,21 +432,44 @@ python demo_link_prediction.py \
 
 ## Summary
 
-✅ **Quick demo**: `python demo_link_prediction.py --model_dir fuselinker-complex --data primekg`
+⚠️ **YÊU CẦU**: Phải có file .pth (trained model weights)!
 
-✅ **Check specific triple**: Add `--head`, `--relation`, `--tail`
+✅ **Quick demo**:
+```bash
+python demo_link_prediction.py \
+    --model_dir fuselinker-complex \
+    --data primekg \
+    --model_state_file primekg_model.pth
+```
 
-✅ **See more predictions**: Add `--top_k 20`
+✅ **Tính năng**:
+- ✓ Load TRAINED model weights (.pth file)
+- ✓ Dùng model's scoring function (ComplEx, DistMult, TransE, ConvE)
+- ✓ Random samples LẤY TỪ TEST SET THẬT (không bịa!)
+- ✓ Hiển thị rank của đáp án đúng
+- ✓ Filtered evaluation (loại known triples)
 
 ✅ **Rank indicators**: 🎉 (rank 1), ✓ (top 3), ○ (top 10), ✗ (>10)
 
-✅ **Files needed**: entity/relation pkl files + visualization_outputs/
+✅ **Files cần thiết**:
+- **Model state file (.pth)** - BẮT BUỘC
+- entity2index.pkl, index2entity.pkl
+- relation2index.pkl, index2relation.pkl
+- test.tsv hoặc visualization_outputs/test_graph.json
 
 **Cách đơn giản nhất để kiểm tra model:**
 ```bash
 conda activate fuselinker
 cd ~/fussion-and-verify-in-BKG
-python demo_link_prediction.py --model_dir fuselinker-complex --data primekg
+
+# Tìm file .pth của bạn
+find . -name "*.pth"
+
+# Chạy demo (thay YOUR_MODEL.pth bằng tên file thật)
+python demo_link_prediction.py \
+    --model_dir fuselinker-complex \
+    --data primekg \
+    --model_state_file YOUR_MODEL.pth
 ```
 
-Tool sẽ hiển thị 5 random test triples với predictions và **rank của đáp án đúng**! 🎯
+Tool sẽ hiển thị 5 **RANDOM TEST TRIPLES THẬT** với predictions và **rank của đáp án đúng**! 🎯

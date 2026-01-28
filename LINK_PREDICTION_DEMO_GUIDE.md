@@ -1,0 +1,398 @@
+# Hướng dẫn Demo Link Prediction - Kiểm tra Dự đoán và Rank
+
+## Giới thiệu
+
+Tool `demo_link_prediction.py` giúp bạn kiểm tra chất lượng dự đoán của model đã train bằng cách:
+- Che đi head hoặc tail entity
+- Dự đoán entity bị che
+- **Kiểm tra đáp án đúng nằm ở vị trí (rank) thứ bao nhiêu**
+
+## Quick Start
+
+### 1. Demo với test triples ngẫu nhiên
+
+```bash
+conda activate fuselinker
+cd ~/fussion-and-verify-in-BKG
+
+# Demo 5 triples ngẫu nhiên từ test set
+python demo_link_prediction.py \
+    --model_dir fuselinker-complex \
+    --data primekg \
+    --num_samples 5 \
+    --top_k 10
+```
+
+### 2. Demo với triple cụ thể
+
+```bash
+# Kiểm tra một triple cụ thể
+python demo_link_prediction.py \
+    --model_dir fuselinker-complex \
+    --data primekg \
+    --head "Gene_APOE" \
+    --relation "ppi" \
+    --tail "Gene_APP" \
+    --top_k 20
+```
+
+## Output Ví dụ
+
+### Demo ngẫu nhiên
+
+```
+================================================================================
+LINK PREDICTION DEMO - 5 Random Test Triples
+================================================================================
+
+════════════════════════════════════════════════════════════════════════════════
+Sample 1/5: (Gene_APP) --[ppi]--> (Gene_BACE1)
+════════════════════════════════════════════════════════════════════════════════
+
+🎯 Task: Predict TAIL given (Gene_APP, ppi, ?)
+
+Top-10 Predictions:
+  1. Gene_BACE1                                (score: 0.8923) ✓✓✓ [CORRECT]
+  2. Gene_PSEN1                                (score: 0.8567)
+  3. Gene_MAPT                                 (score: 0.8234)
+  4. Gene_GSK3B                                (score: 0.7891)
+  5. Gene_APOE                                 (score: 0.7654)
+  ... (5 more predictions)
+
+✓ Ground Truth: Gene_BACE1
+✓ Rank: 1 / 14903
+  🎉 Rank 1 - Perfect prediction!
+```
+
+### Demo triple cụ thể
+
+```
+================================================================================
+LINK PREDICTION DEMO
+================================================================================
+
+Test Triple:
+  (Gene_APOE) --[ppi]--> (Gene_APP)
+  Indices: (1234, 5, 5678)
+
+────────────────────────────────────────────────────────────────────────────────
+Task 1: Predict TAIL
+Given: (Gene_APOE) --[ppi]--> (?)
+────────────────────────────────────────────────────────────────────────────────
+
+Top-10 Tail Predictions:
+   1. Gene_PSEN1                              (score: 0.9123)
+   2. Gene_MAPT                               (score: 0.8956)
+   3. Gene_APP                                (score: 0.8734) ✓✓✓
+   4. Gene_GSK3B                              (score: 0.8421)
+   ...
+
+✓ Ground Truth: Gene_APP
+✓ Rank of Ground Truth: 3 / 14903
+  ✓ Rank 3 - In top 3 (Hits@3)
+
+────────────────────────────────────────────────────────────────────────────────
+Task 2: Predict HEAD
+Given: (?) --[ppi]--> (Gene_APP)
+────────────────────────────────────────────────────────────────────────────────
+
+Top-10 Head Predictions:
+   1. Gene_APOE                               (score: 0.9234) ✓✓✓
+   2. Gene_BACE1                              (score: 0.8923)
+   3. Gene_PSEN1                              (score: 0.8567)
+   ...
+
+✓ Ground Truth: Gene_APOE
+✓ Rank of Ground Truth: 1 / 14903
+  🎉 Perfect! Ground truth is rank 1!
+```
+
+## Tham số (Arguments)
+
+### Required Arguments
+
+| Argument | Mô tả | Ví dụ |
+|----------|-------|-------|
+| `--model_dir` | Thư mục chứa trained model | `fuselinker-complex` |
+| `--data` | Thư mục data | `primekg`, `suppkg`, `mybkg_cui` |
+
+### Optional Arguments
+
+| Argument | Mô tả | Default | Ví dụ |
+|----------|-------|---------|-------|
+| `--head` | Head entity name (cho specific triple demo) | None | `"Gene_APOE"` |
+| `--relation` | Relation name (cho specific triple demo) | None | `"ppi"` |
+| `--tail` | Tail entity name (cho specific triple demo) | None | `"Gene_APP"` |
+| `--num_samples` | Số triples ngẫu nhiên để demo | 5 | `10` |
+| `--top_k` | Số predictions hiển thị | 10 | `20` |
+
+## Các Use Cases
+
+### Use Case 1: Kiểm tra chất lượng model tổng quan
+
+Dùng random samples để xem model perform như thế nào trên test set:
+
+```bash
+python demo_link_prediction.py \
+    --model_dir fuselinker-complex \
+    --data primekg \
+    --num_samples 10 \
+    --top_k 10
+```
+
+**Khi nào dùng:**
+- Sau khi train model xong
+- Muốn kiểm tra nhanh chất lượng dự đoán
+- So sánh giữa các models (ComplEx vs DistMult vs TransE)
+
+### Use Case 2: Debug một triple cụ thể
+
+Kiểm tra tại sao model predict tốt/tệ cho một triple cụ thể:
+
+```bash
+python demo_link_prediction.py \
+    --model_dir fuselinker-complex \
+    --data primekg \
+    --head "Disease_Alzheimer" \
+    --relation "associated_with" \
+    --tail "Gene_APOE" \
+    --top_k 20
+```
+
+**Khi nào dùng:**
+- Model predict sai một triple quan trọng
+- Muốn hiểu tại sao một prediction được rank cao/thấp
+- Nghiên cứu biological relationships cụ thể
+
+### Use Case 3: Xem nhiều predictions
+
+Xem top 20-50 predictions để phân tích:
+
+```bash
+python demo_link_prediction.py \
+    --model_dir fuselinker-complex \
+    --data primekg \
+    --head "Gene_APOE" \
+    --relation "ppi" \
+    --tail "Gene_APP" \
+    --top_k 50
+```
+
+**Khi nào dùng:**
+- Phát hiện novel relationships
+- Xem các candidates có score cao
+- Validate predictions với domain knowledge
+
+### Use Case 4: So sánh models
+
+```bash
+# ComplEx model
+python demo_link_prediction.py \
+    --model_dir fuselinker-complex \
+    --data primekg \
+    --head "Gene_APOE" \
+    --relation "ppi" \
+    --tail "Gene_APP"
+
+# DistMult model
+python demo_link_prediction.py \
+    --model_dir fuselinker \
+    --data primekg \
+    --head "Gene_APOE" \
+    --relation "ppi" \
+    --tail "Gene_APP"
+
+# TransE model
+python demo_link_prediction.py \
+    --model_dir fuselinker-transe \
+    --data primekg \
+    --head "Gene_APOE" \
+    --relation "ppi" \
+    --tail "Gene_APP"
+```
+
+## Hiểu Output
+
+### Rank Indicators
+
+Tool hiển thị chất lượng prediction dựa trên rank:
+
+- 🎉 **Rank 1**: Perfect prediction! Model dự đoán đúng ngay vị trí đầu tiên
+- ✓ **Rank 2-3**: Good! Ground truth trong top 3 (Hits@3)
+- ○ **Rank 4-10**: Fair. Ground truth trong top 10 (Hits@10)
+- ✗ **Rank > 10**: Ground truth nằm ngoài top 10
+
+### Score Interpretation
+
+- **Score cao (> 0.9)**: Model rất tự tin về prediction này
+- **Score trung bình (0.7-0.9)**: Model khá tự tin
+- **Score thấp (< 0.7)**: Model không chắc chắn
+
+### Markers
+
+- **✓✓✓ [CORRECT]**: Đánh dấu ground truth entity trong danh sách predictions
+
+## Model Types
+
+Tool hỗ trợ các model types:
+
+| Model Type | Directory | Scoring Function |
+|------------|-----------|------------------|
+| **DistMult** | `fuselinker/` | `score = <h, r, t>` |
+| **ComplEx** | `fuselinker-complex/` | Complex embeddings |
+| **TransE** | `fuselinker-transe/` | `score = -‖h + r - t‖` |
+| **ConvE** | `fuselinker-conve/` | Convolutional |
+
+**Note**: Tool hiện tại dùng DistMult scoring function cho tất cả models. Để có kết quả chính xác nhất, cần load proper scoring function cho từng model type.
+
+## Files cần thiết
+
+Tool cần các files sau:
+
+```
+model_dir/
+└── data/
+    ├── entity2index.pkl
+    ├── index2entity.pkl
+    ├── relation2index.pkl
+    ├── index2relation.pkl
+    └── visualization_outputs/
+        ├── node_embeddings.npy
+        ├── relation_embeddings.npy
+        ├── train_graph.json
+        └── test_graph.json
+```
+
+Các files này được tạo tự động khi:
+1. Train model với `main.py`
+2. Visualization outputs được export sau khi training
+
+## Ví dụ đầy đủ
+
+### Workflow: Train → Demo
+
+```bash
+# Step 1: Train model
+conda activate fuselinker
+cd ~/fussion-and-verify-in-BKG/fuselinker-complex
+
+python main.py \
+    --data primekg \
+    --text_embedding_file sapbert_embeddings \
+    --knowledge_embedding_file ~/fussion-and-verify-in-BKG/engine/poincare_embeddings.npy \
+    --iterations 4000 \
+    --use_reciprocal \
+    --w 0.75 \
+    --use_cuda True \
+    --use_n3_reg \
+    --model_state_file primekg_complex_model.pth
+
+# Step 2: Demo predictions
+cd ~/fussion-and-verify-in-BKG
+
+# Demo random samples
+python demo_link_prediction.py \
+    --model_dir fuselinker-complex \
+    --data primekg \
+    --num_samples 10 \
+    --top_k 10
+
+# Demo specific triple
+python demo_link_prediction.py \
+    --model_dir fuselinker-complex \
+    --data primekg \
+    --head "Gene_APOE" \
+    --relation "ppi" \
+    --tail "Gene_APP" \
+    --top_k 20
+```
+
+## Troubleshooting
+
+### Lỗi: "Could not find entities/relation"
+
+**Nguyên nhân**: Entity hoặc relation name không tồn tại trong data
+
+**Giải pháp**: Kiểm tra tên chính xác trong pkl files:
+
+```python
+import pickle
+
+# Check entity names
+with open('fuselinker-complex/primekg/entity2index.pkl', 'rb') as f:
+    entity2index = pickle.load(f)
+    print("Sample entities:", list(entity2index.keys())[:10])
+
+# Check relation names
+with open('fuselinker-complex/primekg/relation2index.pkl', 'rb') as f:
+    relation2index = pickle.load(f)
+    print("Relations:", list(relation2index.keys()))
+```
+
+### Lỗi: "visualization_outputs not found"
+
+**Nguyên nhân**: Model chưa export visualization data
+
+**Giải pháp**: Train lại model, visualization outputs sẽ được export tự động
+
+### Demo chạy chậm
+
+**Nguyên nhân**: Scoring tất cả entities mất thời gian với dataset lớn
+
+**Giải pháp**:
+- Giảm `--num_samples` xuống 3-5
+- Chỉ demo specific triples thay vì random samples
+
+## Best Practices
+
+### 1. Kiểm tra model quality
+```bash
+# Demo nhiều samples để có overview
+python demo_link_prediction.py \
+    --model_dir fuselinker-complex \
+    --data primekg \
+    --num_samples 20 \
+    --top_k 10
+```
+
+### 2. Debug specific relationships
+```bash
+# Focus vào một relationship type
+python demo_link_prediction.py \
+    --model_dir fuselinker-complex \
+    --data primekg \
+    --relation "ppi" \
+    --num_samples 10
+```
+
+### 3. Discover novel predictions
+```bash
+# Xem top 50 predictions
+python demo_link_prediction.py \
+    --model_dir fuselinker-complex \
+    --data primekg \
+    --head "Disease_Alzheimer" \
+    --relation "associated_with" \
+    --top_k 50
+```
+
+## Summary
+
+✅ **Quick demo**: `python demo_link_prediction.py --model_dir fuselinker-complex --data primekg`
+
+✅ **Check specific triple**: Add `--head`, `--relation`, `--tail`
+
+✅ **See more predictions**: Add `--top_k 20`
+
+✅ **Rank indicators**: 🎉 (rank 1), ✓ (top 3), ○ (top 10), ✗ (>10)
+
+✅ **Files needed**: entity/relation pkl files + visualization_outputs/
+
+**Cách đơn giản nhất để kiểm tra model:**
+```bash
+conda activate fuselinker
+cd ~/fussion-and-verify-in-BKG
+python demo_link_prediction.py --model_dir fuselinker-complex --data primekg
+```
+
+Tool sẽ hiển thị 5 random test triples với predictions và **rank của đáp án đúng**! 🎯
